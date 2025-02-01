@@ -187,13 +187,24 @@
 			"TypeName": "Game.Character",
 			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
 			"V": {
-	"_model": "cf556f1c41ac7d287109469884ed9cdc",
-	"CharacterObj": "cf556f1c41ac7d287109469884ed9cdc",
-	"Speed": 200.0,
-	"JumpStrength": 1.0,
-	"CameraView": "260754be40627bfa3e64f4b33d2c7594",
-	"MouseSensitivity": 3.0808654,
-	"CameraLag": 12.362002
+	"_movementArgs": {
+		"_model": "cf556f1c41ac7d287109469884ed9cdc",
+		"CharacterObj": "cf556f1c41ac7d287109469884ed9cdc",
+		"Speed": 250.0,
+		"SprintSpeed": 400.0,
+		"Gravity": -9.81,
+		"JumpStrength": 10.0
+	},
+	"_cameraArgs": {
+		"CameraView": "260754be40627bfa3e64f4b33d2c7594",
+		"MouseSensitivity": 2.0,
+		"CameraLag": 10.0,
+		"FOVZoom": 50.0,
+		"PitchMinMax": {
+			"X": -45.0,
+			"Y": 45.0
+		}
+	}
 }
 		},
 		{
