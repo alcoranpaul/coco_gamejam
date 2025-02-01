@@ -1,7 +1,7 @@
 {
 	"ID": "74a68a984824b4510d12589f199ad68f",
 	"TypeName": "FlaxEngine.SceneAsset",
-	"EngineBuild": 6333,
+	"EngineBuild": 6606,
 	"Data": [
 		{
 			"ID": "74a68a984824b4510d12589f199ad68f",
@@ -99,32 +99,6 @@
 			"Mode": 0
 		},
 		{
-			"ID": "b0d72c3746caebca055e1f921ca21c7c",
-			"TypeName": "FlaxEngine.Camera",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Camera",
-			"Transform": {
-				"Translation": {
-					"X": -198.75326538085938,
-					"Y": 196.89071655273438,
-					"Z": 190.70037841796876
-				},
-				"Orientation": {
-					"X": 0.06189095228910446,
-					"Y": 0.9198267459869385,
-					"Z": -0.1617070734500885,
-					"W": 0.35204988718032839
-				}
-			},
-			"StaticFlags": 0
-		},
-		{
-			"ID": "9053ad38428b10594c741db78d7fcca5",
-			"TypeName": "FreeCamera",
-			"ParentID": "b0d72c3746caebca055e1f921ca21c7c",
-			"V": {}
-		},
-		{
 			"ID": "4a9d87134ab42f4294db6bbcf1902bde",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
@@ -183,6 +157,115 @@
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
 			"Name": "BoxCollider"
+		},
+		{
+			"ID": "76ced65c40eb4b6ac986748f8796fe4c",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "CharacterController",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 95.63887023925781,
+					"Z": 188.3566131591797
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Tag": "Player",
+			"Center": {
+				"X": 0.0,
+				"Y": 50.0,
+				"Z": 0.0
+			},
+			"Radius": 30.0,
+			"Height": 40.0,
+			"NonWalkableMode": 1
+		},
+		{
+			"ID": "8fed41b24724bb75a9e15faab38fc2b9",
+			"TypeName": "Game.Character",
+			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
+			"V": {
+	"CharacterObj": "cf556f1c41ac7d287109469884ed9cdc",
+	"Speed": 200.0,
+	"JumpStrength": 1.0,
+	"CameraView": "260754be40627bfa3e64f4b33d2c7594",
+	"MouseSensitivity": 3.0808654,
+	"CameraLag": 12.362002
+}
+		},
+		{
+			"ID": "cf556f1c41ac7d287109469884ed9cdc",
+			"TypeName": "FlaxEngine.AnimatedModel",
+			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
+			"Name": "Character",
+			"StaticFlags": 0,
+			"SkinnedModel": "0bb721ac429a91838d4b3d908e0c49c5",
+			"AnimationGraph": "0f6d293f43795c259c7a0db31deac1a4",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4f23f9b640cf28c6cb8b5393563b7f4c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
+			"Name": "CameraSocket",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 31.194183349609376,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "260754be40627bfa3e64f4b33d2c7594",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "4f23f9b640cf28c6cb8b5393563b7f4c",
+			"Name": "TPSCamera",
+			"Transform": {
+				"Translation": {
+					"X": 45.0,
+					"Y": 49.99999237060547,
+					"Z": -150.0
+				}
+			},
+			"StaticFlags": 0,
+			"FOV": 80.0
 		}
 	]
 }
