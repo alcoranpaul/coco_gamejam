@@ -166,7 +166,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
-					"Y": 95.63887023925781,
+					"Y": 50.167388916015628,
 					"Z": 188.3566131591797
 				}
 			},
@@ -187,6 +187,7 @@
 			"TypeName": "Game.Character",
 			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
 			"V": {
+	"_model": "cf556f1c41ac7d287109469884ed9cdc",
 	"CharacterObj": "cf556f1c41ac7d287109469884ed9cdc",
 	"Speed": 200.0,
 	"JumpStrength": 1.0,
@@ -259,8 +260,8 @@
 			"Name": "TPSCamera",
 			"Transform": {
 				"Translation": {
-					"X": 45.0,
-					"Y": 49.99999237060547,
+					"X": 20.0,
+					"Y": 49.99998474121094,
 					"Z": -150.0
 				}
 			},
