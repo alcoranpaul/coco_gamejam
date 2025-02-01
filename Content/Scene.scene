@@ -190,7 +190,7 @@
 	"_movementArgs": {
 		"_model": "cf556f1c41ac7d287109469884ed9cdc",
 		"CharacterObj": "cf556f1c41ac7d287109469884ed9cdc",
-		"Speed": 250.0,
+		"Speed": 200.0,
 		"SprintSpeed": 400.0,
 		"Gravity": -9.81,
 		"JumpStrength": 10.0
