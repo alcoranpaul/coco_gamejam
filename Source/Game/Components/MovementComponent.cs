@@ -118,7 +118,6 @@ public class MovementComponent
 
 
 		// Movement
-		[ExpandGroups]
 		[Tooltip("The character model"), EditorDisplay(MovementGroup, "Character"), EditorOrder(2)]
 		public Actor CharacterObj { get; set; } = null;
 

@@ -15,6 +15,8 @@ public class Character : Script
 	private MovementComponent.CameraArgs _cameraArgs;
 	[ShowInEditor, Serialize]
 	private InteractionComponent.InteractionArgs _interactionArgs;
+	[ShowInEditor, Serialize]
+	private InventoryComponent.InventoryArgs _inventoryArgs;
 
 	[ShowInEditor, Serialize] private float startingHealth = 100f;
 
@@ -28,7 +30,7 @@ public class Character : Script
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As
 		<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs);
-		_inventoryComponent = new InventoryComponent();
+		_inventoryComponent = new InventoryComponent(_inventoryArgs);
 
 		HealthComponent = new HealthComponent(startingHealth);
 	}
