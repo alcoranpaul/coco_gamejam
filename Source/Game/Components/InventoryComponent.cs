@@ -13,6 +13,8 @@ public class InventoryComponent : InstanceManagerClass
 	private Vial toxinVial;
 	private Vial healthVial;
 	private InventoryArgs _inventoryArgs;
+
+
 	public InventoryComponent(InventoryArgs inventoryArgs) : base()
 	{
 		_inventoryArgs = inventoryArgs;
