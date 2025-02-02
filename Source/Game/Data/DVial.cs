@@ -13,6 +13,7 @@ public class DVial
 	public Model Model;
 	public Type VialType;
 	public Prefab Prefab;
+	public MaterialInstance Material;
 
 	public enum Type
 	{

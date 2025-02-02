@@ -13,11 +13,14 @@ public class VialTrigger : Script
 	[ShowInEditor, Serialize] private Collider collider;
 	[ShowInEditor, Serialize] private Actor modelActor;
 
+
 	/// <inheritdoc/>
 	public override void OnStart()
 	{
 		collider.IsTrigger = true;
 		collider.TriggerEnter += TriggerEnter;
+		PrefabManager.SpawnPrefab(VialType.Instance.Prefab, modelActor);
+
 	}
 
 	private void TriggerEnter(PhysicsColliderActor actor)

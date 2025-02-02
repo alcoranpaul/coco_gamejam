@@ -6,6 +6,7 @@
 	"Name": "Toxic Vial",
 	"Model": "3f82e57744f57c28285150b646ad2198",
 	"VialType": 1,
-	"Prefab": null
+	"Prefab": "59c9056d49c68fee6919639136941b41",
+	"Material": "f121484743edd00c3a5c87a1dba68451"
 }
 }

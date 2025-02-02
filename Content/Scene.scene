@@ -684,7 +684,7 @@
 			"ID": "94a7f19442d1bb48d68e1e8d7483dc69",
 			"TypeName": "FlaxEngine.BoneSocket",
 			"ParentID": "cf556f1c41ac7d287109469884ed9cdc",
-			"Name": "BoneSocket",
+			"Name": "RightHandIndex2",
 			"Transform": {
 				"Translation": {
 					"X": 36.53874588012695,
@@ -699,6 +699,30 @@
 				}
 			},
 			"Node": "RightHandIndex2"
+		},
+		{
+			"ID": "aedfaded4a85e0f6009362a0c50eeaf3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "94a7f19442d1bb48d68e1e8d7483dc69",
+			"Name": "Item",
+			"Transform": {
+				"Translation": {
+					"X": 0.05873875319957733,
+					"Y": 7.815952777862549,
+					"Z": -0.4249100685119629
+				},
+				"Orientation": {
+					"X": 0.45226338505744936,
+					"Y": -0.039567895233631137,
+					"Z": 0.0776563435792923,
+					"W": 0.8876157999038696
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			}
 		},
 		{
 			"ID": "f25bb30a4113b99bab5f19979d3bb2d8",
@@ -799,71 +823,67 @@
 			"FOV": 80.0
 		},
 		{
-			"ID": "66423abc45f4ef188fb4fca044b6cafa",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Vial Trigger",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 16.29962158203125,
-					"Z": 31.96578598022461
-				}
-			}
+			"ID": "13afa84b460496162f72bc9dfeab8e3d",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "45f139a747df610c2461ca9086b827b8",
+			"ParentID": "74a68a984824b4510d12589f199ad68f"
 		},
 		{
-			"ID": "19499d1741ea295fff926db997fca48b",
-			"TypeName": "Game.VialTrigger",
-			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
+			"ID": "f143fee74c90b118269e9db89e4cfb73",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "ea85be304a162c6d6ea102b2e751f3bc",
+			"ParentID": "13afa84b460496162f72bc9dfeab8e3d",
 			"V": {
-	"VialType": "144ab177474e6756bb62048f2aaee4c0",
-	"collider": "103058ac4733704fa543109f8b8b5bf1"
+	"collider": "a7e01400434328919f031c8182e33022",
+	"modelActor": "6d1c25334bc8dbc82430e09895e9960c",
+	"vialModel": "e7aca5ea4181c43439fcedb35bcf6c6a"
 }
 		},
 		{
-			"ID": "a9eef32845b1a9c4ff0935a3bf457aa5",
-			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
-			"Name": "Capsule",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": 38.921722412109378,
-					"Z": 0.0
-				},
-				"Scale": {
-					"X": 0.30000001192092898,
-					"Y": 0.30000001192092898,
-					"Z": 0.30000001192092898
-				}
-			},
-			"Model": "3f82e57744f57c28285150b646ad2198",
+			"ID": "6d1c25334bc8dbc82430e09895e9960c",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "a171f1704f3738966b997a9900dad386",
+			"ParentID": "13afa84b460496162f72bc9dfeab8e3d"
+		},
+		{
+			"ID": "741299b24c9a32eb95504aa3da9e42a8",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "933c31f84ddab19e6e0bc285934334bd",
+			"ParentID": "6d1c25334bc8dbc82430e09895e9960c",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{},
+					{}
 				]
 			}
 		},
 		{
-			"ID": "103058ac4733704fa543109f8b8b5bf1",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
-			"Name": "BoxCollider",
-			"Center": {
-				"X": 0.0,
-				"Y": 50.0,
-				"Z": -0.0000019073486328125
-			},
-			"Size": {
-				"X": 50.0,
-				"Y": 99.99999237060547,
-				"Z": 50.0
+			"ID": "114caedf4067f25cf5ac5c8eb2ed704b",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "19a0066a43f3a961b59dffbb1685c88c",
+			"ParentID": "6d1c25334bc8dbc82430e09895e9960c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
 			}
+		},
+		{
+			"ID": "e7aca5ea4181c43439fcedb35bcf6c6a",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "0c0320a1486a47dadfe61cb7df039b15",
+			"ParentID": "6d1c25334bc8dbc82430e09895e9960c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a7e01400434328919f031c8182e33022",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "723f0a40433614498f7026a6c08e7bcf",
+			"ParentID": "13afa84b460496162f72bc9dfeab8e3d"
 		}
 	]
 }

@@ -1,0 +1,75 @@
+{
+	"ID": "393dd9e543bef79ba8aca7b06c2fbade",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "462365ae415a1d52e28b4dbb62c87918",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "ToxicVial"
+	},
+	{
+		"ID": "46e521044379e56d1fd7e18b6e503203",
+		"TypeName": "Game.ToxinVial",
+		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
+		"V": {}
+	},
+	{
+		"ID": "cfda9433425c8a7fa28693a8648b75d5",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
+		"Name": "Base",
+		"Model": "02c7cb7b49874be142b74babfef8f719",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "5d52bfe9453fe84442566d944a831dab",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				},
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "38bc400c496896872a19a9a07f64aad2",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
+		"Name": "Cap",
+		"Model": "67f6dccf44c793f0315c738467d77d21",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "43a9721847b9c2b79b1a23a3744df029",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
+		"Name": "Vial",
+		"Model": "1c2a51cb4441ca455a1ed2b8631a68cc",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	}
+]
+}

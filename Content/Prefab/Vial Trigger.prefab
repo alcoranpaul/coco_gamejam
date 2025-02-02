@@ -1,0 +1,56 @@
+{
+	"ID": "18b59d454d23afabb448ac9d16769599",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "45f139a747df610c2461ca9086b827b8",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Vial Trigger"
+	},
+	{
+		"ID": "ea85be304a162c6d6ea102b2e751f3bc",
+		"TypeName": "Game.VialTrigger",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"V": {
+	"VialType": "144ab177474e6756bb62048f2aaee4c0",
+	"collider": "723f0a40433614498f7026a6c08e7bcf",
+	"modelActor": "511d93524f852a35a87d5f88e210dfb2"
+}
+	},
+	{
+		"ID": "723f0a40433614498f7026a6c08e7bcf",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"Name": "BoxCollider",
+		"Center": {
+			"X": 0.0,
+			"Y": 50.0,
+			"Z": -0.0000019073486328125
+		},
+		"Size": {
+			"X": 50.0,
+			"Y": 99.99999237060547,
+			"Z": 50.0
+		}
+	},
+	{
+		"ID": "511d93524f852a35a87d5f88e210dfb2",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"Name": "Item",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 44.11660385131836,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 0.5,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		}
+	}
+]
+}
