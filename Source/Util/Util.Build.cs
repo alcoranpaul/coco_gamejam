@@ -1,14 +1,14 @@
 using Flax.Build;
 using Flax.Build.NativeCpp;
 
-public class Game : GameModule
+public class Util : GameModule
 {
     /// <inheritdoc />
     public override void Init()
     {
         base.Init();
 
-        // C#-only scripting
+        // C#-only scripting if false
         BuildNativeCode = false;
     }
 
@@ -18,9 +18,9 @@ public class Game : GameModule
         base.Setup(options);
 
         options.ScriptingAPI.IgnoreMissingDocumentationWarnings = true;
-        options.PublicDependencies.Add("Util");
 
         // Here you can modify the build options for your game module
+        // To reference another module use: options.PublicDependencies.Add("Audio");
         // To add C++ define use: options.PublicDefinitions.Add("COMPILE_WITH_FLAX");
         // To learn more see scripting documentation.
     }

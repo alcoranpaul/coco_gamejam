@@ -8,6 +8,7 @@ public class GameTarget : GameProjectTarget
         base.Init();
 
         // Reference the modules for game
+        Modules.Add(nameof(Util));
         Modules.Add("Game");
     }
 }

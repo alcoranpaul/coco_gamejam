@@ -548,7 +548,7 @@
 			"ID": "4a7045e748c74e3de29afd8856f99205",
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "4a9d87134ab42f4294db6bbcf1902bde",
-			"Name": "BoxCollider"
+			"Name": "FBoxCollider"
 		},
 		{
 			"ID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
@@ -562,6 +562,7 @@
 					"Z": -84.26880645751953
 				}
 			},
+			"Layer": 2,
 			"Model": "b43f0f8f4aaba3f3156896a5a22ba493",
 			"Buffer": {
 				"Entries": [
@@ -578,7 +579,8 @@
 			"ID": "f05185004d85b1695fc5b1ae710ba373",
 			"TypeName": "FlaxEngine.BoxCollider",
 			"ParentID": "e1c92bcc4eb069c29f0a5e9c605ec5ef",
-			"Name": "BoxCollider"
+			"Name": "BoxCollider",
+			"Layer": 2
 		},
 		{
 			"ID": "76ced65c40eb4b6ac986748f8796fe4c",
@@ -626,6 +628,12 @@
 			"X": -45.0,
 			"Y": 45.0
 		}
+	},
+	"_interactionArgs": {
+		"TriggerColllider": "ce9f651c497eec28e08f4f944b7374b5",
+		"LayersMask": {
+			"Mask": 4
+		}
 	}
 }
 		},
@@ -670,6 +678,95 @@
 						"ReceiveDecals": true
 					}
 				]
+			}
+		},
+		{
+			"ID": "94a7f19442d1bb48d68e1e8d7483dc69",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "cf556f1c41ac7d287109469884ed9cdc",
+			"Name": "BoneSocket",
+			"Transform": {
+				"Translation": {
+					"X": 36.53874588012695,
+					"Y": 3.9609320163726808,
+					"Z": 0.8393362164497376
+				},
+				"Orientation": {
+					"X": 0.701052188873291,
+					"Y": 0.17229332029819489,
+					"Z": 0.6703331470489502,
+					"W": -0.17173947393894196
+				}
+			},
+			"Node": "RightHandIndex2"
+		},
+		{
+			"ID": "f25bb30a4113b99bab5f19979d3bb2d8",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "cf556f1c41ac7d287109469884ed9cdc",
+			"Name": "Spine 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.12487499415874481,
+					"Y": 27.24854850769043,
+					"Z": 0.6272854804992676
+				},
+				"Orientation": {
+					"X": 1.6721336815184174e-10,
+					"Y": 0.9999982118606567,
+					"Z": 0.0019126982660964132,
+					"W": -8.74226344649287e-8
+				}
+			},
+			"Node": "Spine2"
+		},
+		{
+			"ID": "ec771beb490c4e87e6016796c839eb6e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f25bb30a4113b99bab5f19979d3bb2d8",
+			"Name": "Interaction",
+			"Transform": {
+				"Translation": {
+					"X": 0.12488149106502533,
+					"Y": -1.015053629875183,
+					"Z": -37.06783676147461
+				},
+				"Orientation": {
+					"X": -1.6721336815184174e-10,
+					"Y": -0.9999982118606567,
+					"Z": -0.0019126982660964132,
+					"W": -8.74226344649287e-8
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e12b59c045a91c3f22bfbf83d7c161ef",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "ec771beb490c4e87e6016796c839eb6e",
+			"Name": "RigidBody",
+			"StaticFlags": 0,
+			"Layer": 2,
+			"EnableGravity": false
+		},
+		{
+			"ID": "ce9f651c497eec28e08f4f944b7374b5",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "e12b59c045a91c3f22bfbf83d7c161ef",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -7.54510498046875
+				}
+			},
+			"Layer": 2,
+			"IsTrigger": true,
+			"Size": {
+				"X": 50.0,
+				"Y": 100.0,
+				"Z": 50.0
 			}
 		},
 		{

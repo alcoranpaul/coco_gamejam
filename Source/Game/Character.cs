@@ -13,18 +13,28 @@ public class Character : Script
 	private MovementComponent.MovementArgs _movementArgs;
 	[ShowInEditor, Serialize]
 	private MovementComponent.CameraArgs _cameraArgs;
+	[ShowInEditor, Serialize]
+	private InteractionComponent.InteractionArgs _interactionArgs;
 
 	[ShowInEditor, Serialize] private float startingHealth = 100f;
 
 	private MovementComponent _movementComponent;
 	public HealthComponent HealthComponent { get; private set; }
+	private InteractionComponent _interactionComponent;
+
 
 	public override void OnAwake()
 	{
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As
 		<AnimatedModel>());
+		_interactionComponent = new InteractionComponent(_interactionArgs);
 
 		HealthComponent = new HealthComponent(startingHealth);
+	}
+	public override void OnDisable()
+	{
+		_interactionComponent.OnDisable();
+		base.OnDisable();
 	}
 
 	public override void OnStart()
