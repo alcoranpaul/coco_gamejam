@@ -17,14 +17,14 @@ public class Character : Script
 	[ShowInEditor, Serialize] private float startingHealth = 100f;
 
 	private MovementComponent _movementComponent;
-	private HealthComponent _healthComponent;
+	public HealthComponent HealthComponent { get; private set; }
 
 	public override void OnAwake()
 	{
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As
 		<AnimatedModel>());
 
-		_healthComponent = new HealthComponent(startingHealth);
+		HealthComponent = new HealthComponent(startingHealth);
 	}
 
 	public override void OnStart()
@@ -35,6 +35,7 @@ public class Character : Script
 		Screen.CursorVisible = false;
 
 		_movementComponent.Start();
+		HealthComponent.Start();
 	}
 
 

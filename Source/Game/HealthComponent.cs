@@ -9,36 +9,41 @@ namespace Game;
 /// </summary>
 public class HealthComponent
 {
-	private float health;
-	private float maxHealth;
-	public float NormalizedHealth => health / maxHealth;
+	public float Health { get; private set; }
+	public float MaxHealth { get; private set; }
+	public float NormalizedHealth => Health / MaxHealth;
 
-	public event Action<float> OnHealthChanged;
+	public event Action<float, float, float> OnHealthChanged;
 	public event EventHandler OnDeath;
 
 	public HealthComponent(float maxHealth)
 	{
-		this.maxHealth = maxHealth;
-		health = maxHealth;
+		this.MaxHealth = maxHealth;
+		Health = maxHealth;
+	}
+
+	public void Start()
+	{
+		OnHealthChanged?.Invoke(Health, MaxHealth, NormalizedHealth);
 	}
 
 	public void Damage(float amount)
 	{
-		health -= amount;
-		if (health < 0)
+		Health -= amount;
+		if (Health < 0)
 		{
-			health = 0;
+			Health = 0;
 			OnDeath?.Invoke(this, EventArgs.Empty);
 		}
-		OnHealthChanged?.Invoke(health);
+		OnHealthChanged?.Invoke(Health, MaxHealth, NormalizedHealth);
 	}
 
 	public void Heal(float amount)
 	{
-		health += amount;
-		if (health > maxHealth)
-			health = maxHealth;
-		OnHealthChanged?.Invoke(health);
+		Health += amount;
+		if (Health > MaxHealth)
+			Health = MaxHealth;
+		OnHealthChanged?.Invoke(Health, MaxHealth, NormalizedHealth);
 	}
 
 
