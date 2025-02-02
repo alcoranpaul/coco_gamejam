@@ -334,7 +334,14 @@
 		}
 	},
 	"_inventoryArgs": {
-		"ActorToAttach": "aedfaded4a85e0f6009362a0c50eeaf3"
+		"ActorToAttach": "aedfaded4a85e0f6009362a0c50eeaf3",
+		"toxinVialControl": "c27a07d84547668aeb8793977dba1dc7",
+		"healthVialControl": "a653062f40b4f6ccf87f39a8e069f535"
+	},
+	"_toxinArgs": {
+		"FillRate": 1.5,
+		"DecayRate": 1.0,
+		"MaxToxin": 100.0
 	}
 }
 		},
@@ -1088,6 +1095,16 @@
 }
 		},
 		{
+			"ID": "97ca70a14ff1663a366bd0bd129a6fff",
+			"TypeName": "Game.ToxinUI",
+			"ParentID": "177b0deb4990e80c60f5ab890fe0087b",
+			"V": {
+	"toxinLabelControl": "8402fdf74a09316657614f9a170a0596",
+	"progressBarControl": "dadcd5844e16e06d024b9db1947310b7",
+	"character": "8fed41b24724bb75a9e15faab38fc2b9"
+}
+		},
+		{
 			"ID": "dadcd5844e16e06d024b9db1947310b7",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "177b0deb4990e80c60f5ab890fe0087b",
@@ -1288,7 +1305,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 48.0,
+		"Right": 84.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -1321,7 +1338,7 @@
 			"ID": "0dd689a4402103a424538f8ff3ecaea1",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "42d86ffd496d8b929b2a55ab5b292a36",
-			"Name": "ContainerControl",
+			"Name": "HealthItem",
 			"Transform": {
 				"Translation": {
 					"X": 2.0,
@@ -1361,10 +1378,10 @@
 	},
 	"Rotation": 0.0,
 	"BackgroundColor": {
-		"R": 0.0,
-		"G": 0.0,
+		"R": 0.19444442,
+		"G": 0.0018755294,
 		"B": 0.0,
-		"A": 0.6333333
+		"A": 0.1
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
@@ -1454,7 +1471,7 @@
 			"ID": "3a4039b9440927f20a0c3483f46a2034",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "42d86ffd496d8b929b2a55ab5b292a36",
-			"Name": "ContainerControl 0",
+			"Name": "ToxinItem",
 			"Transform": {
 				"Translation": {
 					"X": 2.0,
@@ -1494,10 +1511,10 @@
 	},
 	"Rotation": 0.0,
 	"BackgroundColor": {
-		"R": 1.0,
-		"G": 1.0,
+		"R": 0.51111114,
+		"G": 0.02222222,
 		"B": 1.0,
-		"A": 0.0
+		"A": 0.1
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
@@ -1527,7 +1544,7 @@
 		"R": 1.0,
 		"G": 1.0,
 		"B": 1.0,
-		"A": 0.35000002
+		"A": 0.5
 	},
 	"MouseOverColor": {
 		"R": 1.0,

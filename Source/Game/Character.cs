@@ -17,44 +17,60 @@ public class Character : Script
 	private InteractionComponent.InteractionArgs _interactionArgs;
 	[ShowInEditor, Serialize]
 	private InventoryComponent.InventoryArgs _inventoryArgs;
+	[ShowInEditor, Serialize]
+	private ToxinComponent.ToxinArgs _toxinArgs;
 
 	[ShowInEditor, Serialize] private float startingHealth = 100f;
 
-	private MovementComponent _movementComponent;
 	public HealthComponent HealthComponent { get; private set; }
+	public ToxinComponent ToxinComponent { get; private set; }
+	private MovementComponent _movementComponent;
 	private InteractionComponent _interactionComponent;
 	private InventoryComponent _inventoryComponent;
 
+
+
 	public override void OnAwake()
 	{
-		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As
-		<AnimatedModel>());
+		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs);
 		_inventoryComponent = new InventoryComponent(_inventoryArgs);
 
 		HealthComponent = new HealthComponent(startingHealth);
+		ToxinComponent = new ToxinComponent(_toxinArgs, healthComponent: HealthComponent);
+
+		_inventoryComponent.OnToxinVialAdded += OnToxinVialAdded;
 	}
+
+	private void OnToxinVialAdded(bool flag)
+	{
+		ToxinComponent.Toxify(flag);
+	}
+
 	public override void OnDisable()
 	{
 		_interactionComponent.OnDisable();
+		_inventoryComponent.OnToxinVialAdded -= OnToxinVialAdded;
 		base.OnDisable();
 	}
 
 	public override void OnStart()
 	{
-
-
 		Screen.CursorLock = CursorLockMode.Locked;
 		Screen.CursorVisible = false;
 
 		_movementComponent.Start();
 		HealthComponent.Start();
+		ToxinComponent.Start();
 	}
 
+	public override void OnUpdate()
+	{
+		ToxinComponent.Update();
+	}
 
 	public override void OnFixedUpdate()
 	{
 		_movementComponent.Update();
 	}
 }
-
