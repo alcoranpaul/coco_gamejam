@@ -1,0 +1,11 @@
+{
+	"ID": "e8418eeb46c8ab45cce0769ea5b9ba44",
+	"TypeName": "Game.DVial",
+	"EngineBuild": 6606,
+	"Data": {
+	"Name": "Toxic Vial",
+	"Model": "3f82e57744f57c28285150b646ad2198",
+	"VialType": 1,
+	"Prefab": null
+}
+}

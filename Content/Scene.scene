@@ -797,6 +797,73 @@
 			},
 			"StaticFlags": 0,
 			"FOV": 80.0
+		},
+		{
+			"ID": "66423abc45f4ef188fb4fca044b6cafa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Vial Trigger",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 16.29962158203125,
+					"Z": 31.96578598022461
+				}
+			}
+		},
+		{
+			"ID": "19499d1741ea295fff926db997fca48b",
+			"TypeName": "Game.VialTrigger",
+			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
+			"V": {
+	"VialType": "144ab177474e6756bb62048f2aaee4c0",
+	"collider": "103058ac4733704fa543109f8b8b5bf1"
+}
+		},
+		{
+			"ID": "a9eef32845b1a9c4ff0935a3bf457aa5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
+			"Name": "Capsule",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 38.921722412109378,
+					"Z": 0.0
+				},
+				"Scale": {
+					"X": 0.30000001192092898,
+					"Y": 0.30000001192092898,
+					"Z": 0.30000001192092898
+				}
+			},
+			"Model": "3f82e57744f57c28285150b646ad2198",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "103058ac4733704fa543109f8b8b5bf1",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "66423abc45f4ef188fb4fca044b6cafa",
+			"Name": "BoxCollider",
+			"Center": {
+				"X": 0.0,
+				"Y": 50.0,
+				"Z": -0.0000019073486328125
+			},
+			"Size": {
+				"X": 50.0,
+				"Y": 99.99999237060547,
+				"Z": 50.0
+			}
 		}
 	]
 }

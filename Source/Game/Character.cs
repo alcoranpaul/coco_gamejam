@@ -21,13 +21,14 @@ public class Character : Script
 	private MovementComponent _movementComponent;
 	public HealthComponent HealthComponent { get; private set; }
 	private InteractionComponent _interactionComponent;
-
+	private InventoryComponent _inventoryComponent;
 
 	public override void OnAwake()
 	{
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As
 		<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs);
+		_inventoryComponent = new InventoryComponent();
 
 		HealthComponent = new HealthComponent(startingHealth);
 	}
