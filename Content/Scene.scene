@@ -257,7 +257,7 @@
 				"Translation": {
 					"X": 6.8406219482421879,
 					"Y": 61.59697723388672,
-					"Z": -84.26880645751953
+					"Z": -319.8265075683594
 				}
 			},
 			"Layer": 2,
@@ -517,7 +517,7 @@
 			"ID": "90a7ed7c40a17b73c7070f8c610f120c",
 			"TypeName": "FlaxEngine.BoneSocket",
 			"ParentID": "cf556f1c41ac7d287109469884ed9cdc",
-			"Name": "BoneSocket",
+			"Name": "Hips",
 			"Transform": {
 				"Translation": {
 					"X": 0.12487497180700302,
@@ -1317,7 +1317,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 52.0,
+		"Right": 84.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -1668,6 +1668,43 @@
 			"PrefabID": "18b59d454d23afabb448ac9d16769599",
 			"PrefabObjectID": "511d93524f852a35a87d5f88e210dfb2",
 			"ParentID": "ea4e9eb94cdaf6212a34799926787aa3"
+		},
+		{
+			"ID": "1e25e96f44f1af5cfa7d2fa38ac03fc2",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "45f139a747df610c2461ca9086b827b8",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Vial Trigger 0",
+			"Transform": {
+				"Translation": {
+					"X": -147.69000244140626,
+					"Y": 0.0,
+					"Z": 0.0
+				}
+			}
+		},
+		{
+			"ID": "c43a528242000754ae10d7a082128d88",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "ea85be304a162c6d6ea102b2e751f3bc",
+			"ParentID": "1e25e96f44f1af5cfa7d2fa38ac03fc2",
+			"V": {
+	"VialType": "e8418eeb46c8ab45cce0769ea5b9ba44",
+	"collider": "c86fa6dc49d936c32926fd8e563e96b1",
+	"modelActor": "f6c6de674acb5c66e8b34a9c2d2d5b4a"
+}
+		},
+		{
+			"ID": "c86fa6dc49d936c32926fd8e563e96b1",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "723f0a40433614498f7026a6c08e7bcf",
+			"ParentID": "1e25e96f44f1af5cfa7d2fa38ac03fc2"
+		},
+		{
+			"ID": "f6c6de674acb5c66e8b34a9c2d2d5b4a",
+			"PrefabID": "18b59d454d23afabb448ac9d16769599",
+			"PrefabObjectID": "511d93524f852a35a87d5f88e210dfb2",
+			"ParentID": "1e25e96f44f1af5cfa7d2fa38ac03fc2"
 		}
 	]
 }

@@ -35,19 +35,17 @@ public class Character : Script
 	{
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs);
-		_inventoryComponent = new InventoryComponent(_inventoryArgs);
+		_inventoryComponent = new InventoryComponent(_inventoryArgs, _movementArgs.CharacterObj);
 		_throwComponent = new ThrowComponent();
 
 		HealthComponent = new HealthComponent(startingHealth);
 		ToxinComponent = new ToxinComponent(_toxinArgs, healthComponent: HealthComponent);
 
 		_inventoryComponent.OnToxinVialAdded += OnToxinVialAdded;
+		_inventoryComponent.OnToxinVialRemoved += OnToxinVialRemoved;
+		_throwComponent.OnThrowEnabled += OnThrowEnabled;
 	}
 
-	private void OnToxinVialAdded(bool flag)
-	{
-		ToxinComponent.Toxify(flag);
-	}
 
 	public override void OnDisable()
 	{
@@ -55,6 +53,8 @@ public class Character : Script
 		_throwComponent.OnDisable();
 		_inventoryComponent.OnDisable();
 		_inventoryComponent.OnToxinVialAdded -= OnToxinVialAdded;
+		_inventoryComponent.OnToxinVialRemoved -= OnToxinVialRemoved;
+		_throwComponent.OnThrowEnabled -= OnThrowEnabled;
 		base.OnDisable();
 	}
 
@@ -76,5 +76,21 @@ public class Character : Script
 	public override void OnFixedUpdate()
 	{
 		_movementComponent.Update();
+	}
+
+	private void OnThrowEnabled(object sender, EventArgs e)
+	{
+		Debug.Log($"Throw has been raised");
+	}
+
+	private void OnToxinVialAdded(bool flag)
+	{
+		ToxinComponent.Toxify(flag);
+	}
+
+
+	private void OnToxinVialRemoved(object sender, EventArgs e)
+	{
+		ToxinComponent.Toxify(false);
 	}
 }

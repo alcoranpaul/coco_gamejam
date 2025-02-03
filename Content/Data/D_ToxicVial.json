@@ -7,6 +7,7 @@
 	"Model": "3f82e57744f57c28285150b646ad2198",
 	"VialType": 0,
 	"Prefab": "393dd9e543bef79ba8aca7b06c2fbade",
-	"Material": "7e217865413cfa07447d758d79870f7a"
+	"Material": "7e217865413cfa07447d758d79870f7a",
+	"ThrowablePrefab": "415210494cb16196b2f01fa209571b90"
 }
 }

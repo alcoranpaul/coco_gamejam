@@ -13,8 +13,13 @@ public class InventoryComponent : InstanceManagerClass
 	public event Action<bool> OnToxinVialAdded;
 	public event Action<bool> OnHealthVialAdded;
 
+	public event EventHandler OnToxinVialRemoved;
+	public event EventHandler OnHealthVialRemoved;
+
 	private Vial toxinVial;
+
 	private Vial healthVial;
+
 	private InventoryArgs _inventoryArgs;
 
 
@@ -28,8 +33,11 @@ public class InventoryComponent : InstanceManagerClass
 
 	private VialEquipped _vialEquipped;
 
-	public InventoryComponent(InventoryArgs inventoryArgs) : base()
+	private Actor character;
+
+	public InventoryComponent(InventoryArgs inventoryArgs, Actor character) : base()
 	{
+		this.character = character;
 		_inventoryArgs = inventoryArgs;
 		_toxinVialImage = _inventoryArgs.toxinVialControl.Get<Image>();
 		_healthVialImage = _inventoryArgs.healthVialControl.Get<Image>();
@@ -56,7 +64,25 @@ public class InventoryComponent : InstanceManagerClass
 
 	private void OnUseVial()
 	{
-
+		switch (_vialEquipped)
+		{
+			case VialEquipped.Toxin:
+				if (toxinVial == null) return;
+				toxinVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
+				UpdateVialUI(_toxinVialImage, _inventoryArgs.toxinVialControl, toxinVialColorNone, 0.5f);
+				FlaxEngine.Object.Destroy(toxinVial.Actor);
+				toxinVial = null;
+				OnToxinVialRemoved?.Invoke(this, EventArgs.Empty);
+				break;
+			case VialEquipped.Health:
+				if (healthVial == null) return;
+				healthVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
+				UpdateVialUI(_healthVialImage, _inventoryArgs.healthVialControl, healthVialColorNone, 0.5f);
+				FlaxEngine.Object.Destroy(healthVial.Actor);
+				healthVial = null;
+				OnHealthVialRemoved?.Invoke(this, EventArgs.Empty);
+				break;
+		}
 	}
 
 	private void OnSwapVial()
@@ -66,14 +92,18 @@ public class InventoryComponent : InstanceManagerClass
 			case VialEquipped.Toxin:
 				if (healthVial == null) return;
 				_vialEquipped = VialEquipped.Health;
-				toxinVial.Actor.IsActive = false;
-				healthVial.Actor.IsActive = true;
+				if (toxinVial != null)
+					toxinVial.Actor.IsActive = false;
+				if (healthVial != null)
+					healthVial.Actor.IsActive = true;
 				break;
 			case VialEquipped.Health:
 				if (toxinVial == null) return;
 				_vialEquipped = VialEquipped.Toxin;
-				healthVial.Actor.IsActive = false;
-				toxinVial.Actor.IsActive = true;
+				if (healthVial != null)
+					healthVial.Actor.IsActive = false;
+				if (toxinVial != null)
+					toxinVial.Actor.IsActive = true;
 				break;
 
 		}
@@ -91,7 +121,7 @@ public class InventoryComponent : InstanceManagerClass
 			return;
 
 		// Check if this is the first vial added.
-		bool isFirstVial = (toxinVial == null && healthVial == null);
+		bool isFirstVial = toxinVial == null && healthVial == null;
 		if (isFirstVial)
 		{
 			_vialEquipped = isToxin ? VialEquipped.Toxin : VialEquipped.Health;
@@ -126,15 +156,15 @@ public class InventoryComponent : InstanceManagerClass
 
 		// Determine whether the spawned vial should be active.
 		// If it's the first vial or if it matches the equipped type, set active; otherwise, inactive.
-		bool isEquipped = isFirstVial || ((isToxin && _vialEquipped == VialEquipped.Toxin) || (isHealth && _vialEquipped == VialEquipped.Health));
+		bool isEquipped = isFirstVial || (isToxin && _vialEquipped == VialEquipped.Toxin) || (isHealth && _vialEquipped == VialEquipped.Health);
 		vialActor.IsActive = isEquipped;
 	}
 
-	private void UpdateVialUI(Image vialImage, UIControl vialControl, Color usedColor)
+	private void UpdateVialUI(Image vialImage, UIControl vialControl, Color usedColor, float alpha = 1)
 	{
 		vialImage.Color = usedColor;
 		var controlColor = vialControl.Control.BackgroundColor;
-		controlColor.A = 1;
+		controlColor.A = alpha;
 		vialControl.Control.BackgroundColor = controlColor;
 	}
 

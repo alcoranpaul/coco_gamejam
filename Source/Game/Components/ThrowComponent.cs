@@ -7,11 +7,13 @@ namespace Game;
 /// <summary>
 /// ThrowComponent class.
 /// </summary>
-public class ThrowComponent
+public class ThrowComponent : InstanceManagerClass
 {
-	public ThrowComponent()
+	public event EventHandler OnThrowEnabled;
+	private State _state;
+	public ThrowComponent() : base()
 	{
-
+		_state = State.Idle;
 	}
 
 	public void OnDisable()
@@ -19,11 +21,20 @@ public class ThrowComponent
 
 	}
 
-	private void OnUseVial()
+	public static void EnableThrow()
 	{
+		if (SingletonManager.Get<ThrowComponent>()._state == State.Throwing) return;
+		// Enable Throw
+		Debug.Log($"Enable Throw -- ThrowComponent");
+		SingletonManager.Get<ThrowComponent>()._state = State.Throwing;
+		SingletonManager.Get<ThrowComponent>().OnThrowEnabled?.Invoke(SingletonManager.Get<ThrowComponent>(), EventArgs.Empty);
 
-		// Get the currently equipped vial
-		// Call Interact on the Vial
+	}
+
+	private enum State
+	{
+		Idle,
+		Throwing
 	}
 
 }

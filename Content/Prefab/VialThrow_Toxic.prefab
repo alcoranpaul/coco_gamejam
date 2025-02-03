@@ -1,0 +1,101 @@
+{
+	"ID": "415210494cb16196b2f01fa209571b90",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "06a868424661d0172eb6c2befb006db6",
+		"TypeName": "FlaxEngine.RigidBody",
+		"Name": "VialThrow_Toxic",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Mass": 6.870663642883301
+	},
+	{
+		"ID": "04272b604da8e548c0a34fbacc983845",
+		"PrefabID": "393dd9e543bef79ba8aca7b06c2fbade",
+		"PrefabObjectID": "462365ae415a1d52e28b4dbb62c87918",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"Transform": {
+			"Scale": {
+				"X": 0.30000001192092898,
+				"Y": 0.30000001192092898,
+				"Z": 0.30000001192092898
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 3,
+		"RemovedObjects": [
+			"46e521044379e56d1fd7e18b6e503203"
+		]
+	},
+	{
+		"ID": "fd677f9a4a00d6fd49af4ca048b2e4bd",
+		"PrefabID": "393dd9e543bef79ba8aca7b06c2fbade",
+		"PrefabObjectID": "cfda9433425c8a7fa28693a8648b75d5",
+		"ParentID": "04272b604da8e548c0a34fbacc983845",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Buffer": {
+			"Entries": [
+				{},
+				{}
+			]
+		}
+	},
+	{
+		"ID": "361780bd40f46aa9460e6c937bb55bc4",
+		"PrefabID": "393dd9e543bef79ba8aca7b06c2fbade",
+		"PrefabObjectID": "38bc400c496896872a19a9a07f64aad2",
+		"ParentID": "04272b604da8e548c0a34fbacc983845",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "5cd7a10d41a08393a371938448a4d571",
+		"PrefabID": "393dd9e543bef79ba8aca7b06c2fbade",
+		"PrefabObjectID": "43a9721847b9c2b79b1a23a3744df029",
+		"ParentID": "04272b604da8e548c0a34fbacc983845",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "a413b3fe47faa620230ce0892ac01518",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -10.523354530334473,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Center": {
+			"X": 20.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Radius": 6.0,
+		"Height": 10.0
+	}
+]
+}

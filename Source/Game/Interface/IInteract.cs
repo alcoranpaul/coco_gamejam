@@ -9,5 +9,5 @@ namespace Game;
 /// </summary>
 public interface IInteract
 {
-    public void Interact();
+    public void Interact(Vector3 origin, Actor instigator);
 }

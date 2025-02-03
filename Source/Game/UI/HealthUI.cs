@@ -36,7 +36,7 @@ public class HealthUI : Script
 	{
 		healthLabel.Text = $"{(int)health}/{(int)maxHealth}";
 		progressBar.Value = normalizedHealth;
-		Debug.Log($"Health changed: {health}/{maxHealth} ({normalizedHealth:P})");
+
 
 	}
 

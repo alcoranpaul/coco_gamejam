@@ -10,5 +10,7 @@ namespace Game;
 public abstract class Vial : Script, IInteract
 {
 
-    public abstract void Interact();
+    public abstract void Interact(Vector3 origin, Actor instigator);
+
+
 }

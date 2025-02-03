@@ -12,7 +12,9 @@
 		"ID": "46e521044379e56d1fd7e18b6e503203",
 		"TypeName": "Game.ToxinVial",
 		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
-		"V": {}
+		"V": {
+	"throwablePrefab": "415210494cb16196b2f01fa209571b90"
+}
 	},
 	{
 		"ID": "cfda9433425c8a7fa28693a8648b75d5",

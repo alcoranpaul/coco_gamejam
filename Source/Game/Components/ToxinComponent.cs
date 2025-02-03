@@ -45,17 +45,19 @@ public class ToxinComponent
 		{
 			Increase(_toxinArgs.FillRate * Time.DeltaTime);
 
-			if (Toxin > 50f)
-			{
-				float toxinFactor = (Toxin - 50f) / 50f; // Scales from 0 to 1 (50%-100%)
-				float damagePerSecond = Mathf.Lerp(_healthComponent.MaxHealth * 0.01f, _healthComponent.MaxHealth * 0.03f, toxinFactor);
-				Debug.Log($"Toxin damage: {damagePerSecond}");
-				_healthComponent.Damage(damagePerSecond * Time.DeltaTime);
-			}
+
 		}
 		else
 		{
 			Decrease(_toxinArgs.DecayRate * Time.DeltaTime);
+		}
+
+		if (Toxin > 50f)
+		{
+			float toxinFactor = (Toxin - 50f) / 50f; // Scales from 0 to 1 (50%-100%)
+			float damagePerSecond = Mathf.Lerp(_healthComponent.MaxHealth * 0.01f, _healthComponent.MaxHealth * 0.03f, toxinFactor);
+
+			_healthComponent.Damage(damagePerSecond * Time.DeltaTime);
 		}
 	}
 
