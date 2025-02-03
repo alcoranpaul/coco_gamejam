@@ -12,6 +12,15 @@
 		"Mass": 6.870663642883301
 	},
 	{
+		"ID": "f315b16f4182f466940592bad3a84adc",
+		"TypeName": "Game.Throwable",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"V": {
+	"collider": "a413b3fe47faa620230ce0892ac01518",
+	"vfxPrefab": "e439be5347313c6747787396ee10c005"
+}
+	},
+	{
 		"ID": "04272b604da8e548c0a34fbacc983845",
 		"PrefabID": "393dd9e543bef79ba8aca7b06c2fbade",
 		"PrefabObjectID": "462365ae415a1d52e28b4dbb62c87918",
