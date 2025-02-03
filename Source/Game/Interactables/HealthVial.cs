@@ -6,6 +6,6 @@ public class HealthVial : Vial
 {
     public override void Interact()
     {
-
+        // Heal the player
     }
 }

@@ -27,6 +27,7 @@ public class Character : Script
 	private MovementComponent _movementComponent;
 	private InteractionComponent _interactionComponent;
 	private InventoryComponent _inventoryComponent;
+	private ThrowComponent _throwComponent;
 
 
 
@@ -35,6 +36,7 @@ public class Character : Script
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs);
 		_inventoryComponent = new InventoryComponent(_inventoryArgs);
+		_throwComponent = new ThrowComponent();
 
 		HealthComponent = new HealthComponent(startingHealth);
 		ToxinComponent = new ToxinComponent(_toxinArgs, healthComponent: HealthComponent);
@@ -50,6 +52,7 @@ public class Character : Script
 	public override void OnDisable()
 	{
 		_interactionComponent.OnDisable();
+		_throwComponent.OnDisable();
 		_inventoryComponent.OnToxinVialAdded -= OnToxinVialAdded;
 		base.OnDisable();
 	}

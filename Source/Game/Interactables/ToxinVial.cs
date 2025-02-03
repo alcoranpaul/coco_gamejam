@@ -6,6 +6,6 @@ public class ToxinVial : Vial
 {
 	public override void Interact()
 	{
-
+		// Enable Throw
 	}
 }
