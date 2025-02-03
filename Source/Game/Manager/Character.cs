@@ -53,6 +53,7 @@ public class Character : Script
 	{
 		_interactionComponent.OnDisable();
 		_throwComponent.OnDisable();
+		_inventoryComponent.OnDisable();
 		_inventoryComponent.OnToxinVialAdded -= OnToxinVialAdded;
 		base.OnDisable();
 	}
