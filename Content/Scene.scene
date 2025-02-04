@@ -296,7 +296,7 @@
 			"ID": "76ced65c40eb4b6ac986748f8796fe4c",
 			"TypeName": "FlaxEngine.CharacterController",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "CharacterController",
+			"Name": "Player",
 			"Transform": {
 				"Translation": {
 					"X": 0.0,
@@ -362,6 +362,14 @@
 			"TypeName": "FlaxEngine.AnimatedModel",
 			"ParentID": "76ced65c40eb4b6ac986748f8796fe4c",
 			"Name": "Character",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": -0.0,
+					"W": -4.371138828673793e-8
+				}
+			},
 			"StaticFlags": 0,
 			"SkinnedModel": "0bb721ac429a91838d4b3d908e0c49c5",
 			"AnimationGraph": "0f6d293f43795c259c7a0db31deac1a4",
@@ -1705,6 +1713,79 @@
 			"PrefabID": "18b59d454d23afabb448ac9d16769599",
 			"PrefabObjectID": "511d93524f852a35a87d5f88e210dfb2",
 			"ParentID": "1e25e96f44f1af5cfa7d2fa38ac03fc2"
+		},
+		{
+			"ID": "78cb856e4238be01ce8b3d8b1f5ceb4a",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "74a68a984824b4510d12589f199ad68f",
+			"Name": "Enemy",
+			"Transform": {
+				"Translation": {
+					"X": 73.24396514892578,
+					"Y": 104.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Center": {
+				"X": 0.0,
+				"Y": -14.0,
+				"Z": 0.0
+			},
+			"Radius": 20.0,
+			"Height": 100.0
+		},
+		{
+			"ID": "26aae269497ce4a0318d5ca12aafe688",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78cb856e4238be01ce8b3d8b1f5ceb4a",
+			"Name": "Model",
+			"Transform": {
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ab4b386847f96636e43fbca8faff1804",
+			"TypeName": "FlaxEngine.AnimatedModel",
+			"ParentID": "26aae269497ce4a0318d5ca12aafe688",
+			"Name": "Walker Walk_skin",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -158.0,
+					"Z": 10.0
+				}
+			},
+			"StaticFlags": 0,
+			"SkinnedModel": "9602e1bc457dcde570812c90f5e0dad4",
+			"AnimationGraph": "9744417843e3eaf8e03a209bf08ba74c",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
 		}
 	]
 }
