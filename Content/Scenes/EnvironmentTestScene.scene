@@ -559,9 +559,9 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 13149.185546875,
+					"X": 13128.9951171875,
 					"Y": 2592.73193359375,
-					"Z": 12197.5009765625
+					"Z": 22575.28515625
 				}
 			},
 			"StaticFlags": 0,
@@ -1549,7 +1549,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 84.0,
+		"Right": 36.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -2032,7 +2032,8 @@
 					"Z": 0.0,
 					"W": 0.9238795042037964
 				}
-			}
+			},
+			"ShadowsDistance": 6000.0
 		},
 		{
 			"ID": "e901ed294f1bc1cf5e093baf3d0ac102",
@@ -6258,6 +6259,404 @@
 			"DirectionalInscatteringLight": "8c227a8546b321c69891edb1a1253792",
 			"VolumetricFogEnable": true,
 			"VolumetricFogScatteringDistribution": 0.5
+		},
+		{
+			"ID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"Name": "Waters",
+			"Transform": {
+				"Translation": {
+					"X": 23582.8984375,
+					"Y": 1962.03515625,
+					"Z": 26140.16796875
+				}
+			}
+		},
+		{
+			"ID": "f8115dee41f81ba2d44652b4dce0a1d1",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 0",
+			"Transform": {
+				"Translation": {
+					"X": -19725.642578125,
+					"Y": -725.5194091796875,
+					"Z": -22265.66796875
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 80.0,
+					"Y": 80.00001525878906,
+					"Z": 80.00001525878906
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3addb441453e9b5d27a10a8f7892255d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a16364cc453b525b5043e9b59c433ed8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 1",
+			"Transform": {
+				"Translation": {
+					"X": -10863.244140625,
+					"Y": -718.1533203125,
+					"Z": -863.49609375
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 30.0,
+					"Y": 30.0000057220459,
+					"Z": 30.0000057220459
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "cde8c6204f31027bae6210b6d10deac7",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "40ff9c8f4bc913ff0be4099256059f77",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 2",
+			"Transform": {
+				"Translation": {
+					"X": -11556.26171875,
+					"Y": 102.258544921875,
+					"Z": 19766.59375
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 100.0,
+					"Y": 100.0,
+					"Z": 72.31999969482422
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3addb441453e9b5d27a10a8f7892255d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "23838bb5479198ea7aeccfba4cadf1e8",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 3",
+			"Transform": {
+				"Translation": {
+					"X": -20051.556640625,
+					"Y": 102.258544921875,
+					"Z": 15598.015625
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 70.0,
+					"Y": 180.0,
+					"Z": 72.31999969482422
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3addb441453e9b5d27a10a8f7892255d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "a21abbe54b41a589862512ba5795683b",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 4",
+			"Transform": {
+				"Translation": {
+					"X": 2222.35546875,
+					"Y": 309.78857421875,
+					"Z": -24762.3125
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 234.1999969482422,
+					"Y": 46.71001434326172,
+					"Z": 63.420013427734378
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "8b61cfe24301d821b44fad87d7ad7d96",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "122e1b954b5f8cf6e840b5843b3a52f6",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 5",
+			"Transform": {
+				"Translation": {
+					"X": 23942.4375,
+					"Y": 309.78857421875,
+					"Z": -23555.865234375
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 70.0,
+					"Y": 70.0,
+					"Z": 63.420013427734378
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "cde8c6204f31027bae6210b6d10deac7",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b98814c3404af2fec5614daaac773943",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 6",
+			"Transform": {
+				"Translation": {
+					"X": 22265.8046875,
+					"Y": 309.78857421875,
+					"Z": 13473.66796875
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 100.0,
+					"Y": 220.0,
+					"Z": 63.420013427734378
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3addb441453e9b5d27a10a8f7892255d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "4b7fc8e24815fda938826fb02e987c54",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 7",
+			"Transform": {
+				"Translation": {
+					"X": 13766.1015625,
+					"Y": 309.78857421875,
+					"Z": 22609.05078125
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 70.0,
+					"Y": 40.0,
+					"Z": 63.420013427734378
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "3addb441453e9b5d27a10a8f7892255d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "aabce8e040c31102541cfeb11221a300",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 8",
+			"Transform": {
+				"Translation": {
+					"X": -439.96875,
+					"Y": 205.53515625,
+					"Z": -3897.109375
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 30.0,
+					"Y": 30.0000057220459,
+					"Z": 30.0000057220459
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "cde8c6204f31027bae6210b6d10deac7",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "aa666575423bcadc5cfeeb9cddda1b0e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 9",
+			"Transform": {
+				"Translation": {
+					"X": 7324.859375,
+					"Y": 309.78857421875,
+					"Z": -19645.689453125
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 30.0,
+					"Y": 30.0,
+					"Z": 63.420013427734378
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "8b61cfe24301d821b44fad87d7ad7d96",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "cfdcfc6b4da85d61721207b4254f0680",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "717b3f9946fd1b24571cf2a3d5bdab3c",
+			"Name": "Water_Plane 10",
+			"Transform": {
+				"Translation": {
+					"X": 10438.7890625,
+					"Y": 309.78857421875,
+					"Z": -15824.0703125
+				},
+				"Orientation": {
+					"X": -0.7071068286895752,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.7071068286895752
+				},
+				"Scale": {
+					"X": 40.0,
+					"Y": 40.000003814697269,
+					"Z": 84.56002044677735
+				}
+			},
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "8b61cfe24301d821b44fad87d7ad7d96",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
 		},
 		{
 			"ID": "fafa076743833bb76f45d9affca228ef",
