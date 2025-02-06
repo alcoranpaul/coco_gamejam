@@ -17,7 +17,8 @@
 		"ParentID": "06a868424661d0172eb6c2befb006db6",
 		"V": {
 	"collider": "a413b3fe47faa620230ce0892ac01518",
-	"vfxPrefab": "e439be5347313c6747787396ee10c005"
+	"vfxPrefab": "e439be5347313c6747787396ee10c005",
+	"type": 1
 }
 	},
 	{

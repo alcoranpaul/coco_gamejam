@@ -11,6 +11,7 @@ public class Throwable : Script
 {
 	[ShowInEditor, Serialize] private Collider collider;
 	[ShowInEditor, Serialize] private Prefab vfxPrefab;
+	[ShowInEditor, Serialize] private Type type;
 
 	private bool firstCollision = true;
 	public override void OnStart()
@@ -31,7 +32,16 @@ public class Throwable : Script
 			firstCollision = false;
 			var vfxActor = PrefabManager.SpawnPrefab(vfxPrefab, Actor.Position);
 			Destroy(Actor, 1f);
+
+			// Sphere case for checking enemies or Tree. Depending on the Type
+			// Normal: Enemies
+			// Special: Tree
 		}
 	}
 
+	public enum Type
+	{
+		Normal,
+		Special
+	}
 }
