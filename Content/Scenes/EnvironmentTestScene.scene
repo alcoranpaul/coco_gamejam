@@ -1549,7 +1549,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 76.0,
+		"Right": 20.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -1918,91 +1918,91 @@
 				{
 					"X": 0,
 					"Z": 0,
-					"Offset": 3098.039306640625,
-					"Height": 2286.129150390625,
+					"Offset": 1667.28759765625,
+					"Height": 3716.880859375,
 					"Heightmap": "340a2dfa43b6db5180cb6fb2fd82af51",
 					"Splatmap0": "a8435b9a4560c6d315a24e97b90e00ec",
 					"Splatmap1": "61e9c4fa49d5df1e9c9028be76f93a74",
 					"Heightfield": "8f3bd37b4c6da3153203988a7e573661",
 					"Chunks": [
 						{
-							"Offset": 3098.039306640625,
-							"Height": 2001.928466796875,
+							"Offset": 3098.02783203125,
+							"Height": 2001.91259765625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 2286.129150390625,
+							"Offset": 1803.0379638671876,
+							"Height": 3581.13037109375,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 2213.849365234375,
+							"Offset": 1891.236328125,
+							"Height": 3420.623046875,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 4352.89013671875,
-							"Height": 647.099609375,
+							"Offset": 4352.88330078125,
+							"Height": 647.05078125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3980.29296875,
-							"Height": 1019.69677734375,
+							"Offset": 3980.249267578125,
+							"Height": 1019.684814453125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 2154.247802734375,
+							"Offset": 1667.28759765625,
+							"Height": 3584.93603515625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 1722.4368896484376,
+							"Height": 3277.4970703125,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 4333.07568359375,
-							"Height": 666.9140625,
+							"Offset": 4333.0048828125,
+							"Height": 666.92919921875,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						},
 						{
-							"Offset": 3098.039306640625,
-							"Height": 1901.950439453125,
+							"Offset": 3098.02783203125,
+							"Height": 1901.90625,
 							"Material": "00000000000000000000000000000000"
 						}
 					]
@@ -2055,23 +2055,6 @@
 			"Name": "SkyLight",
 			"Brightness": 2.5,
 			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
-		},
-		{
-			"ID": "2160af704bf1adc5f63412b6f92231dd",
-			"TypeName": "FlaxEngine.ExponentialHeightFog",
-			"ParentID": "b96c438e410114abb3f982b17d750e44",
-			"Name": "ExponentialHeightFog",
-			"FogDensity": 0.20000000298023225,
-			"FogInscatteringColor": {
-				"R": 0.7940255403518677,
-				"G": 0.439026415348053,
-				"B": 1.0,
-				"A": 1.0
-			},
-			"StartDistance": 100.0,
-			"DirectionalInscatteringLight": "8c227a8546b321c69891edb1a1253792",
-			"VolumetricFogEnable": true,
-			"VolumetricFogScatteringDistribution": 0.5
 		},
 		{
 			"ID": "c633ffd94f34948dc663bd84f9c34b04",
@@ -2590,8 +2573,8 @@
 		},
 		{
 			"ID": "23b545dd462baf84a118cda418f135ef",
-			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
-			"PrefabObjectID": "4ea85eef4120c3cc83e3b39aac6d514a",
+			"PrefabID": "23839db64b112e60f7ba0f83865a37ad",
+			"PrefabObjectID": "b4bc78c84c9c475d7a30a2af89bc10b2",
 			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
 			"Transform": {
 				"Translation": {
@@ -2618,37 +2601,20 @@
 			}
 		},
 		{
-			"ID": "a6f5cd2245ae99392a14ea9bcf58f4bc",
-			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
-			"PrefabObjectID": "a67b10c24d5de43f9cb402968f777d48",
+			"ID": "d1ccf27342141edaa80a7ba4a34c046a",
+			"PrefabID": "23839db64b112e60f7ba0f83865a37ad",
+			"PrefabObjectID": "d80686d74f58d455c8df30a6758bf193",
 			"ParentID": "23b545dd462baf84a118cda418f135ef",
-			"V": {}
-		},
-		{
-			"ID": "531d3dc44063b2d79f920db86b785459",
-			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
-			"PrefabObjectID": "50b8261844eb89aea37153ae152651df",
-			"ParentID": "a6f5cd2245ae99392a14ea9bcf58f4bc",
-			"Data": {
-	"ResolutionCurve": {},
-	"DpiCurve": {}
-}
-		},
-		{
-			"ID": "34b7f7c54b9006e023ab579b89fdefed",
-			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
-			"PrefabObjectID": "c38d88764d7538d0b7006682668fcf93",
-			"ParentID": "531d3dc44063b2d79f920db86b785459",
-			"Data": {
-	"Brush": {
-		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp"
-	}
-}
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
 		},
 		{
 			"ID": "3b12db6c4a1939b9cc9a1c9e8335316a",
-			"PrefabID": "87b659874d972217687eb1abadd8a561",
-			"PrefabObjectID": "16b8576b4501d2e0487dbd99d97e7355",
+			"PrefabID": "6a8311794a068480d3e3a1a05180e633",
+			"PrefabObjectID": "504fb29f49504142355ee8aa3992e99f",
 			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
 			"Transform": {
 				"Translation": {
@@ -2675,32 +2641,33 @@
 			}
 		},
 		{
-			"ID": "ae0a07a94dddbe75b6d3899135b97e67",
-			"PrefabID": "87b659874d972217687eb1abadd8a561",
-			"PrefabObjectID": "a08f5cd14a8e960dee0982a4c84db9fc",
+			"ID": "a59f9eb04367a4a89443c188ad99091d",
+			"PrefabID": "6a8311794a068480d3e3a1a05180e633",
+			"PrefabObjectID": "835afe614aea65f1331ca88ec80e010d",
 			"ParentID": "3b12db6c4a1939b9cc9a1c9e8335316a",
-			"V": {}
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
 		},
 		{
-			"ID": "2da82f094e17f15b5fdd0ab2255275e3",
-			"PrefabID": "87b659874d972217687eb1abadd8a561",
-			"PrefabObjectID": "58f5ee214811f09be5f3699a8c9f75ce",
-			"ParentID": "ae0a07a94dddbe75b6d3899135b97e67",
-			"Data": {
-	"ResolutionCurve": {},
-	"DpiCurve": {}
-}
-		},
-		{
-			"ID": "64c00345433be6c62d37ff84f0e064b0",
-			"PrefabID": "87b659874d972217687eb1abadd8a561",
-			"PrefabObjectID": "cb4c6ff147cfeba02120418547d8b28e",
-			"ParentID": "2da82f094e17f15b5fdd0ab2255275e3",
-			"Data": {
-	"Brush": {
-		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp"
-	}
-}
+			"ID": "2160af704bf1adc5f63412b6f92231dd",
+			"TypeName": "FlaxEngine.ExponentialHeightFog",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"IsActive": false,
+			"Name": "ExponentialHeightFog",
+			"FogDensity": 0.5,
+			"FogInscatteringColor": {
+				"R": 0.7940255403518677,
+				"G": 0.439026415348053,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"StartDistance": 5000.0,
+			"DirectionalInscatteringLight": "8c227a8546b321c69891edb1a1253792",
+			"VolumetricFogEnable": true,
+			"VolumetricFogScatteringDistribution": 0.5
 		},
 		{
 			"ID": "fafa076743833bb76f45d9affca228ef",
