@@ -1,0 +1,12 @@
+{
+	"ID": "f6f2c75940219bb65fad6ab6b064971c",
+	"TypeName": "Game.DVial",
+	"EngineBuild": 6606,
+	"Data": {
+	"Name": "Special Vial",
+	"Model": "3f82e57744f57c28285150b646ad2198",
+	"VialType": 0,
+	"Prefab": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
+	"Material": "ec0842644416627edda1678d8a1751a7"
+}
+}

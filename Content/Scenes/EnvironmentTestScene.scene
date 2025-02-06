@@ -1549,7 +1549,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 44.0,
+		"Right": 76.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -2889,6 +2889,41 @@
 				"Entries": [
 					{},
 					{},
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4a8eb938479ece2689764dbfb23640cc",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Harvest_Plant 3",
+			"Transform": {
+				"Translation": {
+					"X": 12145.498046875,
+					"Y": 1981.8592529296876,
+					"Z": 12093.654296875
+				}
+			}
+		},
+		{
+			"ID": "3da158564350d063b3b81facd76df197",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "4a8eb938479ece2689764dbfb23640cc"
+}
+		},
+		{
+			"ID": "6a39d38c438f8524ca5223b8c6749ec6",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
+			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
+			"Buffer": {
+				"Entries": [
 					{}
 				]
 			}

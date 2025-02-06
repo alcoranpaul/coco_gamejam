@@ -1,0 +1,107 @@
+{
+	"ID": "23de56ea42f9977bbe92b8a6628de60f",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "06a868424661d0172eb6c2befb006db6",
+		"TypeName": "FlaxEngine.RigidBody",
+		"Name": "VialThrow_Toxic",
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Mass": 6.870663642883301
+	},
+	{
+		"ID": "f315b16f4182f466940592bad3a84adc",
+		"TypeName": "Game.Throwable",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"V": {
+	"collider": "a413b3fe47faa620230ce0892ac01518",
+	"vfxPrefab": "e439be5347313c6747787396ee10c005"
+}
+	},
+	{
+		"ID": "f529014f4ff1df109d20ecac4866d331",
+		"PrefabID": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
+		"PrefabObjectID": "462365ae415a1d52e28b4dbb62c87918",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"Name": "SpecialVial",
+		"Transform": {
+			"Scale": {
+				"X": 0.30000001192092898,
+				"Y": 0.30000001192092898,
+				"Z": 0.30000001192092898
+			}
+		},
+		"StaticFlags": 0,
+		"RemovedObjects": [
+			"46e521044379e56d1fd7e18b6e503203"
+		]
+	},
+	{
+		"ID": "c7daf89941d91b1022e6eb8280ac9e46",
+		"PrefabID": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
+		"PrefabObjectID": "cfda9433425c8a7fa28693a8648b75d5",
+		"ParentID": "f529014f4ff1df109d20ecac4866d331",
+		"StaticFlags": 0,
+		"Buffer": {
+			"Entries": [
+				{},
+				{}
+			]
+		}
+	},
+	{
+		"ID": "2739d75c4dc5cddf3984b5824e97b86b",
+		"PrefabID": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
+		"PrefabObjectID": "38bc400c496896872a19a9a07f64aad2",
+		"ParentID": "f529014f4ff1df109d20ecac4866d331",
+		"StaticFlags": 0,
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "540fe48c42ee452d7cd6a5a90b507c0b",
+		"PrefabID": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
+		"PrefabObjectID": "43a9721847b9c2b79b1a23a3744df029",
+		"ParentID": "f529014f4ff1df109d20ecac4866d331",
+		"StaticFlags": 0,
+		"Buffer": {
+			"Entries": [
+				{}
+			]
+		}
+	},
+	{
+		"ID": "a413b3fe47faa620230ce0892ac01518",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "06a868424661d0172eb6c2befb006db6",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -10.523354530334473,
+				"Z": 0.0
+			},
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"StaticFlags": 0,
+		"Layer": 3,
+		"Center": {
+			"X": 20.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Radius": 10.0,
+		"Height": 10.0
+	}
+]
+}

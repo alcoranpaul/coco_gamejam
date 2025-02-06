@@ -118,7 +118,12 @@ public class InventoryComponent : InstanceManagerClass
 
 		// If the corresponding vial is already added, exit.
 		if ((isToxin && toxinVial != null) || (isHealth && healthVial != null))
+
+		{
+			Debug.Log("Vial already added to Inventory");
 			return;
+
+		}
 
 		// Check if this is the first vial added.
 		bool isFirstVial = toxinVial == null && healthVial == null;

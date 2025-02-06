@@ -14,6 +14,8 @@ public class ToxinVial : Vial
 		// Enable Throw
 		Debug.Log($"Enable Throw");
 		var throwActor = PrefabManager.SpawnPrefab(throwablePrefab, origin, instigator.Transform.Orientation);
+
+
 		RigidBody rb = throwActor.As<RigidBody>();
 
 		Vector3 force = instigator.Transform.Forward * throwForce + Transform.Up * throwUpForce;

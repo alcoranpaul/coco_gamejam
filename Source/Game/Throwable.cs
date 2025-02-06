@@ -29,7 +29,8 @@ public class Throwable : Script
 		if (firstCollision)
 		{
 			firstCollision = false;
-			PrefabManager.SpawnPrefab(vfxPrefab, Actor.Position);
+			var vfxActor = PrefabManager.SpawnPrefab(vfxPrefab, Actor.Position);
+			Destroy(Actor, 1f);
 		}
 	}
 
