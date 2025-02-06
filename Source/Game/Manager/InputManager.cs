@@ -18,10 +18,12 @@ public class InputManager : InstanceManagerScript
 	public event Action OnHideItem;
 	public event Action OnSwapVial;
 	public event Action OnUseVial;
+	public event Action OnCollectVial;
 
 	private InputEvent hideItemEvent;
 	private InputEvent swapVialEvent;
 	private InputEvent useVialEvent;
+	private InputEvent collectVialEvent;
 
 	public override void OnAwake()
 	{
@@ -41,6 +43,9 @@ public class InputManager : InstanceManagerScript
 
 		useVialEvent = new InputEvent("UseVial");
 		useVialEvent.Pressed += () => { OnUseVial?.Invoke(); };
+
+		collectVialEvent = new InputEvent("CollectVial");
+		collectVialEvent.Pressed += () => { OnCollectVial?.Invoke(); };
 	}
 
 	public override void OnDisable()
@@ -53,10 +58,12 @@ public class InputManager : InstanceManagerScript
 		hideItemEvent.Dispose();
 		swapVialEvent.Dispose();
 		useVialEvent.Dispose();
+		collectVialEvent.Dispose();
 
 		OnHideItem = null;
 		OnSwapVial = null;
 		OnUseVial = null;
+		OnCollectVial = null;
 
 		base.OnDisable();
 	}

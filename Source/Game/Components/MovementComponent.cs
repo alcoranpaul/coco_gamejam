@@ -90,10 +90,14 @@ public class MovementComponent
 
 			// Apply gravity
 			_velocity.Y += _movementArgs.Gravity * Time.DeltaTime;
+
 			movementDirection += (_velocity * 0.5f);
+
+
 
 			// Apply controller movement, evaluate whether we are sprinting or not
 			var speed = (Input.GetAction("Sprint") ? _movementArgs.SprintSpeed : _movementArgs.Speed) * Time.DeltaTime;
+
 			_controller.Move(movementDirection * speed);
 
 			float moveSpeed = 0f;
@@ -101,7 +105,6 @@ public class MovementComponent
 			{
 				moveSpeed = 1f;
 			}
-
 
 			_speedParam.Value = Input.GetAction("Sprint") ? 2f : moveSpeed;
 			_isSprintParam.Value = Input.GetAction("Sprint");
