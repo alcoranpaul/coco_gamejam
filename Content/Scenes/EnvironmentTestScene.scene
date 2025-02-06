@@ -559,9 +559,9 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 13128.9951171875,
-					"Y": 2592.73193359375,
-					"Z": 22575.28515625
+					"X": 12346.3779296875,
+					"Y": 2004.573486328125,
+					"Z": 13032.1396484375
 				}
 			},
 			"StaticFlags": 0,
@@ -1549,7 +1549,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 36.0,
+		"Right": 11.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -6164,14 +6164,14 @@
 		},
 		{
 			"ID": "23b545dd462baf84a118cda418f135ef",
-			"PrefabID": "23839db64b112e60f7ba0f83865a37ad",
-			"PrefabObjectID": "b4bc78c84c9c475d7a30a2af89bc10b2",
+			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"Name": "SM_Rock_CaveEntrance_02",
 			"Transform": {
 				"Translation": {
 					"X": -2212.4443359375,
 					"Y": 50.293212890625,
-					"Z": 320.9560546875
+					"Z": 278.6494140625
 				},
 				"Orientation": {
 					"X": 0.0,
@@ -6185,62 +6185,76 @@
 					"Z": 0.5
 				}
 			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
 				]
 			}
 		},
 		{
 			"ID": "d1ccf27342141edaa80a7ba4a34c046a",
-			"PrefabID": "23839db64b112e60f7ba0f83865a37ad",
-			"PrefabObjectID": "d80686d74f58d455c8df30a6758bf193",
+			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "23b545dd462baf84a118cda418f135ef",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "3b12db6c4a1939b9cc9a1c9e8335316a",
-			"PrefabID": "6a8311794a068480d3e3a1a05180e633",
-			"PrefabObjectID": "504fb29f49504142355ee8aa3992e99f",
-			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"Name": "StaticModel 0",
 			"Transform": {
 				"Translation": {
-					"X": 2212.4443359375,
-					"Y": -50.2930908203125,
-					"Z": -320.9560546875
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
 				},
 				"Orientation": {
 					"X": 0.0,
-					"Y": 0.14780940115451814,
+					"Y": 0.9998477697372437,
 					"Z": 0.0,
-					"W": 0.9890158772468567
+					"W": -0.017452433705329896
 				},
 				"Scale": {
-					"X": 0.5,
-					"Y": 0.5,
-					"Z": 0.5
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
 				}
 			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
 			"Buffer": {
 				"Entries": [
-					{}
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
 				]
 			}
 		},
 		{
-			"ID": "a59f9eb04367a4a89443c188ad99091d",
-			"PrefabID": "6a8311794a068480d3e3a1a05180e633",
-			"PrefabObjectID": "835afe614aea65f1331ca88ec80e010d",
-			"ParentID": "3b12db6c4a1939b9cc9a1c9e8335316a",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
+			"ID": "6cde5eff4fc3b35d1a06eba98f9ffacd",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "23b545dd462baf84a118cda418f135ef",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "320459a34eeaff1e4ed2afa015553b4a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "23b545dd462baf84a118cda418f135ef",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 81.40855407714844,
+					"Y": 0.0,
+					"Z": 74.3617172241211
+				}
+			},
+			"StaticFlags": 23
 		},
 		{
 			"ID": "2160af704bf1adc5f63412b6f92231dd",
@@ -6779,10 +6793,29 @@
 			}
 		},
 		{
+			"ID": "d1ba0ddd4c0fc260d62ffca37e25fae4",
+			"TypeName": "FlaxEngine.NavModifierVolume",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "NavModifierVolume",
+			"Transform": {
+				"Translation": {
+					"X": 20.94635581970215,
+					"Y": 1.832568645477295,
+					"Z": 0.0
+				}
+			},
+			"Size": {
+				"X": 500.0,
+				"Y": 500.0,
+				"Z": 1154.0
+			}
+		},
+		{
 			"ID": "16cc49cc46878ed9275d8eb2a3a93df4",
 			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
 			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"IsActive": false,
 			"Transform": {
 				"Translation": {
 					"X": 12145.498046875,
@@ -6816,6 +6849,7 @@
 			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
 			"PrefabObjectID": "1cc629494a48cc684dbb6c88bce31f5f",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"IsActive": false,
 			"Transform": {
 				"Translation": {
 					"X": 12603.2939453125,
@@ -6854,6 +6888,7 @@
 			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
 			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"IsActive": false,
 			"Name": "Harvest_Plant 3",
 			"Transform": {
 				"Translation": {
@@ -6882,6 +6917,35 @@
 				"Entries": [
 					{}
 				]
+			}
+		},
+		{
+			"ID": "0374dcc1432c1fac692a32b71545639e",
+			"TypeName": "FlaxEngine.NavMeshBoundsVolume",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "NavMeshBoundsVolume",
+			"Transform": {
+				"Translation": {
+					"X": 11349.6103515625,
+					"Y": 2267.580810546875,
+					"Z": 12226.494140625
+				}
+			},
+			"Size": {
+				"X": 5000.0,
+				"Y": 3000.0,
+				"Z": 5000.0
+			}
+		},
+		{
+			"ID": "bc0d33b540573b3e40c69fa657b0a25f",
+			"TypeName": "FlaxEngine.NavMesh",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "NavMesh.Default",
+			"DataAsset": "eff776eb4c2c7cca85941aa3c9e4372c",
+			"Properties": {
+				"Name": "Default",
+				"Agent": {}
 			}
 		}
 	]

@@ -6,8 +6,8 @@
 	{
 		"ID": "0f773d694bfc4b1f6e639eb663f99a57",
 		"TypeName": "FlaxEngine.SphereCollider",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Harvest_Plant 2",
+		"StaticFlags": 23,
 		"Layer": 2,
 		"IsTrigger": true,
 		"Center": {
@@ -22,9 +22,9 @@
 		"TypeName": "Game.HarvestNode",
 		"ParentID": "0f773d694bfc4b1f6e639eb663f99a57",
 		"V": {
-			"prefabVialTrigger": "18b59d454d23afabb448ac9d16769599",
-			"collider": "0f773d694bfc4b1f6e639eb663f99a57"
-		}
+	"prefabVialTrigger": "18b59d454d23afabb448ac9d16769599",
+	"collider": "0f773d694bfc4b1f6e639eb663f99a57"
+}
 	},
 	{
 		"ID": "1883deff4c90cde53ea5659065b9f9f2",
@@ -38,6 +38,7 @@
 				"Z": 2.0
 			}
 		},
+		"StaticFlags": 23,
 		"Layer": 2,
 		"Model": "77cd78c8401201c890c89895b97c3608",
 		"Buffer": {
