@@ -1,0 +1,2304 @@
+{
+	"ID": "f33ce73649fd05dbe77743944315f7e0",
+	"TypeName": "FlaxEngine.SceneAsset",
+	"EngineBuild": 6606,
+	"Data": [
+		{
+			"ID": "f33ce73649fd05dbe77743944315f7e0",
+			"TypeName": "FlaxEngine.Scene",
+			"LightmapSettings": {
+				"IndirectLightingIntensity": 1.0,
+				"GlobalObjectsScale": 1.0,
+				"ChartsPadding": 3,
+				"AtlasSize": 1024,
+				"BounceCount": 1,
+				"CompressLightmaps": true,
+				"UseGeometryWithNoMaterials": true,
+				"Quality": 10
+			}
+		},
+		{
+			"ID": "c49208b74cadd074f6e8499ba54056fc",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Manager"
+		},
+		{
+			"ID": "89f831d049d230703a489f964339429f",
+			"TypeName": "Game.InputManager",
+			"ParentID": "c49208b74cadd074f6e8499ba54056fc",
+			"V": {}
+		},
+		{
+			"ID": "869e062243a848ad3a534aa0ad85d107",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Player",
+			"Transform": {
+				"Translation": {
+					"X": 13149.185546875,
+					"Y": 2592.73193359375,
+					"Z": 12197.5009765625
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 1,
+			"Tag": "Player",
+			"Center": {
+				"X": 0.0,
+				"Y": 50.0,
+				"Z": 0.0
+			},
+			"Radius": 30.0,
+			"Height": 40.0
+		},
+		{
+			"ID": "3003d8d840e9d0c08ceec38d2966e271",
+			"TypeName": "Game.Character",
+			"ParentID": "869e062243a848ad3a534aa0ad85d107",
+			"V": {
+	"_movementArgs": {
+		"_model": "c281f4f0463ae689a1b1eeaf59843730",
+		"CharacterObj": "c281f4f0463ae689a1b1eeaf59843730",
+		"Speed": 200.0,
+		"SprintSpeed": 400.0,
+		"Gravity": -9.81,
+		"JumpStrength": 2.0
+	},
+	"_cameraArgs": {
+		"CameraView": "48694f564e80b178a8b0509849c221e9",
+		"MouseSensitivity": 2.0,
+		"CameraLag": 10.0,
+		"FOVZoom": 50.0,
+		"PitchMinMax": {
+			"X": -45.0,
+			"Y": 45.0
+		}
+	},
+	"_interactionArgs": {
+		"TriggerColllider": "2b9cbde043dfc1991ff7159a2593e0a0",
+		"LayersMask": {
+			"Mask": 4
+		}
+	},
+	"_inventoryArgs": {
+		"ActorToAttach": "ed74f4fc4afab707e16e1cbb512a955e",
+		"toxinVialControl": "92c1ebb347bbe02ea1237c9f2b924466",
+		"healthVialControl": "539a350842694e70142baea3824689ed"
+	},
+	"_toxinArgs": {
+		"FillRate": 1.5,
+		"DecayRate": 1.0,
+		"MaxToxin": 100.0
+	}
+}
+		},
+		{
+			"ID": "c281f4f0463ae689a1b1eeaf59843730",
+			"TypeName": "FlaxEngine.AnimatedModel",
+			"ParentID": "869e062243a848ad3a534aa0ad85d107",
+			"Name": "Character",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": -0.0,
+					"W": -4.371138828673793e-8
+				}
+			},
+			"StaticFlags": 0,
+			"SkinnedModel": "0bb721ac429a91838d4b3d908e0c49c5",
+			"AnimationGraph": "0f6d293f43795c259c7a0db31deac1a4",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "ca3c6727469c4c9c100197a22f424180",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "c281f4f0463ae689a1b1eeaf59843730",
+			"Name": "RightHandIndex2",
+			"Transform": {
+				"Translation": {
+					"X": 36.53874588012695,
+					"Y": 3.9609320163726808,
+					"Z": 0.8393362164497376
+				},
+				"Orientation": {
+					"X": 0.701052188873291,
+					"Y": 0.17229332029819489,
+					"Z": 0.6703331470489502,
+					"W": -0.17173947393894196
+				}
+			},
+			"StaticFlags": 0,
+			"Node": "RightHandIndex2"
+		},
+		{
+			"ID": "ed74f4fc4afab707e16e1cbb512a955e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "ca3c6727469c4c9c100197a22f424180",
+			"Name": "Item",
+			"Transform": {
+				"Translation": {
+					"X": 2.0587387084960939,
+					"Y": 2.815952777862549,
+					"Z": -0.4249100685119629
+				},
+				"Orientation": {
+					"X": -0.7130405306816101,
+					"Y": 0.0015969055239111186,
+					"Z": -0.6768156886100769,
+					"W": 0.18300621211528779
+				},
+				"Scale": {
+					"X": 0.4000000059604645,
+					"Y": 0.4000000059604645,
+					"Z": 0.4000000059604645
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "eab911e84c5f5b9300936280f668cfa6",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "c281f4f0463ae689a1b1eeaf59843730",
+			"Name": "Spine 2",
+			"Transform": {
+				"Translation": {
+					"X": 0.12487499415874481,
+					"Y": 27.24854850769043,
+					"Z": 0.6272854804992676
+				},
+				"Orientation": {
+					"X": 1.6721336815184174e-10,
+					"Y": 0.9999982118606567,
+					"Z": 0.0019126982660964132,
+					"W": -8.74226344649287e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Node": "Spine2"
+		},
+		{
+			"ID": "e5714a77477605763ddeb9aed35231a8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "eab911e84c5f5b9300936280f668cfa6",
+			"Name": "Interaction",
+			"Transform": {
+				"Translation": {
+					"X": 0.12488149106502533,
+					"Y": -1.015053629875183,
+					"Z": -37.06783676147461
+				},
+				"Orientation": {
+					"X": -1.6721336815184174e-10,
+					"Y": -0.9999982118606567,
+					"Z": -0.0019126982660964132,
+					"W": -8.74226344649287e-8
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "d927bcd14d8f468a4f8fd194aece2f93",
+			"TypeName": "FlaxEngine.RigidBody",
+			"ParentID": "e5714a77477605763ddeb9aed35231a8",
+			"Name": "RigidBody",
+			"StaticFlags": 0,
+			"Layer": 2,
+			"EnableGravity": false
+		},
+		{
+			"ID": "2b9cbde043dfc1991ff7159a2593e0a0",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "d927bcd14d8f468a4f8fd194aece2f93",
+			"Name": "BoxCollider",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -7.54510498046875
+				}
+			},
+			"StaticFlags": 0,
+			"Layer": 2,
+			"IsTrigger": true,
+			"Size": {
+				"X": 50.0,
+				"Y": 100.0,
+				"Z": 50.0
+			}
+		},
+		{
+			"ID": "d4b305234ba389614c157ebd108d8503",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "c281f4f0463ae689a1b1eeaf59843730",
+			"Name": "Hips",
+			"Transform": {
+				"Translation": {
+					"X": 0.12487497180700302,
+					"Y": -0.29797330498695376,
+					"Z": 0.5219085812568665
+				},
+				"Orientation": {
+					"X": -6.123234262925839e-17,
+					"Y": 1.0,
+					"Z": 5.3531024233162238e-24,
+					"W": -8.742279078433057e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Node": "Hips"
+		},
+		{
+			"ID": "7b13144a43b6ef945a3687804ba79e7e",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "d4b305234ba389614c157ebd108d8503",
+			"Name": "Backpack",
+			"StaticFlags": 0,
+			"Model": "11228ab04a4afb650175fdab7f803248",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "94cb65c24c1a67d02df10b93a4e31005",
+			"TypeName": "FlaxEngine.UICanvas",
+			"ParentID": "7b13144a43b6ef945a3687804ba79e7e",
+			"Name": "UICanvas",
+			"Transform": {
+				"Translation": {
+					"X": 15.373202323913575,
+					"Y": 47.69049072265625,
+					"Z": 36.5281867980957
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 1.0,
+					"W": 3.1391647326017848e-7
+				}
+			},
+			"StaticFlags": 0,
+			"V": {
+	"RenderMode": 2,
+	"Size": {
+		"X": 30.0,
+		"Y": 50.0
+	}
+}
+		},
+		{
+			"ID": "d04418b14c240fd8fcd5469f81031b83",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "94cb65c24c1a67d02df10b93a4e31005",
+			"Name": "Canvas Scalar",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.CanvasScaler",
+			"Data": {
+	"ResolutionCurve": {
+		"Keyframes": [
+			{
+				"Time": 0.0,
+				"Value": 0.0
+			},
+			{
+				"Time": 480.0,
+				"Value": 0.444
+			},
+			{
+				"Time": 720.0,
+				"Value": 0.666
+			},
+			{
+				"Time": 1080.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 8640.0,
+				"Value": 8.0
+			}
+		]
+	},
+	"DpiCurve": {
+		"Keyframes": [
+			{
+				"Time": 1.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 96.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 200.0,
+				"Value": 2.0
+			},
+			{
+				"Time": 400.0,
+				"Value": 4.0
+			}
+		]
+	},
+	"Scaling": 2,
+	"ScaleFactor": 1.0,
+	"PhysicalUnit": 3,
+	"PhysicalUnitSize": 1.0,
+	"ResolutionMode": 0,
+	"ResolutionMin": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"ResolutionMax": {
+		"X": 7680.0,
+		"Y": 4320.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.37222224
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "28e31d6146d6ea3a772810a2b5c9a41a",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "d04418b14c240fd8fcd5469f81031b83",
+			"Name": "Health UI",
+			"Transform": {
+				"Translation": {
+					"X": 11.78731918334961,
+					"Y": 0.00000740046743885614,
+					"Z": -0.0000020609606963262196
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ContainerControl",
+			"Data": {
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 11.787319,
+		"Right": 10.0,
+		"Top": 7.4004674E-06,
+		"Bottom": 50.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
+			"ID": "2333a4b14e021720b94642ba1996edf6",
+			"TypeName": "Game.HealthUI",
+			"ParentID": "28e31d6146d6ea3a772810a2b5c9a41a",
+			"V": {
+	"healthLabelControl": "1e5396af4ca070cfa3b20b8b229811ad",
+	"progressBarControl": "beae6b3d4a3d7cff21ddfcad23513d3f",
+	"character": "3003d8d840e9d0c08ceec38d2966e271"
+}
+		},
+		{
+			"ID": "beae6b3d4a3d7cff21ddfcad23513d3f",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "28e31d6146d6ea3a772810a2b5c9a41a",
+			"Name": "ProgressBar",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 0,
+	"Origin": 3,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.5,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 0.827451,
+		"G": 0.0,
+		"B": 0.06307821,
+		"A": 1.0
+	},
+	"BarBrush": null,
+	"ClipChildren": true,
+	"CullChildren": false,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 8.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.10980392,
+		"G": 0.10980392,
+		"B": 0.10980392,
+		"A": 1.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "1e5396af4ca070cfa3b20b8b229811ad",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "beae6b3d4a3d7cff21ddfcad23513d3f",
+			"Name": "Label",
+			"Transform": {
+				"Translation": {
+					"X": 0.123904749751091,
+					"Y": 34.105613708496097,
+					"Z": -2.1667942107228556e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.Label",
+			"Data": {
+	"Text": "100/100",
+	"CaseOption": 0,
+	"Bold": false,
+	"Italic": false,
+	"TextColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"TextColorHighlighted": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"HorizontalAlignment": 1,
+	"VerticalAlignment": 1,
+	"Wrapping": 0,
+	"BaseLinesGapScale": 1.0,
+	"Font": {
+		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Size": 150.0
+	},
+	"Material": null,
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"ClipText": false,
+	"AutoWidth": false,
+	"AutoHeight": false,
+	"AutoFitText": true,
+	"AutoFitTextRange": {
+		"X": 0.001,
+		"Y": 1.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 0.12390475,
+		"Right": 20.0,
+		"Top": 34.105614,
+		"Bottom": 8.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": -90.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "477ab4d3442f3a41563fc3a90c075884",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "d04418b14c240fd8fcd5469f81031b83",
+			"Name": "Toxin UI",
+			"Transform": {
+				"Translation": {
+					"X": 21.037622451782228,
+					"Y": 0.000013208112250140403,
+					"Z": -0.000003678335360746132
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ContainerControl",
+			"Data": {
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 21.037622,
+		"Right": 10.0,
+		"Top": 1.3208112E-05,
+		"Bottom": 50.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
+			"ID": "0614a12346dd6b3be1e67d8d5fb2927c",
+			"TypeName": "Game.ToxinUI",
+			"ParentID": "477ab4d3442f3a41563fc3a90c075884",
+			"V": {
+	"toxinLabelControl": "9395638b43b41fa65523c593da28ec2a",
+	"progressBarControl": "482ea543418ebd2383a01ab67720c1e2",
+	"character": "3003d8d840e9d0c08ceec38d2966e271"
+}
+		},
+		{
+			"ID": "482ea543418ebd2383a01ab67720c1e2",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "477ab4d3442f3a41563fc3a90c075884",
+			"Name": "ProgressBar",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 0,
+	"Origin": 3,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.5,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 0.38824484,
+		"G": 0.0,
+		"B": 0.827451,
+		"A": 1.0
+	},
+	"BarBrush": null,
+	"ClipChildren": true,
+	"CullChildren": false,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 8.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.10980392,
+		"G": 0.10980392,
+		"B": 0.10980392,
+		"A": 1.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "9395638b43b41fa65523c593da28ec2a",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "482ea543418ebd2383a01ab67720c1e2",
+			"Name": "Label",
+			"Transform": {
+				"Translation": {
+					"X": 0.123904749751091,
+					"Y": 34.105613708496097,
+					"Z": -2.1667942107228556e-8
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.Label",
+			"Data": {
+	"Text": "100/100",
+	"CaseOption": 0,
+	"Bold": false,
+	"Italic": false,
+	"TextColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"TextColorHighlighted": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"HorizontalAlignment": 1,
+	"VerticalAlignment": 1,
+	"Wrapping": 0,
+	"BaseLinesGapScale": 1.0,
+	"Font": {
+		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Size": 150.0
+	},
+	"Material": null,
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"ClipText": false,
+	"AutoWidth": false,
+	"AutoHeight": false,
+	"AutoFitText": true,
+	"AutoFitTextRange": {
+		"X": 0.001,
+		"Y": 1.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 0.12390475,
+		"Right": 20.0,
+		"Top": 34.105614,
+		"Bottom": 8.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": -90.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "67a49b9e4f9fd41bf7c0c2900478a502",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "d04418b14c240fd8fcd5469f81031b83",
+			"Name": "VerticalPanel",
+			"Transform": {
+				"Translation": {
+					"X": -1.5586767196655274,
+					"Y": -9.785885595192668e-7,
+					"Z": 2.725277283843752e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.VerticalPanel",
+			"Data": {
+	"Spacing": 2.0,
+	"Offset": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AutoSize": true,
+	"ControlChildSize": false,
+	"Margin": {
+		"Left": 2.0,
+		"Right": 2.0,
+		"Top": 2.0,
+		"Bottom": 2.0
+	},
+	"Alignment": 0,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": -1.5586767,
+		"Right": 84.0,
+		"Top": -9.785886E-07,
+		"Bottom": 50.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "2794f2324980c0cbf5d1d3b2af6ffe60",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "67a49b9e4f9fd41bf7c0c2900478a502",
+			"Name": "HealthItem",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 2.0,
+					"Z": -2.5346153620375846e-7
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ContainerControl",
+			"Data": {
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 2.0,
+		"Right": 11.0,
+		"Top": 2.0,
+		"Bottom": 22.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.19444442,
+		"G": 0.0018755294,
+		"B": 0.0,
+		"A": 0.1
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
+			"ID": "539a350842694e70142baea3824689ed",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "2794f2324980c0cbf5d1d3b2af6ffe60",
+			"Name": "Image",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "7202a8724cc60605e1985ca16edfd8bd",
+		"Filter": 0
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 0.38333333
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "0826527446574c2f1c5f24b42c175233",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "67a49b9e4f9fd41bf7c0c2900478a502",
+			"Name": "ToxinItem",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 26.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ContainerControl",
+			"Data": {
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 2.0,
+		"Right": 11.0,
+		"Top": 26.0,
+		"Bottom": 22.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.51111114,
+		"G": 0.02222222,
+		"B": 1.0,
+		"A": 0.1
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
+			"ID": "92c1ebb347bbe02ea1237c9f2b924466",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "0826527446574c2f1c5f24b42c175233",
+			"Name": "Image 0",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "f915790c4c904cec4ba3539c03ef2c4b",
+		"Filter": 0
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 0.5
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.6333333
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "ed1cce2443f64e266f9c728709d9a5cb",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "869e062243a848ad3a534aa0ad85d107",
+			"Name": "CameraSocket",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": 31.194183349609376,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.8870108723640442,
+					"Z": 0.0,
+					"W": 0.4617486000061035
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "48694f564e80b178a8b0509849c221e9",
+			"TypeName": "FlaxEngine.Camera",
+			"ParentID": "ed1cce2443f64e266f9c728709d9a5cb",
+			"Name": "TPSCamera",
+			"Transform": {
+				"Translation": {
+					"X": 20.0,
+					"Y": 49.99998474121094,
+					"Z": -150.0
+				}
+			},
+			"StaticFlags": 0,
+			"FOV": 80.0
+		},
+		{
+			"ID": "b96c438e410114abb3f982b17d750e44",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Environment"
+		},
+		{
+			"ID": "915193c24d2b03ecc527b6b212d14386",
+			"TypeName": "FlaxEngine.Terrain",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"Name": "Terrain",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -2500.0,
+					"Z": 0.0
+				}
+			},
+			"PhysicalMaterials": [
+				"ddfb0ca44208318af6cc1dbd636b492e",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000",
+				"00000000000000000000000000000000"
+			],
+			"Material": "bdaeee1d4713d101c784519942b9bfaa",
+			"LODCount": 6,
+			"ChunkSize": 127,
+			"Patches": [
+				{
+					"X": 0,
+					"Z": 0,
+					"Offset": 3098.039306640625,
+					"Height": 2286.129150390625,
+					"Heightmap": "340a2dfa43b6db5180cb6fb2fd82af51",
+					"Splatmap0": "a8435b9a4560c6d315a24e97b90e00ec",
+					"Splatmap1": "61e9c4fa49d5df1e9c9028be76f93a74",
+					"Heightfield": "8f3bd37b4c6da3153203988a7e573661",
+					"Chunks": [
+						{
+							"Offset": 3098.039306640625,
+							"Height": 2001.960205078125,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 2286.129150390625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 2213.879638671875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 4352.92431640625,
+							"Height": 647.07568359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3980.31005859375,
+							"Height": 1019.68994140625,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 4333.10205078125,
+							"Height": 666.89794921875,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						},
+						{
+							"Offset": 3098.039306640625,
+							"Height": 1901.960693359375,
+							"Material": "00000000000000000000000000000000"
+						}
+					]
+				}
+			]
+		},
+		{
+			"ID": "770a305f4c0f2a5668e9218865847989",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"Name": "Light"
+		},
+		{
+			"ID": "8c227a8546b321c69891edb1a1253792",
+			"TypeName": "FlaxEngine.DirectionalLight",
+			"ParentID": "770a305f4c0f2a5668e9218865847989",
+			"Name": "Sun",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 160.0,
+					"Z": 0.0
+				},
+				"Orientation": {
+					"X": 0.3826834559440613,
+					"Y": 0.0,
+					"Z": 0.0,
+					"W": 0.9238795042037964
+				}
+			}
+		},
+		{
+			"ID": "e901ed294f1bc1cf5e093baf3d0ac102",
+			"TypeName": "FlaxEngine.Sky",
+			"ParentID": "770a305f4c0f2a5668e9218865847989",
+			"Name": "Sky",
+			"Transform": {
+				"Translation": {
+					"X": 40.0,
+					"Y": 150.0,
+					"Z": 0.0
+				}
+			},
+			"Sun": "8c227a8546b321c69891edb1a1253792"
+		},
+		{
+			"ID": "33301ae94254ec7a8ed43b9df2c9bedd",
+			"TypeName": "FlaxEngine.SkyLight",
+			"ParentID": "770a305f4c0f2a5668e9218865847989",
+			"Name": "SkyLight",
+			"Brightness": 2.5,
+			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
+		},
+		{
+			"ID": "2160af704bf1adc5f63412b6f92231dd",
+			"TypeName": "FlaxEngine.ExponentialHeightFog",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"Name": "ExponentialHeightFog",
+			"FogDensity": 0.20000000298023225,
+			"FogInscatteringColor": {
+				"R": 0.7940255403518677,
+				"G": 0.439026415348053,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"StartDistance": 100.0,
+			"DirectionalInscatteringLight": "8c227a8546b321c69891edb1a1253792",
+			"VolumetricFogEnable": true,
+			"VolumetricFogScatteringDistribution": 0.5
+		},
+		{
+			"ID": "c633ffd94f34948dc663bd84f9c34b04",
+			"TypeName": "FlaxEngine.Foliage",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Foliage",
+			"Foliage": [
+				{
+					"Model": "b8823a9548fd12815029de811a3fe9d6",
+					"Materials": [
+						"0704794940fc7dbc25f5bf9e866f11a6"
+					],
+					"CullDistance": 10000.0,
+					"CullDistanceRandomRange": 1000.0,
+					"ScaleInLightmap": 1.0,
+					"DrawModes": 7,
+					"ShadowsMode": 3,
+					"ReceiveDecals": true,
+					"UseDensityScaling": false,
+					"DensityScalingScale": 1.0,
+					"PaintDensity": 0.5,
+					"PaintRadius": 100.0,
+					"PaintGroundSlopeAngleMin": 0.0,
+					"PaintGroundSlopeAngleMax": 45.0,
+					"PaintScaling": 0,
+					"PaintScaleMin": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PaintScaleMax": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PlacementOffsetY": {
+						"X": 0.0,
+						"Y": 0.0
+					},
+					"PlacementRandomPitchAngle": 0.0,
+					"PlacementRandomRollAngle": 0.0,
+					"PlacementAlignToNormal": true,
+					"PlacementRandomYaw": true
+				},
+				{
+					"Model": "4dad29094915f2810d38e9b96e1c2901",
+					"Materials": [
+						"0704794940fc7dbc25f5bf9e866f11a6"
+					],
+					"CullDistance": 10000.0,
+					"CullDistanceRandomRange": 1000.0,
+					"ScaleInLightmap": 1.0,
+					"DrawModes": 7,
+					"ShadowsMode": 3,
+					"ReceiveDecals": true,
+					"UseDensityScaling": false,
+					"DensityScalingScale": 1.0,
+					"PaintDensity": 1.0,
+					"PaintRadius": 0.0,
+					"PaintGroundSlopeAngleMin": 0.0,
+					"PaintGroundSlopeAngleMax": 45.0,
+					"PaintScaling": 0,
+					"PaintScaleMin": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PaintScaleMax": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PlacementOffsetY": {
+						"X": 0.0,
+						"Y": 0.0
+					},
+					"PlacementRandomPitchAngle": 0.0,
+					"PlacementRandomRollAngle": 0.0,
+					"PlacementAlignToNormal": true,
+					"PlacementRandomYaw": true
+				},
+				{
+					"Model": "b5bd67944b265c840bafb4a81fe9fe14",
+					"Materials": [
+						"0704794940fc7dbc25f5bf9e866f11a6"
+					],
+					"CullDistance": 10000.0,
+					"CullDistanceRandomRange": 1000.0,
+					"ScaleInLightmap": 1.0,
+					"DrawModes": 7,
+					"ShadowsMode": 3,
+					"ReceiveDecals": true,
+					"UseDensityScaling": false,
+					"DensityScalingScale": 1.0,
+					"PaintDensity": 1.0,
+					"PaintRadius": 0.0,
+					"PaintGroundSlopeAngleMin": 0.0,
+					"PaintGroundSlopeAngleMax": 45.0,
+					"PaintScaling": 0,
+					"PaintScaleMin": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PaintScaleMax": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PlacementOffsetY": {
+						"X": 0.0,
+						"Y": 0.0
+					},
+					"PlacementRandomPitchAngle": 0.0,
+					"PlacementRandomRollAngle": 0.0,
+					"PlacementAlignToNormal": true,
+					"PlacementRandomYaw": true
+				},
+				{
+					"Model": "10b81df84ce9c1e5b0175184ea2024bc",
+					"Materials": [
+						"0704794940fc7dbc25f5bf9e866f11a6"
+					],
+					"CullDistance": 10000.0,
+					"CullDistanceRandomRange": 1000.0,
+					"ScaleInLightmap": 1.0,
+					"DrawModes": 7,
+					"ShadowsMode": 3,
+					"ReceiveDecals": true,
+					"UseDensityScaling": false,
+					"DensityScalingScale": 1.0,
+					"PaintDensity": 1.0,
+					"PaintRadius": 0.0,
+					"PaintGroundSlopeAngleMin": 0.0,
+					"PaintGroundSlopeAngleMax": 45.0,
+					"PaintScaling": 0,
+					"PaintScaleMin": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PaintScaleMax": {
+						"X": 1.0,
+						"Y": 1.0,
+						"Z": 1.0
+					},
+					"PlacementOffsetY": {
+						"X": 0.0,
+						"Y": 0.0
+					},
+					"PlacementRandomPitchAngle": 0.0,
+					"PlacementRandomRollAngle": 0.0,
+					"PlacementAlignToNormal": true,
+					"PlacementRandomYaw": true
+				}
+			],
+			"Instances": [
+				"AQAAAPr9fD+LsyVGQp3nRHN+LEYAAAAAOjZ+PwAAAADlo/E9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALeN2z4yaylGQp3nRBR+MEYAAAAABkF7PwAAAAA9Q0Q+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAH+BPzxL0SVGQp3nRPiNLUYAAAAA09/xPAAAAABv43+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPAveD9pYDVGQp3nRKj0LUYAAAAAgOVIPwAAAADgqx6/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAObZcj5xyjJGQp3nRAQJMkYAAAAAIz1pPwAAAAAeDdM+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAATpAT6OTTlGQp3nROR8LUYAAAAArqYwPwAAAADeSDk/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAALFtWD/qQDxGQp3nRIGwLkYAAAAAFmrUPgAAAADi7Wg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAALNFWT/VxTdGQp3nRGTpLUYAAAAAAZ4nPgAAAAAPjHw/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAKOt0T7UfD1GQp3nRF+FK0YAAAAAr/xJPwAAAADhRx0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAA4pBz9VxFBGQqPxRL5FL0bIeLq95TZIP05WR72cUx2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALANWD+PglJGkubzRJLjL0b8+Yi9CUUIP/hxa73giVe/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAANu3bT/awkZGQp3nRJNtMEYAAAAA6R5YPgAAAAC+O3o/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAK1ZVj8nUEZGQp3nRK4gL0YAAAAARAE5PwAAAACq8TC/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAAG3AD+mEkVGQp3nRFDLLkYAAAAAsllzPwAAAABB9J4+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAACwllj70QEdGQp3nROM4MEYAAAAAaCg2PQAAAAApv38/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAEorJT+W5klGjtLnRCPuLEaJskW7WL9UPg9QxLxvVnq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAACgHFD9+o0ZGQp3nRLp+MEYAAAAAqJTXPgAAAABtM2g/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGY9Mz8qv0ZGQp3nRD6xKkYAAAAA7jx9PwAAAACEAxY+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPrR/D1USEhGTqPnRHxEMEbO4oa7SbpJPxXFUjuNmx0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAP4B/z7PA2pGYqb+REGILEZaCGw+AGV4P/OOUDy1SZQ9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAI2hRj8WoG9GvTbxRM6HLUbZNqE98hEZP3cD6L1wIko/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAI1nRj/WPG1GIx71RHFeKkbEXyW9OMqBPZdkSr4jNno/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAALm53D5BOxxGHYLpRESWbEauu0o+DhxuP2eacj0Fc5s+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAHGVOD/buhxGQp3nROLxbkYAAAAAvfvLPgAAAABBzmo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAFOhKT6E0h1GQp3nRAAnb0YAAAAARxYcPwAAAAA06Uq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMep4z773x5GQp3nRPQZcUYAAAAAmPJ5PwAAAAAWWV0+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAJTnST92Rh9GQp3nRPD4bUYAAAAAnmRlPwAAAAB5SeM+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAG+JNz77Wx1GQp3nRJuQcEYAAAAA33BuPwAAAACSWrq+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMopZT9DjB1GQp3nRB3XdkYAAAAANpFhPwAAAACEHvI+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAK7vVj8t1RtGQp3nRMPxdUYAAAAAvxM3PwAAAAAZ8DK/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACmpFD8p5DFGQp3nRKNRbEYAAAAAW+NDPQAAAAAEtX8/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAIlDRD+sDT9GQp3nRJETYEYAAAAAutspPwAAAAD2hz+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPlZ/D4L7U9G4ajnRGcEQ0bsPKu7fYoAPk1Fjbsa+H2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAKuTVT87s1FG2K7nRBlmREbvgdu6aqZ1P5GNuDudFJA+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAIW5Qj9KeE5GQp3nRAgvREYAAAAAmgF7PwAAAABRRUk+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAHu1vT7LvFNGQp3nRFW4SEYAAAAAxm5/PwAAAACKRIg9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJuTTT8K03FGCMQCRQxKT0ao4l+99r13P8Pj7L2bQF4+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAALj12z6vfG9GSWIBRT9/TkZOggK+4XAmPnDoLjz5dno/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAEDxHz4dbm1GO+4ARQBaTkZRPrK7Hq99P4Vh/L02k1g9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAMg/ZD+GSnFGyY4GRU/EUkbWzgQ+qTltPnh5fb2zTXa/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGD5Lz6c8mdGqecERSz9UUaKNAS+ULcCPyATYL1WKlk/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGQxsj6F32JGxA/9RJKpT0YgjK27oDkkP6aBW777jTy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAOTBcT1I4X9GiisVRS4hUEYSFeG890P5PRPmHD7S83o/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAJ2ZTj/S+1RG3yAaRRUJ4UUA1YI9a25uPzfhTD7kQZg+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAL+l3z5aoVRGX1gXRQl850UAAAAAQjJzPgAAAADprHg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJOBSTwBzVJGX1gXRXFw6UUAAAAA93dKPwAAAAAOqRy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAHO1OT/20lRGX1gXRRNd5UUAAAAA90UoPwAAAADU7EA/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAHe5Oz4ZQVZGX1gXReVF5kUAAAAACpVnPwAAAAD4Odo+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAE7hpj4gzUxGAEAcRdTN4EUAAAAAZqV/PwAAAABtTVe9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAImxxD6SnUVGX1gXRQqh6EUAAAAAJfp/PwAAAAD4H1s8AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAIG/QD8KgUNGX1gXRUtm70UAAAAAL15bPwAAAAAL9gO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAP9Rfz5YckVGX1gXRYW+6UUAAAAAeQ6FPgAAAABSNHe/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALrLXD/o/UNG1cAXRV/Y50VhwCo812Q5Pgd9Zz3VVnu/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAACG9ED/n50ZG4iMZRZo85UXr+dM99zxZP3HpOD6tCPk+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAANDLZz9YI0pGX1gXRfsH9kUAAAAArYo6PwAAAAC4Ui8/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOlLdD/8JUVGX1gXRTrF7kUAAAAAe08TPwAAAACfXlG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANI/aT/e9EZGX1gXRdgh7EUAAAAAFAtlPwAAAACMseQ+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALbBWj4N7j1GAEAcRbEs+UUAAAAA2iRGPwAAAAB4GCI/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAFe9qz4ptEFGn10XRbS5AEZcxR09tW0yP8nWIb1+Bzc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAIgTRD8SFUFGWwQaRXizBEYToDM+a/+uPCH/eD40KXS/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAHT9OT+6Bz5GAEAcRWu4+0UAAAAAlnRePwAAAAC6X/0+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMNV4T7baEVGX1gXRR/0BUYAAAAAlR5HPwAAAABR5SC/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPr9fD9eZj5GfuMbRdTI/UXxNcq851N5P18lBj7d6ju+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJmBzDxatkVGoCMZRU7FE0Yct/Q9HuZGP1bqCD4Rfhq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAD4tHz9BIUhGX1gXRULDDUYAAAAAA3F+PwAAAADzpOE9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJLDSD9Y7kNGKM4aRan9DkY3EXM+fJJgP7I13z3EOc6+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGFdMD8uxERGsdoYRcqnDUYkxbY88dyoPVk+hT7ENXa/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAABG1CD/fNkdGX1gXRWzNCkYAAAAAYQ31PQAAAAAqKX4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAHDNtz55+ElGX1gXRQ5ZDUYAAAAAiGZ6PwAAAABCAFW+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAB95Dz8ojkBGX1gXRQRtIEYAAAAAEtRtPwAAAABzdb0+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAM4VZz9BhTVGZO4XRepjG0Z/fnK+Fj9vP9qXhb3RzYO+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJwDTj+jmzlGX1gXRd7wH0YAAAAAnOr3PgAAAADG/F+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGepMz7RyjBGkHkXReGWGkapyw8+kyjsPkn1lz0WeV8/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMghZD+8RzJGty8YRQj4GEZwDYE92Ah7P/aIMT7xpoc9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADQ9mj6USzBGjnYXRRexG0Y59zo9nI1UP/PI+Twc/A2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPtxfT7P1TVG5ZwYRd9dG0bQqKa9aW2kPjlSbT6NJGo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAAIdAT8CJzNGX1gXRV2lIEYAAAAAH1A+PwAAAADWOCs/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABmhDD7kqidGAEAcRQf7GkYAAAAAoul/PwAAAADzANa8AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAHlbPD8G9yxGX1gXRaLgIUYAAAAA9MtVPwAAAADszgy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADTlGT+zXypGAEAcRd0qGEYAAAAA1YghPwAAAAAEmkY/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOAl8D7VKC5GX1gXRQk6H0YAAAAAkJZfPwAAAACiWvm+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAC+jFz+ErkdGX1gXRcVUH0YAAAAA8y1iPwAAAADd0u++AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANTx6T4vkUhGX1gXRatwIkYAAAAAnEdvPwAAAAChALY+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAANQh6j33O0pGX1gXRYIEIEYAAAAAAYZiPwAAAAB/he4+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADmBHD8VPEdGX1gXRdU4JEYAAAAABK8rPgAAAABVYHw/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAH75vj62tklGX1gXRU/iI0YAAAAApXp+PwAAAABs6d49AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGI5MT+rOUhGX1gXRVY8IkYAAAAA+zNIPQAAAACrsX+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAJ9pzz4HFkxGX1gXRRK2HEYAAAAAdcATPwAAAAD0DlG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAP5Bfz6xWEtGX1gXRZylIUYAAAAADjNXPAAAAABa+n+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMlR5D11V2tGX1gXRWrGG0YAAAAAD38RPgAAAAAXZ32/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALwBXjsOimtGX1gXRZ5BGEYAAAAAiVUaPgAAAABhE32/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAO+Fdz9CAmhGP5sWRbg3IEa4R249SR0UPycHojxVNVA/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAB9VDz/+rWJGUKQWRXw/IkYsZl89PE5eP3f4sjxsHPw+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAMQRYj9c0GxGX1gXRbdgFEYAAAAA7IsvPwAAAADaVDo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAA4xhz2ncnJGX1gXRXy3EkYAAAAAYS9KPgAAAADW9Xq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAC+pFz+r/W5GX1gXRRXEEUYAAAAAi2skPgAAAACsrXy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAHIdOT8B+WpGX1gXRV7vEkYAAAAAtEDiPgAAAAAEpmW/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAEt9pT4x921GX1gXReCDD0YAAAAA+YnwPgAAAABP/WE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGWJMj967XZGX1gXRdavBUYAAAAAi2kjPwAAAAA6D0W/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAADzpHT4Y+3FGX1gXRaUxAkYAAAAAsphEPwAAAAAP+CM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALtR3T3qInpGX1gXRQ8dB0YAAAAA9SFhPgAAAAB8vHm/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAMWxYj+wSn1GX1gXRYzw+UUAAAAAISEDPwAAAAC13Vu/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMg5ZD6qOoJGaSEXRbfwA0ZZawm9EnU6PxAjk7vfMi+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACuBFT/O04FGoSsXRXbCAkZO0yw84h/6PtNhGT2VJl8/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAFubLT/Fu4RGX1gXRfQsAkYAAAAApFQNPwAAAACoc1W/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAL4tXz+q6IFGX1gXRV/ZAUYAAAAAxMhYPwAAAADwKQg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAOApcD5jaoRGX1gXRZSS+0UAAAAAGN8XPwAAAADIFU4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPtZ/T7fHIVGX1gXRZCnAUYAAAAAuQ1+PgAAAAD+/nc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAFrRLD7Bt4ZGX1gXRafQAEYAAAAANt7WPgAAAACvXWg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAOd/cz82i4dGX1gXRXy5AkYAAAAA1cdnPwAAAADfYdm+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJZByzyL9YNGulMXRR6YBUbYAii7Bs3vPiggsjotL2K/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJgRzD3UHIZGX1gXRUtvBUYAAAAA0MEMPwAAAACX1FW/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALIF2T6W24ZGX1gXRYf9CEYAAAAAO6NIPwAAAACj/x4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAGuDNT8B0MdFtg/ARGOADkaFpAM9mFF2P1Ulir5g0J28AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAL9V3z6CS7JFftfNROayDUb6WnI+CncmPhqP1T1dw3O/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAPOXeT+57L9FkQTKREL/D0YECYa+JbAkPgxY5r346HE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAHgxvD08RatFXEHWRB1PDUa0idG8x1UuP9ctf765JzA/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMufZT/3euBFJzi6RIdDvUWlY/K7IJ6kPs+u3jzHTHI/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMDVXz9Of+5FXo7IRPDVwkVGE7m9c+AFP3ysTr6Eu1K/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALQvWj/wCuFFFCq6RIouw0Ve9lm9/Xh/P/AEAjzQJQ89AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAACbtEj+xIuZFpZq9REXzv0U8NKG8O3qXPsFP3z2X43I/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABAliD72sepFS2nDRJydx0WzisG9tfmVPq25TT6jFG4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAHwBvj3zTORFH/a7RCuAwEWYz7e90XliP0WzZj2YdOg+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAOGbcD/18OVFZie9RBoWw0UZKp+9cuNLP7omlD0zZxg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAFzBLT5DW/FF/c7PRMuexkVxb3a+DydwP6NIirxQgn4+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACjfEz9WbuVFzmG9RHwXz0VBSBO9dFrEPmZwGL4iJ2m/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAO9Jdz4tz/RFhs/QRJ+270XA9gS+rdhQP2T7Jz4eBgo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALmZ3D4X4vdFpKrYRONZ60VKkku+24Z5P3Uhnj2JnIg9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAPQpej7P4O9FJXvKROOp50UFeDa+tOM+P3Q68r2qjSG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFOpKT4Vtu9FwHfAROCJ/EUY+Ae+j0xTP0tAD72AMAy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPwF/j5e1fVFZezVRD4v6EUI+Mq9Mx4HP/YhVD7ZVlE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAAo9BT9ppvFFKH3HRB4O9UVQi2w9vTsVPkayNz4XoXg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALIJ2T62B+9FWGPDRG4i9UVthKi9XpA3P4beQT7pbio/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANeZ6z5E8QVGd6QQRcnRwEUx6iy+2mYgP9pQ9z0tT0A/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJ+jTz+MUAZGlv8RRc46yUXlZ929+xLqPgqGOb5tLl2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAEttpT5dV/5Fb+0FRU6BwUWE2B47qg2tPcCXHj7K+3s/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAKuXVT+gLQBGgNoGRa5XvEX89Sy+X897P1+NHb3oCEu9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAM7fZj/muVRGAEAcRaBlMEIAAAAAg5+/PgAAAAD+ZG0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAN4V7z6moFJGAEAcRZaFS0EAAAAA+1MuPwAAAADSeDu/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPdTez8g6FJGDT4cRezI+UN1sb66pvZ/PziBiznd1om8AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAG1HNj/aFlBG5jMcRT4uD0OE3Ie795cnPtLas7u8iny/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAAQdgj5mR09G+RgcRUGAGEM1FJG8T5lrPwbxMzzcAcg+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPTXeT/bEl5GAEAcRTIcLUQAAAAAemBGPwAAAAB8zyG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAGgpND9O9V9GAEAcRd+Z10IAAAAAfENRPwAAAAAFdhO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJl/TD/LjVxGAEAcRWl99EIAAAAAEdlMPwAAAAA/iRm/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAB4hjz0OEmBGAEAcRQLZrEMAAAAAmrpiPwAAAABIve2+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAMzZZT7Tjl9GAEAcRQyTiUMAAAAALwljPwAAAACQkOy+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFQLKj8L7mFGAEAcRT9tF0MAAAAALHZ6PwAAAAAy2VO+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAIDtPz/N0GVGAEAcRfWknkMAAAAAjhV/PwAAAACsE609AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJAtyD47wWFGAEAcRWBAAkQAAAAAAKB+PwAAAABu+tO9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAEdZIz5WSGZGAEAcRRwFI0QAAAAAbqvAPgAAAADCLm0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACFxED9dcmNGAEAcRSrZCUQAAAAArUsYPgAAAAAkJ32/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAM9XZz/xJWpGAEAcRRw37kMAAAAA8JdwPQAAAADYjn+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAADblmj4J4W1GAEAcRQQu5kMAAAAAUMPwPQAAAACQOX4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAAlxhD3ZFW9GAEAcRaVtxkMAAAAAfMVqPwAAAAASJMy+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAONFcT/d3G1GAEAcRd4Xa0MAAAAAoiVWPwAAAABlRgy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAFL1qD55gHJGAEAcRUN6fUMAAAAAHLV4PwAAAAACrHK+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJlRTD/c3npGAEAcRd+YFUQAAAAAwftPPwAAAADeQhW/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAJeVyz7fKHFGAEAcRfmKCEQAAAAAd10nPwAAAACotkG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALW/Wj99D3lGAEAcRX7ZiEMAAAAATn5mPwAAAAApyt6+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPLfeD/RhXJGAEAcRa4GB0MAAAAAFM5BPgAAAACKX3s/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACAVED/+AnpGAEAcRW/NV0MAAAAAZqV/PwAAAABtTVe9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFtNLT9rTIJGAEAcRSAbOEQAAAAA5/n3PQAAAADSHX4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAIYTQz8gbnxGAEAcRV65LEQAAAAAvqR/PwAAAAA6Flg9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGtjNT9j3H9GAEAcRY1MNUQAAAAAjUl8PwAAAACewy0+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAL1fXj8+dXxGAEAcRUmpkkMAAAAA9KChPQAAAACYM38/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAB4/Dz8EfIJGAEAcRS9SWkQAAAAAUjEDPwAAAAAN1Fs/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPRBej/VVoZGAEAcRT9tSUQAAAAAvG98PgAAAABqGXg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAABFfCD8FQYJGAEAcRWQ1LUQAAAAADARTPwAAAABH8RC/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAAghhD2wKoVGAEAcRUN/N0QAAAAAavlsPwAAAABEscE+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAANI9aT9OP4JGAEAcRddSP0QAAAAAPAFwPwAAAAB4JLK+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAOercz8a/YFGAEAcRQttmkQAAAAAOTYZPwAAAAAxF02/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADOhmT2FL4NGAEAcRWejm0QAAAAA5ZkjPwAAAAAV50Q/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOI/cT9TlIRGAEAcRXZQp0QAAAAA0R5fPwAAAAA8Bvs+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAGQ1sj6bQ4tGAEAcRZyhg0QAAAAAyEFXPgAAAACoR3q/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANGvaD8z/4dGAEAcRRTnQkQAAAAAxMlsPwAAAADWmcI+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAMuR5T6eaYxGAEAcRSB33EQAAAAAyIRJPwAAAABj4R0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAM2hZj3qdIpGAEAcRfjqyEQAAAAAztj5PgAAAABVc18/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJo3TT/p5YtGAEAcRbdJw0QAAAAAgXBhPwAAAABEmPK+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAGWRsj1zQopGAEAcReYtlkQAAAAAVuKePgAAAACeXHO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAO9Ndz8AIoxGAEAcRdWFh0QAAAAA01TJPQAAAACOwn6/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAOTV8T5ZRY1GAEAcRfjbAEUAAAAADJcVPwAAAAA8v08/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAEj9oz7zn45GOKYZRZEV50QdPkM+xbngPtidjz6cAVW/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGt5NT4LaIxGAEAcRXcoA0UAAAAAIiwUPwAAAACxwlC/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAFWpKj4w4I1GAEAcRc3xHUUAAAAAtIdyPwAAAABl5KO+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAN7/bj+o6Y5GAEAcRR9gDUUAAAAAS+1IPwAAAAAAoh4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAE9VJz/or5FGAEAcRXlNGEUAAAAAaFF/PwAAAABsZJW9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAG+htz7mbpFGAEAcRZSID0UAAAAASP12PwAAAADVpIY+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGoxNT8dqZJGAEAcRRqOE0UAAAAAuDbDPgAAAAB4qWy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGehsz7qeZJGAEAcRen/EkUAAAAATVqCPgAAAABykHe/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPwhfj93l45GAEAcRb5uT0UAAAAA0dGEPgAAAAB5PHc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAMOBYTzueY9GAEAcRf0mWEUAAAAAyA5tPwAAAACUSMG+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAANDZ5z6uYZBGAEAcRYv5UUUAAAAAx8NtPwAAAAApx70+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAACORET5OVZVGAEAcRa9SW0UAAAAA/FZ+PwAAAAAg3eg9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAMNnYT9bjJZGAEAcRVgUXEUAAAAAsr9rPwAAAACklce+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAGNbMT+1t5hGAEAcRb+QYkUAAAAAUVrLPgAAAAA+8Wo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAIWNwj71hZVGAEAcRXuVUEUAAAAAnZ1zPwAAAAD2UZ2+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAG49tz7BiZdGAEAcRWqVXUUAAAAASIJnPwAAAACJidq+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANm57D7w5pVGAEAcRXJqVkUAAAAAcCTOPgAAAAB0VWo/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPdtez+4KZZGAEAcRfGcU0UAAAAAkG5rPwAAAABME8m+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAACzRlT6GLZhGAEAcRbqIWkUAAAAANEx+PwAAAAAsyus9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANVR6j2KpJxGAEAcRQ/cYEUAAAAALMt0PwAAAADc05U+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAABWZij4j5phGAEAcRUHQVkUAAAAAHgEPPwAAAACEVVS/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAKLfUD871JlGAEAcRQ/AYkUAAAAA53zBPgAAAAAcBG2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAMlVZD/Xm5lGAEAcRUR3UUUAAAAAEvG/PgAAAACEVG0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAACeBkzy7RZxGAEAcRXOjW0UAAAAAcvjpPgAAAAD6tGM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAKFbUD+OFpxGAEAcRTFKTUUAAAAAKSV7PwAAAACAeka+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALjN2z5WtZtGAEAcRYlpQkUAAAAAWaXmPgAAAACmjWS/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAC+Blz6N7p1GAEAcRVeLPEUAAAAAUkVuPwAAAADfOLs+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPeRez4yuJxGAEAcRb49RkUAAAAAOWInPwAAAACNskE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAD2JHj93m51GAEAcRWhWMUUAAAAA1hP0PQAAAADqLH4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAKztVT9n+51GAEAcRSk4E0UAAAAAJFVSPwAAAACn7hE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAH7Vvj5EQ6FGAEAcRSAq+UQAAAAAExlNPwAAAAC0Mxm/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGhBtDy9tqJGAEAcRYEW9kQAAAAASTB+PwAAAAAzM/M9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPbPej9gw59GAEAcRa4JDEUAAAAAfN49PwAAAADRtiu/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALGx2D3MZaNGAEAcRTjL8kQAAAAAhLwPPwAAAADW1lM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABWZCj6eBqBGAEAcRdOhCEUAAAAAUH4+PwAAAABvBSs/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAF4hLz5auqJGAEAcRZGyBEUAAAAAriw5PwAAAAA6xDA/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALwhXj0kh6FGAEAcRZtk9EQAAAAAaOoJPwAAAACLrFc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAANWxaj4b/aNGAEAcRVU7AUUAAAAARQA4PwAAAADY/DG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAACQ5kj5HnKFGAEAcRd4ODUUAAAAArBdEPwAAAABHkiQ/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAJrVzD5IMqZGAEAcRbZl6EQAAAAAaMd/PwAAAADeMCo9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAL4BXz383qFGAEAcRfPqCkUAAAAAiy1bPwAAAADFRgS/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAOb18j5lvKlGAEAcRer2A0UAAAAAU1AyPwAAAABhrzc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAD9xnz0JCK1GAEAcRepBAEUAAAAAMB6XPgAAAABkmHQ/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAKlzVD+iNq9GAEAcRXYUD0UAAAAADsgZPwAAAADvqUy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABlnDD/pma5GAEAcRbrP90QAAAAAxdt3PwAAAACvGIA+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALoRXT609K9GAEAcRVL0DUUAAAAA+pYtPwAAAADiJzy/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAANT9aT8udrNGAEAcRWSMM0UAAAAAzGF1PwAAAABG7ZG+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAB7Vjj466rJGAEAcRbb9IEUAAAAAENZJPwAAAABueR2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMO/YT97gLVGAEAcRSvHGUUAAAAAthsJPwAAAAAsMFg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGTdsT7/BLVGAEAcRRkEJEUAAAAA4KdUPwAAAACLhg4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAElhpD3aIb1GAEAcRfAUDkUAAAAAgnJqPwAAAAAjoM2+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAJl3TD/IubtGAEAcRbwWEUUAAAAAmPObPQAAAAC4QX8/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAB7BDj8xwLtGAEAcRVC8H0UAAAAA9YmsPgAAAACwBnE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADtdHT8HGrlGAEAcRdmrEEUAAAAA7SoYPwAAAADP3U2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAObZ8j4CV7pGAEAcRSUzDUUAAAAAtwJ9PwAAAABQCBy+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPAVeD9KlrtGAEAcRZa9EUUAAAAA7Xb1PgAAAABXqWC/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALmHXD/5tcVGAEAcRR8JB0UAAAAAeHrMPgAAAACwsmq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAAVlgj4iJ81GAEAcRadaBkUAAAAA3DF3PwAAAAC4IIW+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAO43dz/DMs5GAEAcRbWLAUUAAAAAOtUEPwAAAABQ11o/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAOTbcT8AEtBGAEAcRd6yD0UAAAAAtmxxPwAAAAClS6o+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAAQ1gj6G8stGAEAcRRcIHEUAAAAAnAI2PwAAAADmBTS/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAC75lj6EEslGAEAcRXx6IkUAAAAAVP9XPwAAAACeaAm/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAKVdUj/iE8lGAEAcRUO3IUUAAAAA3aNNPwAAAAA2eRi/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFA1qD7DmMxGAEAcRSnILEUAAAAAkYXGPgAAAAAb+Ws/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAABbJij5SQdRGAEAcRR/eK0UAAAAAHO1EPwAAAACkkiM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAP4Vfz+VcNRGAEAcRToTFUUAAAAAAZejPgAAAADElHK/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAANj3az+uoNVGAEAcRTzVK0UAAAAARDN+PwAAAAB+a/I9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAHg5vD7qSNVGAEAcRRJwGkUAAAAALPVfPwAAAAAaBvi+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAPopfT+HedNGAEAcRX4pHEUAAAAAGoo9PwAAAADwEyw/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFlHLD+KEdNGAEAcRd4ZLkUAAAAARH9vPwAAAADZ2rS+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAHo9vT7uNNRGAEAcRU2dLUUAAAAAIWtbPwAAAACC4AO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAGrPND+uO+BGAEAcRS3uPEUAAAAANIw1PgAAAADK8Xs/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAI7dxj6oIt9GAEAcRX46PUUAAAAAx+FBPwAAAACEKyc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAANNV6T5wTNhGX1gXRQdiSkUAAAAAEl5xPwAAAACRnqo+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAHolvT4B2dlGAEAcRf+bLkUAAAAAPpsnPwAAAAA3gUG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABONiT6+i9dGAEAcRdLPKEUAAAAABiy3PgAAAAB2Dm+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGoVNT+PsdpGLrUYRQTzS0WM7dG84iZtP90clT4GF3M+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAN+xbz8EqdhG320bRdotQUWrmMy8V1pvPyOpiT0W3rG+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAMIJ4T6v8NlGIzoaRUD7RkXqBra8rAp6P94lIz7QSBE+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAAj9gz6ivNhGX1gXRY3TX0UAAAAAiyBbPwAAAABLXAQ/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAPebez/jgddGX1gXRceFVUUAAAAAO/AZPwAAAAC4i0y/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJ2FTj9LietGAEAcRaWi9kQAAAAAQv1/PwAAAAAaAxY8AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAEIFIT+rjexGAEAcRQrjCkUAAAAA5LVrPwAAAADxw8e+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAI7Jxj5SfedGAEAcRWxZF0UAAAAAXjzrPgAAAAB8YWO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAEDBnzz7fepGAEAcRWRQIkUAAAAAIIJ+PwAAAADlw9y9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOQhcj+psO1GAEAcRYypDEUAAAAADSB/PwAAAADvKak9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAFjlqz6Ore5GAEAcRZ2MCkUAAAAAivc3PwAAAADgBTI/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAAmxhD3jEPFGAEAcRYQcBEUAAAAA+Ft+PwAAAACdf+e9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAILBwD2DUPVGAEAcRR9BzkQAAAAA+TAOPgAAAAAahX2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAADtdHT8v5fNGAEAcRTdjAEUAAAAA8yU2PwAAAAAk4jO/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAAzphT5rofVGAEAcRdKiv0QAAAAAufy/PgAAAAApUm0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAOgvdD8iZPZGAEAcRehSAEUAAAAAyMVyPwAAAAAlc6K+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAOGt8D5+yfdGAEAcRU59xUQAAAAAV73zPgAAAABrIWG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAL25Xj7TL/ZGAEAcRQrV3UQAAAAA9ctgPwAAAAAO+PQ+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAPNFeT+MwfZGAEAcRTIY6kQAAAAAABLYPgAAAABJFmg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFopLT+5APdGAEAcRTIx6kQAAAAAUqdYPwAAAAAjXwg/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAJ21zj6Q5vtGAEAcRTFkmUQAAAAAxLCAPgAAAAAUyHc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAALzR3T3jdftGAEAcRVE0okQAAAAAsvl+PwAAAACWDbc9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFNdKT9RwPpGAEAcRVI/rkQAAAAAphtRPwAAAAB9rhM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOoBdT6u7vtGAEAcRWUFpkQAAAAAKvqWPgAAAAD0nXQ/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAADDpFz9nWvtGAEAcRYUrsEQAAAAA2IogPwAAAACMZ0e/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAO+R9z02rv5GAEAcRW2gxkQAAAAAHD5/PwAAAACCa529AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAACwRFj7j2fxGAEAcReYdqUQAAAAAKrJvPwAAAABezLO+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMrhZD7PPP1GAEAcRYHSz0QAAAAAB5kwPwAAAADiVTm/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAALfAD9UVP5GAEAcRQ9Ep0QAAAAAMqZ4PwAAAAAYoHM+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAABVtij7GNgFHAEAcRTZg20QAAAAAQGl5PwAAAADc02Y+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALbfWj8VZv5GAEAcRbUZ2EQAAAAAvdxxPwAAAAAUy6c+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMTB4TwgCwFHAEAcRdBmuEQAAAAA3otUPwAAAABMsA4/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAKIfUT9qAABHovMaRTUHkUTCEvu9La3RPqa9hL6NtV2/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAAAxgD60vP5GAEAcRSbFrUQAAAAA45s6PwAAAABnQC+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALTDWT9RLgBHAEAcRYv8vUQAAAAA64BEPgAAAAACPns/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAPepez6AIABHAEAcRY5C2kQAAAAAtwV1PwAAAAAoU5Q+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAGjPMz/pTARHAEAcRfDNuEQAAAAAzCx0PwAAAAAA0Jk+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAL4ZXz9K2ANHAEAcReyHw0QAAAAAYZSyPgAAAABy7G+/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAFRBqj7eGQRHAEAcRX5tm0QAAAAAFj5yPgAAAADOu3g/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAABWBCj7peARHAEAcRQXtlkQAAAAAzYqlPgAAAADwP3I/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAAGhAD6hPgVHAEAcRYLGsEQAAAAAhP4APwAAAAAiIF0/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAOzrdT9tzgdHAEAcRVwEl0QAAAAAeCUNPwAAAADaklU/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAN2tbj9SFAZHAEAcRU9EnUQAAAAA1ZQ0PgAAAADm/Hs/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADuRHT+xdwVHAEAcReYGe0QAAAAACO2PPgAAAABjrXU/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAAoxBT/RgglHAEAcRVk85EMAAAAA+HtoPwAAAAAHW9a+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAL9R3z4MVwhHAEAcRZLkBEQAAAAAXTd7PwAAAACYCEW+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAP+B/zwChQpHAEAcRazClUMAAAAAjDFmPwAAAAC5BuC+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAANYV6z6y9ghHAEAcRXNVC0QAAAAAAutqPwAAAAAid8s+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAGDNLz9fUwlHvIYaRYY0g0OyPp8+7SgOPYM6OryFH3O/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAACDBjz6JBgtHAEAcRRdfu0MAAAAACXVqPwAAAACclM0+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAON3cT9VkApHAEAcRTbPH0QAAAAAOOTtPgAAAABksGI/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAANgd7D4SAAxHAEAcRb7u4kMAAAAAvoBaPwAAAAB0YwU/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAP7V/j7mzQtHAEAcRVTTfUMAAAAAk7edPgAAAAAwjXM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAJuRTT6yiwxHAEAcRUgrAkQAAAAAso0cPwAAAAAdjUq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAEIVIT8/cg1HAEAcRfYP3UMAAAAAj1RGPwAAAAAU3iE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAN4fbz9AdQxHAEAcRaWdpkMAAAAA8BkoPgAAAADphny/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAJTJST6k1A9HAEAcRY2M5kEAAAAAzEZSPwAAAABOAxI/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAMbXYj/xBhBHAEAcRdgRFEMAAAAAceYkPwAAAADr0EM/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAMerYz8qUQ5HAEAcRZ6Er0EAAAAAc0+APgAAAACy1Hc/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOGbcD9VJBBHAEAcRVBSjkMAAAAA/SLgPgAAAACrKmY/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAACgBFD1wzw9HAEAcRUTdIkQAAAAAoP9/PwAAAABeEV+7AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AAAAAEAZID8gHRVHAEAcRWVjBkMAAAAAkMZ+PwAAAAC/D8i9AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAL1d3j7jqxJHAEAcRTt3p0MAAAAAhq5SPwAAAAB8bRE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAETTIT+EIxVHAEAcRSgk2EMAAAAAMf9rPwAAAACWaMY+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAMupZT7i0RJHAEAcRTD6Z0MAAAAAZud4PwAAAAB2bW++AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAALm5XD8rxRNHAEAcRWndNEMAAAAAend6PwAAAACTwFM+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAE49Jz/BQxVHAEAcRbdhs0MAAAAAN7R8PwAAAABUyiO+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAGVvMj8mqRRHAEAcRdW3oEMAAAAA/StjPwAAAADICuy+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAACQrEj9vuBhHAEAcRaDRz0AAAAAAEEATPwAAAAB1aVE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AgAAAH4tvz6nPRhHAEAcRc+He0MAAAAAwiqnPgAAAAB++HG/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAAP+Ffz8YXhhHAEAcRcL/QEMAAAAAso0cPwAAAAAdjUq/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAAOrF9D71ZBdHAEAcRcmegEMAAAAAeBp9PwAAAAAtmxk+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AQAAANQZaj/EgxFHAEAcRXNxCUMAAAAA59ynPgAAAACn2XE/AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA=",
+				"AwAAADjTGz8IXBNHAEAcRWNEcUIAAAAAvitrPwAAAAAnS8q+AACAPwAAgD8AAIA//////wAAAAAAAAAAAAAAAAAAAAA="
+			]
+		},
+		{
+			"ID": "440aa84d4af096415acdf9b3477ceb85",
+			"TypeName": "Game.FoliageGen",
+			"ParentID": "c633ffd94f34948dc663bd84f9c34b04",
+			"V": {
+	"foliage": "c633ffd94f34948dc663bd84f9c34b04",
+	"type1Col": "7c5b461b4e4bfbbed5963d84c1029da1",
+	"type2Col": "3d8073ff4a091511567c5b837af8bc53",
+	"type3Col": "af7330ed484cf2ca9298d98e33a650ea",
+	"type4Col": "791c34a6449281a296b5f8a77e5570ad"
+}
+		},
+		{
+			"ID": "fafa076743833bb76f45d9affca228ef",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "SM_Ship_Fighter_Heavy_01",
+			"Transform": {
+				"Translation": {
+					"X": 9728.138671875,
+					"Y": 2026.71923828125,
+					"Z": 13228.7666015625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": -0.04361938685178757,
+					"W": 0.9990482330322266
+				}
+			},
+			"Model": "cd3899ff4d5960dd8c45a9ac44d17d28",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "7590abcb46d4247e86108891352a43ac",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "SM_Tree_01",
+			"Transform": {
+				"Translation": {
+					"X": 438.0884094238281,
+					"Y": -178.93441772460938,
+					"Z": 194.63671875
+				},
+				"Orientation": {
+					"X": -0.2497621327638626,
+					"Y": -0.05944596230983734,
+					"Z": 0.2571939527988434,
+					"W": 0.9316310286521912
+				}
+			},
+			"Model": "b8823a9548fd12815029de811a3fe9d6",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "0704794940fc7dbc25f5bf9e866f11a6",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "25e5159347e36595ba64d9b24137ac60",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "SM_Tree_2",
+			"Transform": {
+				"Translation": {
+					"X": 456.1405334472656,
+					"Y": -177.3550567626953,
+					"Z": -341.333984375
+				},
+				"Orientation": {
+					"X": 0.03583826124668121,
+					"Y": -0.12313403934240341,
+					"Z": 0.2965594232082367,
+					"W": 0.9463647603988648
+				}
+			},
+			"Model": "b8823a9548fd12815029de811a3fe9d6",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "0704794940fc7dbc25f5bf9e866f11a6",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "060edd654de6807cac82e2a66c5cc8d7",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "SM_Tree_3",
+			"Transform": {
+				"Translation": {
+					"X": 70.93196105957031,
+					"Y": -254.93077087402345,
+					"Z": 173.73828125
+				},
+				"Orientation": {
+					"X": 0.3053364157676697,
+					"Y": 0.16183236241340638,
+					"Z": -0.07518510520458222,
+					"W": 0.935375452041626
+				}
+			},
+			"Model": "b8823a9548fd12815029de811a3fe9d6",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "0704794940fc7dbc25f5bf9e866f11a6",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "69817e6b4b364fc5ca159baa72322f0c",
+			"PrefabID": "348986494becde9bac2e96ac73c09759",
+			"PrefabObjectID": "7965567d4b74321adf07159de77a4749",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Transform": {
+				"Translation": {
+					"X": 11816.8115234375,
+					"Y": 1976.9322509765626,
+					"Z": 11898.3798828125
+				}
+			}
+		},
+		{
+			"ID": "71ff5cbb47d2bce8c9e952b98ea928c1",
+			"PrefabID": "348986494becde9bac2e96ac73c09759",
+			"PrefabObjectID": "77ff490c41a2452a729ae39223b0882b",
+			"ParentID": "69817e6b4b364fc5ca159baa72322f0c"
+		},
+		{
+			"ID": "118e6f6f4282761511d60384a451b8f6",
+			"PrefabID": "348986494becde9bac2e96ac73c09759",
+			"PrefabObjectID": "bfd8960f4af213bf42414f823b221770",
+			"ParentID": "71ff5cbb47d2bce8c9e952b98ea928c1",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "c83c83344eb122cb4736feaaa896f72c",
+			"PrefabID": "2c5cd2af4f296e81d50d5982d2a3c5bd",
+			"PrefabObjectID": "0eaabd8d465700a57b0c30966e157f08",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Transform": {
+				"Translation": {
+					"X": 11964.654296875,
+					"Y": 1988.253173828125,
+					"Z": 12343.33984375
+				}
+			}
+		},
+		{
+			"ID": "bf4555f348fa06f77b3356bf88c800f6",
+			"PrefabID": "2c5cd2af4f296e81d50d5982d2a3c5bd",
+			"PrefabObjectID": "5a49067b4400c269acb05cb0b3fc9af2",
+			"ParentID": "c83c83344eb122cb4736feaaa896f72c",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "d6543fc3454f1435df81389a8fb726e5",
+			"PrefabID": "eef8e6dd462b5eb709a560ab9d009456",
+			"PrefabObjectID": "759ba21e4fd0af4a5107dea771248843",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Transform": {
+				"Translation": {
+					"X": 12145.498046875,
+					"Y": 1981.8592529296876,
+					"Z": 12602.669921875
+				}
+			}
+		},
+		{
+			"ID": "3c6143744c9ec4d5eb96b8b13c7b6b77",
+			"PrefabID": "eef8e6dd462b5eb709a560ab9d009456",
+			"PrefabObjectID": "fe19350d4338dee5fad3099d6a1d611b",
+			"ParentID": "d6543fc3454f1435df81389a8fb726e5",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		}
+	]
+}

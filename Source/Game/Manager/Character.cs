@@ -34,7 +34,7 @@ public class Character : Script
 	public override void OnAwake()
 	{
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As<AnimatedModel>());
-		_interactionComponent = new InteractionComponent(_interactionArgs);
+		_interactionComponent = new InteractionComponent(_interactionArgs, Actor);
 		_inventoryComponent = new InventoryComponent(_inventoryArgs, _movementArgs.CharacterObj);
 		_throwComponent = new ThrowComponent();
 
