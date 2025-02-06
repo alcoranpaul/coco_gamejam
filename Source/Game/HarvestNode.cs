@@ -17,7 +17,9 @@ public class HarvestNode : Script, IInteract
 	{
 		collider.IsTrigger = true;
 		collider.TriggerEnter += TriggerEnter;
+		collider.TriggerExit += TriggerExit;
 	}
+
 
 
 
@@ -25,6 +27,7 @@ public class HarvestNode : Script, IInteract
 	public override void OnDisable()
 	{
 		collider.TriggerEnter -= TriggerEnter;
+		collider.TriggerExit -= TriggerExit;
 	}
 
 	/// <inheritdoc/>
@@ -38,6 +41,14 @@ public class HarvestNode : Script, IInteract
 		if (!actor.HasTag("Player")) return;
 
 		InteractionComponent.TryAssignInteract(this);
+	}
+
+
+	private void TriggerExit(PhysicsColliderActor actor)
+	{
+		if (!actor.HasTag("Player")) return;
+
+		InteractionComponent.TryAssignInteract(null);
 	}
 
 	public void Interact(Vector3 origin, Actor instigator)

@@ -15,6 +15,8 @@ public class InteractionComponent : InstanceManagerClass
 	private IInteract objTointeract;
 	private Actor actor;
 
+	public static event Action<bool> OnInteract;
+
 
 	public InteractionComponent(InteractionArgs interactionArgs, Actor actor) : base()
 	{
@@ -29,9 +31,15 @@ public class InteractionComponent : InstanceManagerClass
 	public static bool TryAssignInteract(IInteract obj)
 	{
 		var instance = SingletonManager.Get<InteractionComponent>();
-		if (obj == null || instance == null || instance.objTointeract != null) return false;
+		if (obj == null || instance == null || instance.objTointeract != null)
+		{
+			OnInteract?.Invoke(false);
+			return false;
+
+		}
 
 		instance.objTointeract = obj;
+		OnInteract?.Invoke(true);
 		return true;
 	}
 
@@ -40,6 +48,7 @@ public class InteractionComponent : InstanceManagerClass
 		if (objTointeract != null)
 		{
 			objTointeract.Interact(actor.Position, actor);
+			OnInteract?.Invoke(false);
 		}
 	}
 
