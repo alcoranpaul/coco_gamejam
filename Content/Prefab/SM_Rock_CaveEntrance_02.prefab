@@ -1,0 +1,237 @@
+{
+	"ID": "c1b170c34fe4ea47b30ae195cf9320c1",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "4ea85eef4120c3cc83e3b39aac6d514a",
+		"TypeName": "FlaxEngine.StaticModel",
+		"ParentID": "00000000000000000000000000000000",
+		"Name": "SM_Rock_CaveEntrance_02",
+		"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+		"Buffer": {
+			"Entries": [
+				{
+					"Material": "00000000000000000000000000000000",
+					"ShadowsMode": 3,
+					"Visible": true,
+					"ReceiveDecals": true
+				}
+			]
+		}
+	},
+	{
+		"ID": "a67b10c24d5de43f9cb402968f777d48",
+		"TypeName": "FlaxEngine.UICanvas",
+		"ParentID": "4ea85eef4120c3cc83e3b39aac6d514a",
+		"Name": "UICanvas",
+		"Transform": {
+			"Translation": {
+				"X": -261.54168701171877,
+				"Y": 397.47607421875,
+				"Z": -129.54356384277345
+			},
+			"Orientation": {
+				"X": 1.0,
+				"Y": 4.371150197357565e-8,
+				"Z": 4.4703483581542978e-8,
+				"W": 1.1546319456101628e-14
+			}
+		},
+		"V": {
+			"RenderMode": 2,
+			"Size": {
+				"X": 600.0,
+				"Y": 600.0
+			}
+		}
+	},
+	{
+		"ID": "50b8261844eb89aea37153ae152651df",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "a67b10c24d5de43f9cb402968f777d48",
+		"Name": "Canvas Scalar",
+		"Control": "FlaxEngine.GUI.CanvasScaler",
+		"Data": {
+			"ResolutionCurve": {
+				"Keyframes": [
+					{
+						"Time": 0.0,
+						"Value": 0.0
+					},
+					{
+						"Time": 480.0,
+						"Value": 0.444
+					},
+					{
+						"Time": 720.0,
+						"Value": 0.666
+					},
+					{
+						"Time": 1080.0,
+						"Value": 1.0
+					},
+					{
+						"Time": 8640.0,
+						"Value": 8.0
+					}
+				]
+			},
+			"DpiCurve": {
+				"Keyframes": [
+					{
+						"Time": 1.0,
+						"Value": 1.0
+					},
+					{
+						"Time": 96.0,
+						"Value": 1.0
+					},
+					{
+						"Time": 200.0,
+						"Value": 2.0
+					},
+					{
+						"Time": 400.0,
+						"Value": 4.0
+					}
+				]
+			},
+			"Scaling": 2,
+			"ScaleFactor": 1.0,
+			"PhysicalUnit": 3,
+			"PhysicalUnitSize": 1.0,
+			"ResolutionMode": 0,
+			"ResolutionMin": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"ResolutionMax": {
+				"X": 7680.0,
+				"Y": 4320.0
+			},
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"AnchorMax": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 0.0
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": true,
+			"AutoFocus": false
+		}
+	},
+	{
+		"ID": "c38d88764d7538d0b7006682668fcf93",
+		"TypeName": "FlaxEngine.UIControl",
+		"ParentID": "50b8261844eb89aea37153ae152651df",
+		"Name": "Image",
+		"Control": "FlaxEngine.GUI.Image",
+		"Data": {
+			"Brush": {
+				"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
+				"Color": {
+					"R": 0.47777778,
+					"G": 0.47777778,
+					"B": 0.47777778,
+					"A": 1.0
+				}
+			},
+			"Margin": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Color": {
+				"R": 1.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"MouseOverColor": {
+				"R": 1.0,
+				"G": 1.0,
+				"B": 1.0,
+				"A": 1.0
+			},
+			"DisabledTint": {
+				"R": 0.5019608,
+				"G": 0.5019608,
+				"B": 0.5019608,
+				"A": 1.0
+			},
+			"KeepAspectRatio": false,
+			"ClipChildren": true,
+			"CullChildren": true,
+			"AnchorMin": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"AnchorMax": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Offsets": {
+				"Left": 0.0,
+				"Right": 0.0,
+				"Top": 0.0,
+				"Bottom": 0.0
+			},
+			"Scale": {
+				"X": 1.0,
+				"Y": 1.0
+			},
+			"Pivot": {
+				"X": 0.5,
+				"Y": 0.5
+			},
+			"Shear": {
+				"X": 0.0,
+				"Y": 0.0
+			},
+			"Rotation": 0.0,
+			"BackgroundColor": {
+				"R": 0.0,
+				"G": 0.0,
+				"B": 0.0,
+				"A": 0.0
+			},
+			"BackgroundBrush": null,
+			"Enabled": true,
+			"Visible": true,
+			"AutoFocus": false
+		}
+	}
+]
+}

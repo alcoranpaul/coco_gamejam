@@ -14,8 +14,8 @@
 		"ParentID": "462365ae415a1d52e28b4dbb62c87918",
 		"V": {
 	"throwablePrefab": "415210494cb16196b2f01fa209571b90",
-	"throwForce": 4500.0,
-	"throwUpForce": 1500.0
+	"throwForce": 5500.0,
+	"throwUpForce": 2500.0
 }
 	},
 	{

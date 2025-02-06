@@ -33,6 +33,7 @@ public class InteractionComponent : InstanceManagerClass
 		var instance = SingletonManager.Get<InteractionComponent>();
 		if (obj == null || instance == null || instance.objTointeract != null)
 		{
+			instance.objTointeract = null;
 			OnInteract?.Invoke(false);
 			return false;
 

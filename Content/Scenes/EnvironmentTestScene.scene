@@ -204,6 +204,7 @@
 			"ID": "9cfdb2b64d0b851c72fee3a9b64daa08",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "244fe8c8484faa5530e2a3a85af71d06",
+			"IsActive": false,
 			"Name": "Content",
 			"Transform": {
 				"Translation": {
@@ -265,7 +266,7 @@
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": true,
+	"Visible": false,
 	"AutoFocus": false
 }
 		},
@@ -1548,7 +1549,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 44.0,
+		"Right": 76.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -2575,6 +2576,133 @@
 }
 		},
 		{
+			"ID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b96c438e410114abb3f982b17d750e44",
+			"Name": "Enemy Spawn",
+			"Transform": {
+				"Translation": {
+					"X": 14853.9111328125,
+					"Y": 1912.833740234375,
+					"Z": 13107.390625
+				}
+			}
+		},
+		{
+			"ID": "23b545dd462baf84a118cda418f135ef",
+			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
+			"PrefabObjectID": "4ea85eef4120c3cc83e3b39aac6d514a",
+			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"Transform": {
+				"Translation": {
+					"X": -2212.4443359375,
+					"Y": 50.293212890625,
+					"Z": 320.9560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.13052619993686677,
+					"Z": 0.0,
+					"W": 0.9914448857307434
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "a6f5cd2245ae99392a14ea9bcf58f4bc",
+			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
+			"PrefabObjectID": "a67b10c24d5de43f9cb402968f777d48",
+			"ParentID": "23b545dd462baf84a118cda418f135ef",
+			"V": {}
+		},
+		{
+			"ID": "531d3dc44063b2d79f920db86b785459",
+			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
+			"PrefabObjectID": "50b8261844eb89aea37153ae152651df",
+			"ParentID": "a6f5cd2245ae99392a14ea9bcf58f4bc",
+			"Data": {
+	"ResolutionCurve": {},
+	"DpiCurve": {}
+}
+		},
+		{
+			"ID": "34b7f7c54b9006e023ab579b89fdefed",
+			"PrefabID": "c1b170c34fe4ea47b30ae195cf9320c1",
+			"PrefabObjectID": "c38d88764d7538d0b7006682668fcf93",
+			"ParentID": "531d3dc44063b2d79f920db86b785459",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp"
+	}
+}
+		},
+		{
+			"ID": "3b12db6c4a1939b9cc9a1c9e8335316a",
+			"PrefabID": "87b659874d972217687eb1abadd8a561",
+			"PrefabObjectID": "16b8576b4501d2e0487dbd99d97e7355",
+			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"Transform": {
+				"Translation": {
+					"X": 2212.4443359375,
+					"Y": -50.2930908203125,
+					"Z": -320.9560546875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.14780940115451814,
+					"Z": 0.0,
+					"W": 0.9890158772468567
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "ae0a07a94dddbe75b6d3899135b97e67",
+			"PrefabID": "87b659874d972217687eb1abadd8a561",
+			"PrefabObjectID": "a08f5cd14a8e960dee0982a4c84db9fc",
+			"ParentID": "3b12db6c4a1939b9cc9a1c9e8335316a",
+			"V": {}
+		},
+		{
+			"ID": "2da82f094e17f15b5fdd0ab2255275e3",
+			"PrefabID": "87b659874d972217687eb1abadd8a561",
+			"PrefabObjectID": "58f5ee214811f09be5f3699a8c9f75ce",
+			"ParentID": "ae0a07a94dddbe75b6d3899135b97e67",
+			"Data": {
+	"ResolutionCurve": {},
+	"DpiCurve": {}
+}
+		},
+		{
+			"ID": "64c00345433be6c62d37ff84f0e064b0",
+			"PrefabID": "87b659874d972217687eb1abadd8a561",
+			"PrefabObjectID": "cb4c6ff147cfeba02120418547d8b28e",
+			"ParentID": "2da82f094e17f15b5fdd0ab2255275e3",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp"
+	}
+}
+		},
+		{
 			"ID": "fafa076743833bb76f45d9affca228ef",
 			"TypeName": "FlaxEngine.StaticModel",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
@@ -2723,6 +2851,44 @@
 			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
 			"Buffer": {
 				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "aa3edc664b823ba9258462b557152155",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "1cc629494a48cc684dbb6c88bce31f5f",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Transform": {
+				"Translation": {
+					"X": 12603.2939453125,
+					"Y": 2020.89208984375,
+					"Z": 13282.732421875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 1.0,
+					"Z": 0.0,
+					"W": -4.371138828673793e-8
+				}
+			}
+		},
+		{
+			"ID": "1697b63746ea0b10870beb8ee73d150b",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "addaa4074d2d4634af9d6d8e05f76537",
+			"ParentID": "aa3edc664b823ba9258462b557152155"
+		},
+		{
+			"ID": "3a28fdb94676e0509639d1846d764c00",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "b0e5042d4b25d495b11279b174e6f0c0",
+			"ParentID": "1697b63746ea0b10870beb8ee73d150b",
+			"Buffer": {
+				"Entries": [
+					{},
+					{},
 					{}
 				]
 			}

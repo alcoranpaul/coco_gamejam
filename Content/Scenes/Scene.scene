@@ -1716,74 +1716,33 @@
 		},
 		{
 			"ID": "78cb856e4238be01ce8b3d8b1f5ceb4a",
-			"TypeName": "FlaxEngine.CharacterController",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "1cc629494a48cc684dbb6c88bce31f5f",
 			"ParentID": "74a68a984824b4510d12589f199ad68f",
-			"Name": "Enemy",
 			"Transform": {
 				"Translation": {
 					"X": 73.24396514892578,
 					"Y": 104.0,
 					"Z": 0.0
 				}
-			},
-			"StaticFlags": 0,
-			"Center": {
-				"X": 0.0,
-				"Y": -14.0,
-				"Z": 0.0
-			},
-			"Radius": 20.0,
-			"Height": 100.0
+			}
 		},
 		{
 			"ID": "26aae269497ce4a0318d5ca12aafe688",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "78cb856e4238be01ce8b3d8b1f5ceb4a",
-			"Name": "Model",
-			"Transform": {
-				"Scale": {
-					"X": 0.5,
-					"Y": 0.5,
-					"Z": 0.5
-				}
-			},
-			"StaticFlags": 0
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "addaa4074d2d4634af9d6d8e05f76537",
+			"ParentID": "78cb856e4238be01ce8b3d8b1f5ceb4a"
 		},
 		{
 			"ID": "ab4b386847f96636e43fbca8faff1804",
-			"TypeName": "FlaxEngine.AnimatedModel",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "b0e5042d4b25d495b11279b174e6f0c0",
 			"ParentID": "26aae269497ce4a0318d5ca12aafe688",
-			"Name": "Walker Walk_skin",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": -158.0,
-					"Z": 10.0
-				}
-			},
-			"StaticFlags": 0,
-			"SkinnedModel": "9602e1bc457dcde570812c90f5e0dad4",
-			"AnimationGraph": "9744417843e3eaf8e03a209bf08ba74c",
 			"Buffer": {
 				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
+					{},
+					{},
+					{}
 				]
 			}
 		}
