@@ -6,7 +6,6 @@
 	{
 		"ID": "1cc629494a48cc684dbb6c88bce31f5f",
 		"TypeName": "FlaxEngine.CharacterController",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Enemy",
 		"StaticFlags": 0,
 		"Center": {
@@ -16,6 +15,21 @@
 		},
 		"Radius": 20.0,
 		"Height": 100.0
+	},
+	{
+		"ID": "348d432e4649620cb24971a2fbdb2201",
+		"TypeName": "FlaxEngine.Behavior",
+		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"Tree": "2552ce9840146f40a972bf8f273c22e8"
+	},
+	{
+		"ID": "3fa1588b42bdb9abcebaa99a22e9ed12",
+		"TypeName": "Game.Enemy",
+		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"V": {
+	"behavior": "348d432e4649620cb24971a2fbdb2201",
+	"moveSpeed": 150.0
+}
 	},
 	{
 		"ID": "addaa4074d2d4634af9d6d8e05f76537",

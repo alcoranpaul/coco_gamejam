@@ -31,7 +31,7 @@ public class Throwable : Script
 		{
 			firstCollision = false;
 			var vfxActor = PrefabManager.SpawnPrefab(vfxPrefab, Actor.Position);
-			Destroy(Actor, 1f);
+			Destroy(vfxActor, 1f);
 
 			// Sphere case for checking enemies or Tree. Depending on the Type
 			// Normal: Enemies

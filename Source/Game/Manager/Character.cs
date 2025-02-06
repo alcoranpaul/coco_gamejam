@@ -7,7 +7,7 @@ namespace Game;
 /// <summary>
 /// Character Script.
 /// </summary>
-public class Character : Script
+public class Character : InstanceManagerScript
 {
 	[ShowInEditor, Serialize]
 	private MovementComponent.MovementArgs _movementArgs;
@@ -33,6 +33,7 @@ public class Character : Script
 
 	public override void OnAwake()
 	{
+		base.OnAwake();
 		_movementComponent = new MovementComponent(_movementArgs, _cameraArgs, Actor.As<CharacterController>(), _movementArgs.CharacterObj.As<AnimatedModel>());
 		_interactionComponent = new InteractionComponent(_interactionArgs, Actor);
 		_inventoryComponent = new InventoryComponent(_inventoryArgs, _movementArgs.CharacterObj);
