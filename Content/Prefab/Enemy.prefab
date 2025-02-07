@@ -6,7 +6,6 @@
 	{
 		"ID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"TypeName": "FlaxEngine.CharacterController",
-		"ParentID": "00000000000000000000000000000000",
 		"Name": "Enemy",
 		"StaticFlags": 0,
 		"Tag": "Enemy",
@@ -15,8 +14,10 @@
 			"Y": -14.0,
 			"Z": 0.0
 		},
-		"Radius": 20.0,
-		"Height": 100.0
+		"ContactOffset": 20.0,
+		"Radius": 25.0,
+		"Height": 100.0,
+		"StepOffset": 25.0
 	},
 	{
 		"ID": "f6941ef94e04de63db9057a0a9915141",
@@ -29,11 +30,11 @@
 		"TypeName": "Game.Enemy",
 		"ParentID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"V": {
-			"behavior": "f6941ef94e04de63db9057a0a9915141",
-			"moveSpeed": 75.0,
-			"model": "3f1e48ec4cc38534c9834ab35fd26db8",
-			"attackTrigger": "aaf177d7464d6798f5dd0db6c0531e17"
-		}
+	"behavior": "f6941ef94e04de63db9057a0a9915141",
+	"moveSpeed": 75.0,
+	"model": "3f1e48ec4cc38534c9834ab35fd26db8",
+	"attackTrigger": "aaf177d7464d6798f5dd0db6c0531e17"
+}
 	},
 	{
 		"ID": "4f35cf254db5727f380f73882a6bec91",
@@ -100,7 +101,7 @@
 		"Transform": {
 			"Translation": {
 				"X": 29.62051773071289,
-				"Y": -39.6406478881836,
+				"Y": -39.640647888183597,
 				"Z": 47.124061584472659
 			},
 			"Orientation": {

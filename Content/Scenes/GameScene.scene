@@ -557,9 +557,16 @@
 			"TypeName": "Game.EnemyManager",
 			"ParentID": "c49208b74cadd074f6e8499ba54056fc",
 			"V": {
-	"enemyPrefab": "763e8f3f423260d8b103f1be04e04be7"
-},
-			"Enabled": false
+	"enemyPrefab": "763e8f3f423260d8b103f1be04e04be7",
+	"spawnPoints": [
+		"320459a34eeaff1e4ed2afa015553b4a",
+		"be8d190f4e2a719e4b3ad2ae8dd1df47",
+		"30da45ef468fd4235ddf498fa7c7cfba",
+		"c19a0ec54d3f5ecf1f3800864e137b4a",
+		"2ef0158341617b4451ae8ca3638ee1f2",
+		"7b3d929444060ab09f79c6b522aa40c8"
+	]
+}
 		},
 		{
 			"ID": "869e062243a848ad3a534aa0ad85d107",
@@ -1560,7 +1567,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 84.0,
+		"Right": 10.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -6391,9 +6398,9 @@
 			"Name": "Spawn Point",
 			"Transform": {
 				"Translation": {
-					"X": 81.40855407714844,
+					"X": 1.5609192848205567,
 					"Y": 0.0,
-					"Z": 74.3617172241211
+					"Z": 22.201509475708009
 				}
 			},
 			"StaticFlags": 23
@@ -6405,15 +6412,15 @@
 			"Name": "SM_Rock_CaveEntrance_3",
 			"Transform": {
 				"Translation": {
-					"X": 4141.302734375,
+					"X": 18238.767578125,
 					"Y": -79.685302734375,
-					"Z": -558.5322265625
+					"Z": -1134.7060546875
 				},
 				"Orientation": {
 					"X": 0.0,
-					"Y": 0.13052619993686677,
+					"Y": 0.9876883625984192,
 					"Z": 0.0,
-					"W": 0.9914448857307434
+					"W": 0.15643449127674104
 				},
 				"Scale": {
 					"X": 0.5,
@@ -6485,9 +6492,385 @@
 			"Name": "Spawn Point",
 			"Transform": {
 				"Translation": {
-					"X": 81.40855407714844,
+					"X": 23.667264938354493,
 					"Y": 0.0,
-					"Z": 74.3617172241211
+					"Z": -103.348388671875
+				}
+			},
+			"StaticFlags": 23
+		},
+		{
+			"ID": "02493463464bbefc33b4278336b55d4d",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
+			"Name": "SM_Rock_CaveEntrance_4",
+			"Transform": {
+				"Translation": {
+					"X": -1993.2958984375,
+					"Y": -393.71435546875,
+					"Z": 15425.7744140625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.7253744006156921,
+					"Z": 0.0,
+					"W": 0.6883546113967896
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "2932077841660ba700d4949a0cc44b3e",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e6eeb96a4565fcf8418643ac05d0a8f2",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "02493463464bbefc33b4278336b55d4d",
+			"Name": "StaticModel 0",
+			"Transform": {
+				"Translation": {
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9998477697372437,
+					"Z": 0.0,
+					"W": -0.017452433705329896
+				},
+				"Scale": {
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "516a524f430a0cf6ab5f6481365ab108",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "02493463464bbefc33b4278336b55d4d",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "30da45ef468fd4235ddf498fa7c7cfba",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "02493463464bbefc33b4278336b55d4d",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 91.16474151611328,
+					"Y": 0.0,
+					"Z": -247.11184692382813
+				}
+			},
+			"StaticFlags": 23
+		},
+		{
+			"ID": "fdcedc4445c77bbe00b22d96fbdcaf94",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
+			"Name": "SM_Rock_CaveEntrance_5",
+			"Transform": {
+				"Translation": {
+					"X": 16208.294921875,
+					"Y": -111.0213623046875,
+					"Z": 24238.38671875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.5,
+					"Z": 0.0,
+					"W": 0.8660253882408142
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "2932077841660ba700d4949a0cc44b3e",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "b8f47eb6411377aba954519756a86969",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "fdcedc4445c77bbe00b22d96fbdcaf94",
+			"Name": "StaticModel 0",
+			"Transform": {
+				"Translation": {
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9998477697372437,
+					"Z": 0.0,
+					"W": -0.017452433705329896
+				},
+				"Scale": {
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "cb7b174748be80ac446697a7c263c7e9",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "fdcedc4445c77bbe00b22d96fbdcaf94",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "c19a0ec54d3f5ecf1f3800864e137b4a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fdcedc4445c77bbe00b22d96fbdcaf94",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 31.546485900878908,
+					"Y": 0.0,
+					"Z": -116.71925354003906
+				}
+			},
+			"StaticFlags": 23
+		},
+		{
+			"ID": "379932024709187d451b1e8bfb664ab5",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
+			"Name": "SM_Rock_CaveEntrance_6",
+			"Transform": {
+				"Translation": {
+					"X": 4203.501953125,
+					"Y": -111.0213623046875,
+					"Z": 28673.3046875
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.6691306233406067,
+					"Z": 0.0,
+					"W": 0.7431448101997376
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "e78e6b1e4ec57f45aa309c82972bb84d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "8f488a674646b1edaf8b2898769e66b3",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "379932024709187d451b1e8bfb664ab5",
+			"Name": "StaticModel 0",
+			"Transform": {
+				"Translation": {
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9998477697372437,
+					"Z": 0.0,
+					"W": -0.017452433705329896
+				},
+				"Scale": {
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3d531fa5407b4bc0cc825583725f7338",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "379932024709187d451b1e8bfb664ab5",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "2ef0158341617b4451ae8ca3638ee1f2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "379932024709187d451b1e8bfb664ab5",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 34.44865036010742,
+					"Y": 131.8828125,
+					"Z": -15.641069412231446
+				}
+			},
+			"StaticFlags": 23
+		},
+		{
+			"ID": "23c2d49b41ba71bbf4298190d71cda47",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
+			"Name": "SM_Rock_CaveEntrance_7",
+			"Transform": {
+				"Translation": {
+					"X": -6883.44091796875,
+					"Y": -82.6973876953125,
+					"Z": 13476.3037109375
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": -0.03489949554204941,
+					"Z": 0.0,
+					"W": 0.9993908405303955
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "e78e6b1e4ec57f45aa309c82972bb84d",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "3a9932cc4208c5f46764b7b53984e965",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "23c2d49b41ba71bbf4298190d71cda47",
+			"Name": "StaticModel 0",
+			"Transform": {
+				"Translation": {
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9998477697372437,
+					"Z": 0.0,
+					"W": -0.017452433705329896
+				},
+				"Scale": {
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "5657f5af4e50ffea47dd8c822726d30e",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "23c2d49b41ba71bbf4298190d71cda47",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "7b3d929444060ab09f79c6b522aa40c8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "23c2d49b41ba71bbf4298190d71cda47",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 67.23722076416016,
+					"Y": 60.279541015625,
+					"Z": -128.30355834960938
 				}
 			},
 			"StaticFlags": 23
@@ -6600,7 +6983,7 @@
 			"Name": "Water_Plane 2",
 			"Transform": {
 				"Translation": {
-					"X": -11556.26171875,
+					"X": -11975.37890625,
 					"Y": 102.258544921875,
 					"Z": 19766.59375
 				},
@@ -6611,7 +6994,7 @@
 					"W": 0.7071068286895752
 				},
 				"Scale": {
-					"X": 100.0,
+					"X": 91.62999725341797,
 					"Y": 100.0,
 					"Z": 72.31999969482422
 				}

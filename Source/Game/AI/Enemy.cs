@@ -48,17 +48,32 @@ public class Enemy : Script, IDeath
 		attackTrigger.IsActive = false;
 		attackTrigger.TriggerEnter += OnTriggerEnter;
 
+		controller.CollisionEnter += OnCollisionEnter;
 
+	}
+
+	private void OnCollisionEnter(Collision collision)
+	{
+		if (collision.OtherActor.HasTag("Enemy"))
+		{
+			Debug.Log($"Enemy {Actor.Name} collision with: {collision.OtherActor.Name}");
+			// Vector3 pushDirection = collision.Contacts[0].Normal;
+			// pushDirection.Y = 0f;
+			// collision.OtherActor.As<CharacterController>().Move(pushDirection * 500f * Time.DeltaTime);
+
+		}
 	}
 
 	public override void OnDisable()
 	{
+		controller.CollisionEnter -= OnCollisionEnter;
 		attackTrigger.TriggerEnter -= OnTriggerEnter;
 		base.OnDisable();
 	}
 
 	public override void OnDestroy()
 	{
+		controller.CollisionEnter -= OnCollisionEnter;
 		attackTrigger.TriggerEnter -= OnTriggerEnter;
 		base.OnDestroy();
 	}
@@ -138,6 +153,7 @@ public class Enemy : Script, IDeath
 		controller.IsTrigger = true;
 		Enabled = false;
 		attackTrigger.TriggerEnter -= OnTriggerEnter;
+		controller.CollisionEnter -= OnCollisionEnter;
 		Destroy(Actor, 5f);
 	}
 
