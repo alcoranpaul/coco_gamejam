@@ -13,27 +13,29 @@ public class MainMenuUI : Script
 	[ShowInEditor, Serialize] private UIControl playControl;
 	[ShowInEditor, Serialize] private UIControl quitControl;
 	[ShowInEditor, Serialize] private SceneReference gameScene;
+	[ShowInEditor, Serialize] private UIControl continueControl;
+	[ShowInEditor, Serialize] private UIControl instructionsControl;
+
 	private Button playBtn;
 	private Button quitBtn;
+	private Button continueBtn;
 
 	/// <inheritdoc/>
 	public override void OnStart()
 	{
+		instructionsControl.IsActive = false;
 		playBtn = playControl.Get<Button>();
 		playBtn.Clicked += OnPlayClicked;
 		quitBtn = quitControl.Get<Button>();
 		quitBtn.Clicked += () => Engine.RequestExit();
+
+		continueBtn = continueControl.Get<Button>();
+		continueBtn.Clicked += () => Level.ChangeSceneAsync(gameScene);
 	}
 
 	private void OnPlayClicked()
 	{
-		Level.ChangeSceneAsync(gameScene);
-	}
-
-	/// <inheritdoc/>
-	public override void OnEnable()
-	{
-		// Here you can add code that needs to be called when script is enabled (eg. register for events)
+		instructionsControl.IsActive = true;
 	}
 
 	/// <inheritdoc/>
@@ -41,6 +43,7 @@ public class MainMenuUI : Script
 	{
 		playBtn.Clicked -= OnPlayClicked;
 		quitBtn.Clicked -= () => Engine.RequestExit();
+		continueBtn.Clicked -= () => Level.ChangeSceneAsync(gameScene);
 	}
 
 	/// <inheritdoc/>
