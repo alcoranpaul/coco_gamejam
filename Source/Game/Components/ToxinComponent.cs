@@ -15,11 +15,12 @@ public class ToxinComponent
 	public event Action<float, float, float> OnToxinChanged;
 	public event EventHandler OnFull;
 
-	private bool _toxified = false;
+
 	private HealthComponent _healthComponent;
 	private ToxinArgs _toxinArgs;
 
-
+	private bool _isHoldingNormalVial = false;
+	private bool _isHoldingSpecialVial = false;
 
 	public ToxinComponent(ToxinArgs _toxinArgs, HealthComponent healthComponent)
 	{
@@ -34,18 +35,24 @@ public class ToxinComponent
 		OnToxinChanged?.Invoke(Toxin, MaxToxin, Normalized);
 	}
 
-	public void Toxify(bool flag)
+	public void Toxify(bool flag, DVial.Toxin toxin)
 	{
-		_toxified = flag;
+		if (toxin == DVial.Toxin.Normal)
+			_isHoldingNormalVial = flag;
+
+		else
+			_isHoldingSpecialVial = flag;
+
 	}
 
 	public void Update()
 	{
-		if (_toxified)
+		if (_isHoldingNormalVial || _isHoldingSpecialVial)
 		{
-			Increase(_toxinArgs.FillRate * Time.DeltaTime);
-
-
+			if (_isHoldingSpecialVial)
+				Increase(_toxinArgs.SpecialFillRate * Time.DeltaTime);
+			if (_isHoldingNormalVial)
+				Increase(_toxinArgs.NormalFillRate * Time.DeltaTime);
 		}
 		else
 		{
@@ -83,8 +90,9 @@ public class ToxinComponent
 
 	public class ToxinArgs
 	{
-		public float FillRate = 1f; // % per second
-		public float DecayRate = 1f; // % per second when not toxified
+		public float NormalFillRate = 1f; // % per second
+		public float SpecialFillRate = 0.5f; // % per second
+		public float DecayRate = 1.3f; // % per second when not toxified
 		public float MaxToxin = 100f; // % per second when not toxified
 
 	}

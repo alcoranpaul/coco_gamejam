@@ -84,15 +84,15 @@ public class Character : InstanceManagerScript, IDamage
 		Debug.Log($"Throw has been raised");
 	}
 
-	private void OnToxinVialAdded(bool flag)
+	private void OnToxinVialAdded(bool flag, DVial.Toxin toxin)
 	{
-		ToxinComponent.Toxify(flag);
+		ToxinComponent.Toxify(flag, toxin);
 	}
 
 
-	private void OnToxinVialRemoved(object sender, EventArgs e)
+	private void OnToxinVialRemoved(DVial.Toxin toxin)
 	{
-		ToxinComponent.Toxify(false);
+		ToxinComponent.Toxify(false, toxin);
 	}
 
 	public void TakeDamage(float damage)

@@ -10,10 +10,12 @@ namespace Game;
 /// </summary>
 public class InventoryComponent : InstanceManagerClass
 {
-	public event Action<bool> OnToxinVialAdded;
+	public event Action<bool, DVial.Toxin> OnToxinVialAdded;
 	public event Action<bool> OnHealthVialAdded;
 
-	public event EventHandler OnToxinVialRemoved;
+
+
+	public event Action<DVial.Toxin> OnToxinVialRemoved;
 	public event EventHandler OnHealthVialRemoved;
 
 	private Vial normalToxinVial;
@@ -82,7 +84,7 @@ public class InventoryComponent : InstanceManagerClass
 				UpdateVialUI(_normalToxinVialImage, _inventoryArgs.NormalToxinVialControl, toxinVialColorNone, 0.5f);
 				FlaxEngine.Object.Destroy(normalToxinVial.Actor);
 				normalToxinVial = null;
-				OnToxinVialRemoved?.Invoke(this, EventArgs.Empty);
+				OnToxinVialRemoved?.Invoke(DVial.Toxin.Normal);
 				break;
 			case VialEquipped.SToxin:
 				if (specialToxinVial == null) return;
@@ -90,7 +92,7 @@ public class InventoryComponent : InstanceManagerClass
 				UpdateVialUI(_specialToxinVialImage, _inventoryArgs.SpecialToxinVialControl, toxinVialColorNone, 0.5f);
 				FlaxEngine.Object.Destroy(specialToxinVial.Actor);
 				specialToxinVial = null;
-				OnToxinVialRemoved?.Invoke(this, EventArgs.Empty);
+				OnToxinVialRemoved?.Invoke(DVial.Toxin.Special);
 				break;
 			case VialEquipped.Health:
 				if (healthVial == null) return;
@@ -204,10 +206,16 @@ public class InventoryComponent : InstanceManagerClass
 		if (isToxin)
 		{
 			if (vial.ToxinType == DVial.Toxin.Normal)
+			{
 				vialActor.TryGetScript<Vial>(out normalToxinVial);
+				OnToxinVialAdded?.Invoke(true, DVial.Toxin.Normal);
+			}
 			else
+			{
 				vialActor.TryGetScript<Vial>(out specialToxinVial);
-			OnToxinVialAdded?.Invoke(true);
+				OnToxinVialAdded?.Invoke(true, DVial.Toxin.Special);
+			}
+
 		}
 		else if (isHealth)
 		{
