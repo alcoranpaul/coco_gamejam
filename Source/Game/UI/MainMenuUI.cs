@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using FlaxEngine;
 using FlaxEngine.GUI;
+using FlaxEngine.Utilities;
 
 namespace Game;
 
@@ -15,6 +16,7 @@ public class MainMenuUI : Script
 	[ShowInEditor, Serialize] private SceneReference gameScene;
 	[ShowInEditor, Serialize] private UIControl continueControl;
 	[ShowInEditor, Serialize] private UIControl instructionsControl;
+	[ShowInEditor, Serialize] private UIControl[] controlToDisable;
 
 	private Button playBtn;
 	private Button quitBtn;
@@ -36,6 +38,7 @@ public class MainMenuUI : Script
 	private void OnPlayClicked()
 	{
 		instructionsControl.IsActive = true;
+		controlToDisable.ForEach(c => c.Control.Enabled = false);
 	}
 
 	/// <inheritdoc/>

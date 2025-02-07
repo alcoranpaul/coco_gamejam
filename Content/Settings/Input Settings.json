@@ -107,6 +107,14 @@
 			"MouseButton": 1,
 			"GamepadButton": 0,
 			"Gamepad": -1
+		},
+		{
+			"Name": "Pause",
+			"Mode": 1,
+			"Key": 27,
+			"MouseButton": 0,
+			"GamepadButton": 0,
+			"Gamepad": -1
 		}
 	],
 	"AxisMappings": [

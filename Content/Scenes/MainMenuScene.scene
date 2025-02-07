@@ -146,7 +146,13 @@
 	"quitControl": "d0bdb7f843e8e38035e0acac2cc8f643",
 	"gameScene": "f33ce73649fd05dbe77743944315f7e0",
 	"continueControl": "c98f66594b21b73f1f831a969d8f09c8",
-	"instructionsControl": "69b68c414cfaf8e56792d0a1260ec293"
+	"instructionsControl": "69b68c414cfaf8e56792d0a1260ec293",
+	"controlToDisable": [
+		"ddcf1723413e849fe98d72953c0fb636",
+		"d0bdb7f843e8e38035e0acac2cc8f643",
+		"af59fe2d4a3df5e0c8909bb0c5b2ed45",
+		"afa49a7249b3bf06ae66709bd25657bd"
+	]
 }
 		},
 		{
@@ -997,7 +1003,7 @@
 			"Name": "Information",
 			"Transform": {
 				"Translation": {
-					"X": 1046.0,
+					"X": 1047.8575439453126,
 					"Y": 240.0,
 					"Z": 0.0
 				}
@@ -1015,7 +1021,7 @@
 		"Y": 0.5
 	},
 	"Offsets": {
-		"Left": -874.0,
+		"Left": -872.14246,
 		"Right": 800.0,
 		"Top": -300.0,
 		"Bottom": 600.0
@@ -1062,7 +1068,6 @@
 			"ID": "39c5c66f41f0e32512f8a68f905eb2e0",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "afa49a7249b3bf06ae66709bd25657bd",
-			"IsActive": false,
 			"Name": "OptionsControl",
 			"Control": "FlaxEngine.GUI.ContainerControl",
 			"Data": {
@@ -1103,8 +1108,19 @@
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": false,
+	"Visible": true,
 	"AutoFocus": true
+}
+		},
+		{
+			"ID": "ede692e9458ec0e662ee46977ea6c25f",
+			"TypeName": "Game.OptionsUI",
+			"ParentID": "39c5c66f41f0e32512f8a68f905eb2e0",
+			"V": {
+	"mouseSensitivityControl": "dce84e50461223146df3d5a6d10d2913",
+	"bgmControl": "525d98da4fc95aeccc0eb89822441598",
+	"sfxControl": "98e737e64c516fb4335016a5e2a289f7",
+	"bgmSource": "85f4a36a45ffacf42ebfeda218e593ea"
 }
 		},
 		{
@@ -2627,6 +2643,7 @@
 			"ID": "69b68c414cfaf8e56792d0a1260ec293",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "f7b1a71f4e2ee05fb31771ab46346f15",
+			"IsActive": false,
 			"Name": "InstructionsControl",
 			"Transform": {
 				"Translation": {
@@ -2674,7 +2691,7 @@
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": true,
+	"Visible": false,
 	"AutoFocus": true
 }
 		},
@@ -2835,7 +2852,7 @@
 		"R": 0.0,
 		"G": 0.0,
 		"B": 0.0,
-		"A": 0.50555557
+		"A": 0.8
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
@@ -3545,6 +3562,21 @@
 			"FOV": 55.237003326416019
 		},
 		{
+			"ID": "2ebdfff342aecabe7f2b4cbafce06fdc",
+			"TypeName": "FlaxEngine.AudioListener",
+			"ParentID": "0bf83b6f4daa53883857ecbb1ef8844d",
+			"Name": "AudioListener"
+		},
+		{
+			"ID": "85f4a36a45ffacf42ebfeda218e593ea",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "0bf83b6f4daa53883857ecbb1ef8844d",
+			"Name": "AudioSource",
+			"Clip": "1676c6f749bca95c8de35eaed01fbf3b",
+			"Loop": true,
+			"PlayOnStart": true
+		},
+		{
 			"ID": "669d326d4a1e446cc79f5ea666a15d54",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "3dbe7fc04c98ba332f1bd195d9fd834f",
@@ -3700,6 +3732,7 @@
 			"ID": "cda5016a420c75491ae2a89949f2a985",
 			"TypeName": "FlaxEngine.Sky",
 			"ParentID": "2635e9fd4b8bcdf67dd46c86fa822d22",
+			"IsActive": false,
 			"Name": "Sky",
 			"Transform": {
 				"Translation": {
@@ -8448,6 +8481,7 @@
 			"ID": "67190c7347802f1a15d2b8b2c0597b1e",
 			"TypeName": "FlaxEngine.SkyLight",
 			"ParentID": "3dbe7fc04c98ba332f1bd195d9fd834f",
+			"IsActive": false,
 			"Name": "SkyLight",
 			"Brightness": 2.5,
 			"CustomTexture": "c54410104ff39427bc11e5bc761d66b0"
@@ -8456,6 +8490,7 @@
 			"ID": "6aaedab24fbe0182bd0ae989ecb81b52",
 			"TypeName": "FlaxEngine.DirectionalLight",
 			"ParentID": "3dbe7fc04c98ba332f1bd195d9fd834f",
+			"IsActive": false,
 			"Name": "Sun",
 			"Transform": {
 				"Translation": {

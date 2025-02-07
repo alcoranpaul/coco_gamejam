@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using FlaxEngine;
+using FlaxEngine.GUI;
 
 namespace Game;
 
@@ -9,6 +10,11 @@ namespace Game;
 /// </summary>
 public class InputManager : InstanceManagerScript
 {
+	[ShowInEditor, Serialize] private UIControl pauseControl;
+	[ShowInEditor, Serialize] private UIControl resumeControl;
+
+	private Button continueButton;
+
 
 	public InputAxis MouseXAxis { get; private set; }
 	public InputAxis MouseYAxis { get; private set; }
@@ -20,12 +26,16 @@ public class InputManager : InstanceManagerScript
 	public event Action OnUseVial;
 	public event Action OnCollectVial;
 	public event Action OnMouseRelease;
+	public event Action OnPaused;
 
 	private InputEvent hideItemEvent;
 	private InputEvent swapVialEvent;
 	private InputEvent useVialEvent;
 	private InputEvent collectVialEvent;
 	private InputEvent mouseReleaseEvent;
+	private InputEvent pauseEvent;
+
+	private bool isPaused;
 
 	public override void OnAwake()
 	{
@@ -51,6 +61,32 @@ public class InputManager : InstanceManagerScript
 
 		mouseReleaseEvent = new InputEvent("MouseRelease");
 		mouseReleaseEvent.Released += () => { OnMouseRelease?.Invoke(); };
+
+		pauseEvent = new InputEvent("Pause");
+		pauseEvent.Pressed += Pause;
+
+		continueButton = resumeControl.Get<Button>();
+		continueButton.Clicked += Resume;
+
+		pauseControl.IsActive = false;
+		isPaused = false;
+	}
+
+	private void Resume()
+	{
+		Screen.CursorLock = CursorLockMode.Locked;
+		Screen.CursorVisible = false;
+		pauseControl.IsActive = false;
+		Time.TimeScale = 1f;
+
+	}
+
+	private void Pause()
+	{
+		pauseControl.IsActive = true;
+		Screen.CursorLock = CursorLockMode.Clipped;
+		Screen.CursorVisible = true;
+		Time.TimeScale = 0f;
 	}
 
 	public override void OnDisable()
@@ -65,12 +101,16 @@ public class InputManager : InstanceManagerScript
 		useVialEvent.Dispose();
 		collectVialEvent.Dispose();
 		mouseReleaseEvent.Dispose();
+		pauseEvent.Dispose();
 
 		OnHideItem = null;
 		OnSwapVial = null;
 		OnUseVial = null;
 		OnCollectVial = null;
 		OnMouseRelease = null;
+		OnPaused = null;
+
+		continueButton.Clicked -= Resume;
 
 		base.OnDisable();
 	}
