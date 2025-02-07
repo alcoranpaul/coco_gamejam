@@ -136,8 +136,8 @@ public class MovementComponent
 		[Range(0f, 25f), Tooltip("Jump factor"), EditorDisplay(MovementGroup, "Jump Strength"), EditorOrder(6)]
 		public float JumpStrength { get; set; } = 10;
 
-		[ShowInEditor, Serialize, EditorDisplay(MovementGroup, "Animated Model"), EditorOrder(7)]
-		private AnimatedModel _model;
+		[EditorDisplay(MovementGroup, "Animated Model"), EditorOrder(7)]
+		public AnimatedModel AnimModel;
 	}
 	[Serializable]
 	public class CameraArgs

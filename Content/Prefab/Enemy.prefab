@@ -147,11 +147,10 @@
 		},
 		"IsTrigger": true,
 		"Center": {
-			"X": 35.0,
+			"X": 98.0,
 			"Y": 0.0,
 			"Z": 0.0
 		},
-		"Radius": 15.0,
 		"Height": 70.0
 	}
 ]

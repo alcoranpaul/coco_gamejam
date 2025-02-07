@@ -41,13 +41,13 @@ public class EnemyManager : InstanceManagerScript
 		if (state == State.WaitingForNextWave)
 		{
 			elapsedTime += Time.DeltaTime;
-			Debug.Log($"MaxEnemis: {currentSpawnTime} <= {elapsedTime} = {currentSpawnTime <= elapsedTime}");
+			// Debug.Log($"MaxEnemis: {currentSpawnTime} <= {elapsedTime} = {currentSpawnTime <= elapsedTime}");
 			if (spawnTimeIndex < spawnTimes.Length && currentSpawnTime <= elapsedTime)
 			{
 				state = State.SpawningEnemies;
 
 				elapsedTime = 0f;
-				Debug.Log($"Max Enemies: {currentEnemiesToSpawn}");
+				// Debug.Log($"Max Enemies: {currentEnemiesToSpawn}");
 			}
 		}
 		else if (state == State.SpawningEnemies)

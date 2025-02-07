@@ -28,7 +28,9 @@ public class Character : InstanceManagerScript, IDamage
 	private InteractionComponent _interactionComponent;
 	private InventoryComponent _inventoryComponent;
 	private ThrowComponent _throwComponent;
+	private bool isDead;
 
+	public event EventHandler OnDeathEvent;
 
 
 	public override void OnAwake()
@@ -40,6 +42,7 @@ public class Character : InstanceManagerScript, IDamage
 		_throwComponent = new ThrowComponent();
 
 		HealthComponent = new HealthComponent(startingHealth);
+		HealthComponent.OnDeath += OnDeath;
 		ToxinComponent = new ToxinComponent(_toxinArgs, healthComponent: HealthComponent);
 
 		_inventoryComponent.OnToxinVialAdded += OnToxinVialAdded;
@@ -47,6 +50,14 @@ public class Character : InstanceManagerScript, IDamage
 		_throwComponent.OnThrowEnabled += OnThrowEnabled;
 	}
 
+	private void OnDeath(object sender, EventArgs e)
+	{
+		isDead = true;
+		Screen.CursorLock = CursorLockMode.Clipped;
+		Screen.CursorVisible = true;
+		_movementArgs.AnimModel.GetParameter("isDead").Value = true;
+		OnDeathEvent?.Invoke(this, EventArgs.Empty);
+	}
 
 	public override void OnDisable()
 	{
@@ -71,11 +82,13 @@ public class Character : InstanceManagerScript, IDamage
 
 	public override void OnUpdate()
 	{
+		if (isDead) return;
 		ToxinComponent.Update();
 	}
 
 	public override void OnFixedUpdate()
 	{
+		if (isDead) return;
 		_movementComponent.Update();
 	}
 
