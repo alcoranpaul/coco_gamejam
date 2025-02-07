@@ -18,6 +18,15 @@ public class HarvestNode : Script, IInteract
 		collider.IsTrigger = true;
 		collider.TriggerEnter += TriggerEnter;
 		collider.TriggerExit += TriggerExit;
+
+		foreach (var child in Actor.Children)
+		{
+			child.IsActive = false;
+		}
+
+		var childCount = Actor.ChildrenCount;
+		var randomIndex = Random.Shared.Next(0, childCount);
+		Actor.GetChild(randomIndex).IsActive = true;
 	}
 
 

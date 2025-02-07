@@ -1,0 +1,15 @@
+{
+	"ID": "ac5800c64bd05353a38274bf1d7534e6",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "d53c9ef04f0c679c650dbdb9ac20f2bd",
+		"TypeName": "FlaxEngine.ParticleEffect",
+		"Name": "VFX_ToxinExplosion",
+		"Overrides": [],
+		"ParticleSystem": "56ad6cf442c525d2ee2e9c9ca570dd58",
+		"IsLooping": false
+	}
+]
+}

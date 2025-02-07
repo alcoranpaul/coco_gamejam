@@ -568,9 +568,9 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 12346.3779296875,
-					"Y": 2004.573486328125,
-					"Z": 13032.1396484375
+					"X": 9591.970703125,
+					"Y": 1981.2010498046876,
+					"Z": 12490.9833984375
 				}
 			},
 			"StaticFlags": 0,
@@ -1560,7 +1560,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 10.0,
+		"Right": 84.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -2218,7 +2218,7 @@
 				{
 					"Model": "b8823a9548fd12815029de811a3fe9d6",
 					"Materials": [
-						"db36b9734b241bb0b7525f9e1b0c6a75"
+						"e78e6b1e4ec57f45aa309c82972bb84d"
 					],
 					"CullDistance": 10000.0,
 					"CullDistanceRandomRange": 1000.0,
@@ -2255,7 +2255,7 @@
 				{
 					"Model": "4dad29094915f2810d38e9b96e1c2901",
 					"Materials": [
-						"db36b9734b241bb0b7525f9e1b0c6a75"
+						"e78e6b1e4ec57f45aa309c82972bb84d"
 					],
 					"CullDistance": 10000.0,
 					"CullDistanceRandomRange": 1000.0,
@@ -2292,7 +2292,7 @@
 				{
 					"Model": "b5bd67944b265c840bafb4a81fe9fe14",
 					"Materials": [
-						"db36b9734b241bb0b7525f9e1b0c6a75"
+						"e78e6b1e4ec57f45aa309c82972bb84d"
 					],
 					"CullDistance": 10000.0,
 					"CullDistanceRandomRange": 1000.0,
@@ -2329,7 +2329,7 @@
 				{
 					"Model": "10b81df84ce9c1e5b0175184ea2024bc",
 					"Materials": [
-						"db36b9734b241bb0b7525f9e1b0c6a75"
+						"e78e6b1e4ec57f45aa309c82972bb84d"
 					],
 					"CullDistance": 10000.0,
 					"CullDistanceRandomRange": 1000.0,
@@ -7029,6 +7029,36 @@
 			}
 		},
 		{
+			"ID": "ec32d38a4abec100dbb6e4a83fd454c9",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "SM_Tree_4",
+			"Transform": {
+				"Translation": {
+					"X": 97.82174682617188,
+					"Y": -208.70388793945313,
+					"Z": -577.18359375
+				},
+				"Orientation": {
+					"X": 0.022595921531319619,
+					"Y": 0.4063020944595337,
+					"Z": 0.19748495519161225,
+					"W": 0.8918564915657044
+				}
+			},
+			"Model": "b8823a9548fd12815029de811a3fe9d6",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "0704794940fc7dbc25f5bf9e866f11a6",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
 			"ID": "d1ba0ddd4c0fc260d62ffca37e25fae4",
 			"TypeName": "FlaxEngine.NavModifierVolume",
 			"ParentID": "fafa076743833bb76f45d9affca228ef",
@@ -7071,80 +7101,14 @@
 			"ParentID": "a8efed2c437431427cc8f09e642c80fc",
 			"V": {
 	"treeActors": [
+		"ec32d38a4abec100dbb6e4a83fd454c9",
 		"7590abcb46d4247e86108891352a43ac",
-		"25e5159347e36595ba64d9b24137ac60",
-		"060edd654de6807cac82e2a66c5cc8d7"
+		"060edd654de6807cac82e2a66c5cc8d7",
+		"25e5159347e36595ba64d9b24137ac60"
 	],
-	"winScene": "36890e964c85b43d2da8a7967a494895"
+	"winScene": "36890e964c85b43d2da8a7967a494895",
+	"treeDissolveVFX": "6e7508dd4e88398d5b5d8ca4ac56044d"
 }
-		},
-		{
-			"ID": "16cc49cc46878ed9275d8eb2a3a93df4",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Transform": {
-				"Translation": {
-					"X": 12145.498046875,
-					"Y": 1981.8592529296876,
-					"Z": 12602.669921875
-				}
-			}
-		},
-		{
-			"ID": "f7db2569489b8f3d5c2eef958578ab4a",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
-			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
-			"V": {
-	"collider": "16cc49cc46878ed9275d8eb2a3a93df4"
-}
-		},
-		{
-			"ID": "3c6143744c9ec4d5eb96b8b13c7b6b77",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
-			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "4a8eb938479ece2689764dbfb23640cc",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Harvest_Plant 3",
-			"Transform": {
-				"Translation": {
-					"X": 11589.7333984375,
-					"Y": 1981.8592529296876,
-					"Z": 12275.6201171875
-				}
-			}
-		},
-		{
-			"ID": "3da158564350d063b3b81facd76df197",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
-			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
-			"V": {
-	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
-	"collider": "4a8eb938479ece2689764dbfb23640cc"
-}
-		},
-		{
-			"ID": "6a39d38c438f8524ca5223b8c6749ec6",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
-			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
 		},
 		{
 			"ID": "0374dcc1432c1fac692a32b71545639e",
@@ -7154,7 +7118,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 24517.609375,
-					"Y": 2928.43701171875,
+					"Y": 2935.43701171875,
 					"Z": 25409.65625
 				}
 			},
@@ -7176,34 +7140,67 @@
 			}
 		},
 		{
-			"ID": "75159887486111850e35b9935fb1be09",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ID": "dd8f2e7e4bed336ddebd599c646eaadc",
+			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Harvest_Plant 4",
-			"Transform": {
-				"Translation": {
-					"X": 10979.830078125,
-					"Y": 1981.8592529296876,
-					"Z": 12294.255859375
-				}
-			}
+			"Name": "Plants",
+			"StaticFlags": 0
 		},
 		{
-			"ID": "f17ffe894289b7b2ba8c20996e2185a2",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
-			"ParentID": "75159887486111850e35b9935fb1be09",
+			"ID": "1be98eff472befe79129b3a404c45396",
+			"TypeName": "Game.PlantGen",
+			"ParentID": "dd8f2e7e4bed336ddebd599c646eaadc",
 			"V": {
-	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
-	"collider": "75159887486111850e35b9935fb1be09"
+	"normalPlantActors": [
+		"b9d922544e08bcdd6311748ea2d01537",
+		"897c25bc42c170383c0a03980e1e09ae",
+		"78a65b9441545d68e0f79ab854fdd0b2"
+	],
+	"specialPlantActors": [
+		"349c68d94b5c26d82c66ada4c1056012",
+		"4906edbd40a1e7e0d1b1138c16e8b571",
+		"18cebe93472ebb97d6e6d1baf321e321"
+	],
+	"normalPlantPrefab": "479ab12a4ccdcd94e72771b25a6f7898",
+	"specialPlantPrefab": "29e589614f3fb1049d0cbca4260c3fdc"
 }
 		},
 		{
-			"ID": "caa97ae84650c7a2f8d8e8a2d9fda95f",
+			"ID": "00f925c446e9fe27d0df70b575d6b229",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dd8f2e7e4bed336ddebd599c646eaadc",
+			"Name": "Initial Plants",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "16cc49cc46878ed9275d8eb2a3a93df4",
 			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
-			"ParentID": "75159887486111850e35b9935fb1be09",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "00f925c446e9fe27d0df70b575d6b229",
+			"Transform": {
+				"Translation": {
+					"X": 11351.16796875,
+					"Y": 1953.5853271484376,
+					"Z": 11554.3271484375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "f7db2569489b8f3d5c2eef958578ab4a",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
+			"V": {
+	"collider": "16cc49cc46878ed9275d8eb2a3a93df4"
+}
+		},
+		{
+			"ID": "dc4ad6104b75f9c7937b919afdf5c460",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "cf116efb44996de8f765efa6a0ce9cbf",
+			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
+			"StaticFlags": 0,
 			"Buffer": {
 				"Entries": [
 					{}
@@ -7211,39 +7208,1228 @@
 			}
 		},
 		{
-			"ID": "9128884045f830ae0414939ee21773a1",
+			"ID": "86b6b5f04d75617a529f7bad4bcdf8a7",
 			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Harvest_Plant 5",
-			"Transform": {
-				"Translation": {
-					"X": 10760.7021484375,
-					"Y": 1981.8592529296876,
-					"Z": 12965.2568359375
-				}
-			}
-		},
-		{
-			"ID": "0e04211448763591604702908cd6745d",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
-			"ParentID": "9128884045f830ae0414939ee21773a1",
-			"V": {
-	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
-	"collider": "9128884045f830ae0414939ee21773a1"
-}
-		},
-		{
-			"ID": "fbcece334ec903d74b0666b205102751",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
-			"ParentID": "9128884045f830ae0414939ee21773a1",
+			"PrefabObjectID": "1bfc0358445cf7c7a4ac98ad31c21e7b",
+			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
+			"StaticFlags": 0,
 			"Buffer": {
 				"Entries": [
 					{}
 				]
 			}
+		},
+		{
+			"ID": "555532b14e79a6a865c3da9cda0fd380",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "781bfb004c7b448bb8058187b041f4c4",
+			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "6903ac0240d347f5c80fb5a758d7f4f9",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "41c4af1f4ecf5c17ac9f5bb1a0c038c4",
+			"ParentID": "16cc49cc46878ed9275d8eb2a3a93df4",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "92e695ce4e5034e7461d1eb91b316940",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "00f925c446e9fe27d0df70b575d6b229",
+			"Name": "Harvest_Plant_Special",
+			"Transform": {
+				"Translation": {
+					"X": 10706.8330078125,
+					"Y": 1963.3502197265626,
+					"Z": 11483.40234375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "f054d2df4bc92159aefc4eade8c63932",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "92e695ce4e5034e7461d1eb91b316940"
+}
+		},
+		{
+			"ID": "9de862c141a65ee5900c058181b60c10",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "13e544f44ef049025761549d6d4c003b",
+			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8df6bedb4f54b70d33bf87bbddaa02e9",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "ce9cec85495ff5016a70c994c16aff68",
+			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8988b05d4be8df5f40a8c5bef5a86599",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "5ba032764ba355ed88aabe8c8e662145",
+			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1c41c7604d7669aefda05aa6083f863c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dd8f2e7e4bed336ddebd599c646eaadc",
+			"Name": "PinkBiome",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "b9d922544e08bcdd6311748ea2d01537",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1c41c7604d7669aefda05aa6083f863c",
+			"Name": "Normal Plants",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "d14902674007a0de6354b7a94b35591d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 10930.322265625,
+					"Y": 1856.3062744140626,
+					"Z": 15512.0595703125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e80222d941c96bab77b18abc8af25e6e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 11966.6767578125,
+					"Y": 1879.3978271484376,
+					"Z": 14615.982421875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a29dd0704cd430e5832676b4d0e885d7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 1",
+			"Transform": {
+				"Translation": {
+					"X": 12186.884765625,
+					"Y": 1879.3978271484376,
+					"Z": 13780.376953125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "3a9e786a409366b5b270fc9121467a33",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 2",
+			"Transform": {
+				"Translation": {
+					"X": 13218.0703125,
+					"Y": 1879.3978271484376,
+					"Z": 12916.396484375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a0411a6448ad115ccb5513a33e55e234",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 3",
+			"Transform": {
+				"Translation": {
+					"X": 16091.0078125,
+					"Y": 1879.3978271484376,
+					"Z": 12829.875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "d90cd82f4ed1f6d85e6e00b7b9404386",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 4",
+			"Transform": {
+				"Translation": {
+					"X": 16415.091796875,
+					"Y": 1879.3978271484376,
+					"Z": 12735.23046875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "f65167554e23edc0226a71acd34f6c93",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 5",
+			"Transform": {
+				"Translation": {
+					"X": 17047.40625,
+					"Y": 1879.3978271484376,
+					"Z": 12626.306640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "16d5abd943e505d5fe9c6086ad11ae9d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 6",
+			"Transform": {
+				"Translation": {
+					"X": 15384.576171875,
+					"Y": 1884.977783203125,
+					"Z": 10625.7275390625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "cb8e7b0e47ff54c6101f9d8b8d4f3cd8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 7",
+			"Transform": {
+				"Translation": {
+					"X": 14447.23828125,
+					"Y": 2391.098876953125,
+					"Z": 10320.9189453125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e5ffbfb840591cc7bfc6c891ba955507",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 8",
+			"Transform": {
+				"Translation": {
+					"X": 14123.548828125,
+					"Y": 2497.242919921875,
+					"Z": 1828.806640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a2d40cef46a38f0b759f59a2840f6c40",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 9",
+			"Transform": {
+				"Translation": {
+					"X": 14386.15625,
+					"Y": 2497.242919921875,
+					"Z": 1808.5765380859376
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ca4e61824fdbf515622f7a9d8b7ad6ab",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 10",
+			"Transform": {
+				"Translation": {
+					"X": 13875.912109375,
+					"Y": 2497.242919921875,
+					"Z": 1859.6585693359376
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "592243b1464df9359d859896349fa62d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 11",
+			"Transform": {
+				"Translation": {
+					"X": 13996.1376953125,
+					"Y": 2497.242919921875,
+					"Z": 2013.0032958984376
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "079ec7814a14ba2671d1329ec573b990",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 12",
+			"Transform": {
+				"Translation": {
+					"X": 14248.1962890625,
+					"Y": 2497.242919921875,
+					"Z": 1999.5477294921876
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "49ccf7ce44cc2fedbb9f3ea1be1f166f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 13",
+			"Transform": {
+				"Translation": {
+					"X": 15952.4033203125,
+					"Y": 2497.242919921875,
+					"Z": 1501.830078125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "1ae14d8c438b77c40079188ec9712e4b",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 14",
+			"Transform": {
+				"Translation": {
+					"X": 15286.541015625,
+					"Y": 2497.242919921875,
+					"Z": 1553.762939453125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "1cb8f69648167429481559b8058fd0d2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 15",
+			"Transform": {
+				"Translation": {
+					"X": 15622.1142578125,
+					"Y": 2497.242919921875,
+					"Z": 1548.048583984375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "26ec6af54506dd348c616cbe96982444",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 16",
+			"Transform": {
+				"Translation": {
+					"X": 15409.091796875,
+					"Y": 2497.242919921875,
+					"Z": 1975.9114990234376
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "509737d34c6c557f6fc359858e8aeb43",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 17",
+			"Transform": {
+				"Translation": {
+					"X": 15104.1005859375,
+					"Y": 2497.242919921875,
+					"Z": 2428.10888671875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "b65cf3b345e33a68bc253092c0ce30a4",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 18",
+			"Transform": {
+				"Translation": {
+					"X": 17181.908203125,
+					"Y": 2497.242919921875,
+					"Z": 2549.5556640625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e2f6abd743a8190dcf8591ad72a21321",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 19",
+			"Transform": {
+				"Translation": {
+					"X": 17366.22265625,
+					"Y": 2497.242919921875,
+					"Z": 3159.14404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "7e88559b48e342283ca434bd5aba1689",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "b9d922544e08bcdd6311748ea2d01537",
+			"Name": "EmptyActor 20",
+			"Transform": {
+				"Translation": {
+					"X": 18981.775390625,
+					"Y": 2497.242919921875,
+					"Z": 4102.017578125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "349c68d94b5c26d82c66ada4c1056012",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "1c41c7604d7669aefda05aa6083f863c",
+			"Name": "Special Plants",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "207121b343687a0ecb5e9baefe2b865c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "349c68d94b5c26d82c66ada4c1056012",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 27975.255859375,
+					"Y": 1846.5369873046876,
+					"Z": 8462.4892578125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "26e907c544e60bf7a3e8278778b3da7a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "349c68d94b5c26d82c66ada4c1056012",
+			"Name": "EmptyActor 2",
+			"Transform": {
+				"Translation": {
+					"X": 29810.388671875,
+					"Y": 2421.76611328125,
+					"Z": 18287.685546875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "d9fd643d4ea5abd9b9c8ef98780dec25",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "349c68d94b5c26d82c66ada4c1056012",
+			"Name": "EmptyActor 3",
+			"Transform": {
+				"Translation": {
+					"X": 24966.466796875,
+					"Y": 2403.81787109375,
+					"Z": 14346.0625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "6217dab24eb89de92c1cca93ed166f85",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dd8f2e7e4bed336ddebd599c646eaadc",
+			"Name": "Green Biome",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "897c25bc42c170383c0a03980e1e09ae",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6217dab24eb89de92c1cca93ed166f85",
+			"Name": "Normal Plants",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ee90a2674e2a3d8c563e70aa0b999608",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 14071.28515625,
+					"Y": 1845.01611328125,
+					"Z": 36914.9765625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "abbdf6404473158a8152de82481b330c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 14188.8681640625,
+					"Y": 1845.01611328125,
+					"Z": 37630.1171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "b10e3e104effbc8cbcf2f58a8d678386",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 1",
+			"Transform": {
+				"Translation": {
+					"X": 17825.15234375,
+					"Y": 1845.01611328125,
+					"Z": 39739.5
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "0dacce7645359ac47fd835874c971a01",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 2",
+			"Transform": {
+				"Translation": {
+					"X": 18560.439453125,
+					"Y": 1845.01611328125,
+					"Z": 40848.296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "c7eaadf34c2492e88edd7d9ac88a8cfe",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 3",
+			"Transform": {
+				"Translation": {
+					"X": 22857.9453125,
+					"Y": 1845.01611328125,
+					"Z": 39686.2109375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "70726acc451d88c42ac1779a03838a4c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 4",
+			"Transform": {
+				"Translation": {
+					"X": 24774.244140625,
+					"Y": 1845.01611328125,
+					"Z": 38808.73046875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "f9ca9df74ec78c305eb3769779d754fa",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 5",
+			"Transform": {
+				"Translation": {
+					"X": 23720.20703125,
+					"Y": 1845.01611328125,
+					"Z": 39216.85546875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "32b75ddb49e140d363e79f9f813752f5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 6",
+			"Transform": {
+				"Translation": {
+					"X": 24404.681640625,
+					"Y": 1845.01611328125,
+					"Z": 39206.921875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e9a07d264f0a59eea0cdeaa939ec4625",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 7",
+			"Transform": {
+				"Translation": {
+					"X": 14516.7734375,
+					"Y": 2416.599609375,
+					"Z": 34348.3671875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "93b3af71414b7ec81d457b89bbf86a2d",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 8",
+			"Transform": {
+				"Translation": {
+					"X": 11497.419921875,
+					"Y": 2416.599609375,
+					"Z": 34882.88671875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "56e03547499235601037edb535964fa7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 9",
+			"Transform": {
+				"Translation": {
+					"X": 11343.74609375,
+					"Y": 2416.599609375,
+					"Z": 35117.05078125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "b28061f84c18ee51a56273a731cfff09",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 10",
+			"Transform": {
+				"Translation": {
+					"X": 11111.908203125,
+					"Y": 2416.599609375,
+					"Z": 34883.1796875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "1eed24c042482bdd97f008a2ce221b80",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 11",
+			"Transform": {
+				"Translation": {
+					"X": 10844.470703125,
+					"Y": 2416.599609375,
+					"Z": 35042.20703125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "f89791e042908a388a0180a1e6b05c89",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 12",
+			"Transform": {
+				"Translation": {
+					"X": 10961.875,
+					"Y": 2416.599609375,
+					"Z": 35231.3515625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "50edc12e45f3f81efb76c59953e6dba5",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 13",
+			"Transform": {
+				"Translation": {
+					"X": 11042.388671875,
+					"Y": 2416.599609375,
+					"Z": 35702.63671875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "c896a0944b484cf1ff0155a2731bc2d0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 14",
+			"Transform": {
+				"Translation": {
+					"X": 10696.083984375,
+					"Y": 2416.599609375,
+					"Z": 35588.3125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "e2da5c3d4cb125a45d04d181363b1e47",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 15",
+			"Transform": {
+				"Translation": {
+					"X": 4736.935546875,
+					"Y": 2416.599609375,
+					"Z": 31903.884765625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "923d757840d0ef1be94774a7c550f5b7",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 16",
+			"Transform": {
+				"Translation": {
+					"X": 4284.12158203125,
+					"Y": 2479.65576171875,
+					"Z": 32372.599609375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a2b248c14643807a9cec80953674abd0",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 17",
+			"Transform": {
+				"Translation": {
+					"X": 3974.30419921875,
+					"Y": 2479.65576171875,
+					"Z": 31990.73828125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ca913fa1498f998ba61d40ab9f3aa88c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 18",
+			"Transform": {
+				"Translation": {
+					"X": 4278.40478515625,
+					"Y": 2479.65576171875,
+					"Z": 31775.47265625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "c9ffff0f4d2eedd8e7ef28b252a9367e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 19",
+			"Transform": {
+				"Translation": {
+					"X": 8470.2060546875,
+					"Y": 2727.119384765625,
+					"Z": 20552.21484375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "144b2d284595cda709ae85a70ac6ec85",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "897c25bc42c170383c0a03980e1e09ae",
+			"Name": "EmptyActor 20",
+			"Transform": {
+				"Translation": {
+					"X": 8444.4111328125,
+					"Y": 2727.119384765625,
+					"Z": 20649.576171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "4906edbd40a1e7e0d1b1138c16e8b571",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "6217dab24eb89de92c1cca93ed166f85",
+			"Name": "Special Plants",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "7d841f89427de2f9d8a7febd718e57a3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4906edbd40a1e7e0d1b1138c16e8b571",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 5798.6923828125,
+					"Y": 2511.054931640625,
+					"Z": 21988.357421875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "dc6e738c4db58834e27b2e84d788989a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4906edbd40a1e7e0d1b1138c16e8b571",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 4901.185546875,
+					"Y": 2424.529052734375,
+					"Z": 27147.857421875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "fea6e0f14dbf82e124520f8870f91100",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "4906edbd40a1e7e0d1b1138c16e8b571",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 14098.6259765625,
+					"Y": 1845.01611328125,
+					"Z": 37318.19921875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "14be0ab5494784482c9577825a68867e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "dd8f2e7e4bed336ddebd599c646eaadc",
+			"Name": "Purple Biome",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "14be0ab5494784482c9577825a68867e",
+			"Name": "Normal Plant",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "11d366fd4ec7da22cba88786f7995ae2",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 35347.17578125,
+					"Y": 2400.3349609375,
+					"Z": 20228.34375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "bd339db14cc8646090665cadb2a86b3f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 35373.73046875,
+					"Y": 2400.3349609375,
+					"Z": 20425.08984375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "0b08abeb4446d0f171abdaa82dc619e3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 1",
+			"Transform": {
+				"Translation": {
+					"X": 35608.80078125,
+					"Y": 2400.3349609375,
+					"Z": 20582.9921875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "99d2e154445eeb11830a8fb69d44aa38",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 2",
+			"Transform": {
+				"Translation": {
+					"X": 35886.36328125,
+					"Y": 2400.3349609375,
+					"Z": 20477.853515625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "2a85b8d547113805f047c6a6400675e6",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 3",
+			"Transform": {
+				"Translation": {
+					"X": 35985.76953125,
+					"Y": 2400.3349609375,
+					"Z": 20331.037109375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "d907b9e74a2e6c3fec9bab9370ebc04a",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 4",
+			"Transform": {
+				"Translation": {
+					"X": 35961.19921875,
+					"Y": 2400.3349609375,
+					"Z": 20039.314453125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "5af5dfed46b782d5135fffa7221df253",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 5",
+			"Transform": {
+				"Translation": {
+					"X": 35701.23046875,
+					"Y": 2400.3349609375,
+					"Z": 19952.439453125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "cdb7cf9b4ca4d4e9c8cbb9a51444411e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 6",
+			"Transform": {
+				"Translation": {
+					"X": 35485.15625,
+					"Y": 2400.3349609375,
+					"Z": 20035.109375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "61b52a624b7e39272529a7b5fca4274c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 7",
+			"Transform": {
+				"Translation": {
+					"X": 31777.583984375,
+					"Y": 1842.7933349609376,
+					"Z": 29467.09375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "8407a1b240176fdd5cc26a8fa5a2a4a3",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 8",
+			"Transform": {
+				"Translation": {
+					"X": 31841.080078125,
+					"Y": 1842.7933349609376,
+					"Z": 29879.2890625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "7aab5eef41a2787178c24ba3ccd4e95f",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 9",
+			"Transform": {
+				"Translation": {
+					"X": 31936.556640625,
+					"Y": 1842.7933349609376,
+					"Z": 30476.03515625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "28ed26c44921de7e2cc4d2a1488b45a4",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 10",
+			"Transform": {
+				"Translation": {
+					"X": 31954.703125,
+					"Y": 1842.7933349609376,
+					"Z": 30866.169921875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "095ce35249247cd64f4aa099f61b37e8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 11",
+			"Transform": {
+				"Translation": {
+					"X": 31975.400390625,
+					"Y": 1842.7933349609376,
+					"Z": 31361.201171875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ad11197d47b57d92475d54928e38a55c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 12",
+			"Transform": {
+				"Translation": {
+					"X": 28511.6484375,
+					"Y": 1842.7933349609376,
+					"Z": 33000.21875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "07df135a4f4ab8813efb618a73e0a320",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 13",
+			"Transform": {
+				"Translation": {
+					"X": 30777.103515625,
+					"Y": 2416.44873046875,
+					"Z": 35536.87109375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "501dfdb947b38ccc72431e991dd4515e",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 14",
+			"Transform": {
+				"Translation": {
+					"X": 27050.994140625,
+					"Y": 2416.44873046875,
+					"Z": 34558.2734375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "9823cdcf49bc19b35c1410b66a05da5c",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 15",
+			"Transform": {
+				"Translation": {
+					"X": 27027.607421875,
+					"Y": 2416.44873046875,
+					"Z": 35035.67578125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ef607328427edeec81a788875601f9eb",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 16",
+			"Transform": {
+				"Translation": {
+					"X": 27028.0625,
+					"Y": 2416.44873046875,
+					"Z": 35511.05078125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "32566bb7401debaa7678a7ac9c3fecf8",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 17",
+			"Transform": {
+				"Translation": {
+					"X": 26905.859375,
+					"Y": 2416.44873046875,
+					"Z": 35975.62109375
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "278464da41ce51fbf78aa3825c71be45",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 18",
+			"Transform": {
+				"Translation": {
+					"X": 19220.4375,
+					"Y": 2416.44873046875,
+					"Z": 29912.404296875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "6f2c601045a8e6c350df3a8eea85aa24",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 19",
+			"Transform": {
+				"Translation": {
+					"X": 19263.904296875,
+					"Y": 2416.44873046875,
+					"Z": 30166.900390625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "ed5dae8c4051403d4ddf9493285f7953",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 20",
+			"Transform": {
+				"Translation": {
+					"X": 19616.32421875,
+					"Y": 2416.44873046875,
+					"Z": 29855.01953125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "36b8ff1b4260a5e47afd7480a088d027",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "78a65b9441545d68e0f79ab854fdd0b2",
+			"Name": "EmptyActor 21",
+			"Transform": {
+				"Translation": {
+					"X": 19616.32421875,
+					"Y": 2416.44873046875,
+					"Z": 29855.01953125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "18cebe93472ebb97d6e6d1baf321e321",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "14be0ab5494784482c9577825a68867e",
+			"Name": "Special Plant",
+			"StaticFlags": 0
+		},
+		{
+			"ID": "a61ff75242d23f380ff4d09145aec482",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "18cebe93472ebb97d6e6d1baf321e321",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 13494.6171875,
+					"Y": 1434.1064453125,
+					"Z": 27554.607421875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "8a0eacd8423dc92c6f8444a13691ecf9",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "18cebe93472ebb97d6e6d1baf321e321",
+			"Name": "EmptyActor 0",
+			"Transform": {
+				"Translation": {
+					"X": 33606.40625,
+					"Y": 1849.3994140625,
+					"Z": 31499.251953125
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "26d5d2434a1157373fe93386b9970142",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "18cebe93472ebb97d6e6d1baf321e321",
+			"Name": "EmptyActor 1",
+			"Transform": {
+				"Translation": {
+					"X": 35705.453125,
+					"Y": 2400.3349609375,
+					"Z": 20260.892578125
+				}
+			},
+			"StaticFlags": 0
 		}
 	]
 }

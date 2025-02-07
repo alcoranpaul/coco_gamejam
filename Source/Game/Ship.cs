@@ -11,6 +11,7 @@ public class Ship : Script
 {
 	[ShowInEditor, Serialize] private Actor[] treeActors;
 	[ShowInEditor, Serialize] private SceneReference winScene;
+	[ShowInEditor, Serialize] private Prefab treeDissolveVFX;
 	private int treeIndex;
 
 	public override void OnAwake()
@@ -25,8 +26,11 @@ public class Ship : Script
 	public void DecreaseTrees()
 	{
 		treeActors[treeIndex].IsActive = false;
+		Vector3 vfxPos = treeActors[treeIndex].Position;
+		vfxPos.Y += 100f;
+		var vfxActor = PrefabManager.SpawnPrefab(treeDissolveVFX, vfxPos);
 		treeIndex++;
-
+		Destroy(vfxActor, 2f);
 		if (treeIndex >= treeActors.Length)
 		{
 			Debug.Log("All trees are destroyed");
