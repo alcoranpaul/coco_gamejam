@@ -82,7 +82,7 @@ public class InventoryComponent : InstanceManagerClass
 				if (normalToxinVial == null) return;
 				normalToxinVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_normalToxinVialImage, _inventoryArgs.NormalToxinVialControl, toxinVialColorNone, 0.5f);
-				FlaxEngine.Object.Destroy(normalToxinVial.Actor);
+				// FlaxEngine.Object.Destroy(normalToxinVial.Actor);
 				normalToxinVial = null;
 				OnToxinVialRemoved?.Invoke(DVial.Toxin.Normal);
 				break;
@@ -90,7 +90,7 @@ public class InventoryComponent : InstanceManagerClass
 				if (specialToxinVial == null) return;
 				specialToxinVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_specialToxinVialImage, _inventoryArgs.SpecialToxinVialControl, toxinVialColorNone, 0.5f);
-				FlaxEngine.Object.Destroy(specialToxinVial.Actor);
+				// FlaxEngine.Object.Destroy(specialToxinVial.Actor);
 				specialToxinVial = null;
 				OnToxinVialRemoved?.Invoke(DVial.Toxin.Special);
 				break;
@@ -98,7 +98,7 @@ public class InventoryComponent : InstanceManagerClass
 				if (healthVial == null) return;
 				healthVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_healthVialImage, _inventoryArgs.HealthVialControl, healthVialColorNone, 0.5f);
-				FlaxEngine.Object.Destroy(healthVial.Actor);
+				// FlaxEngine.Object.Destroy(healthVial.Actor);
 				healthVial = null;
 				OnHealthVialRemoved?.Invoke(this, EventArgs.Empty);
 				break;

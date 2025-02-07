@@ -566,7 +566,8 @@
 		"2ef0158341617b4451ae8ca3638ee1f2",
 		"7b3d929444060ab09f79c6b522aa40c8"
 	]
-}
+},
+			"Enabled": false
 		},
 		{
 			"ID": "869e062243a848ad3a534aa0ad85d107",
@@ -575,9 +576,9 @@
 			"Name": "Player",
 			"Transform": {
 				"Translation": {
-					"X": 9591.970703125,
+					"X": 9760.7373046875,
 					"Y": 1981.2010498046876,
-					"Z": 12490.9833984375
+					"Z": 12346.9794921875
 				}
 			},
 			"StaticFlags": 0,
@@ -642,9 +643,9 @@
 			"Transform": {
 				"Orientation": {
 					"X": 0.0,
-					"Y": -0.017452139407396318,
+					"Y": 0.8191522359848023,
 					"Z": 0.0,
-					"W": 0.9998477101325989
+					"W": 0.5735762119293213
 				}
 			},
 			"StaticFlags": 0,
@@ -939,7 +940,7 @@
 			"ID": "94cb65c24c1a67d02df10b93a4e31005",
 			"TypeName": "FlaxEngine.UICanvas",
 			"ParentID": "7b13144a43b6ef945a3687804ba79e7e",
-			"Name": "UICanvas",
+			"Name": "Back_Canvas",
 			"Transform": {
 				"Translation": {
 					"X": 15.373202323913575,
@@ -956,6 +957,7 @@
 			"StaticFlags": 0,
 			"V": {
 	"RenderMode": 2,
+	"ReceivesEvents": false,
 	"Size": {
 		"X": 30.0,
 		"Y": 50.0
@@ -1567,7 +1569,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 10.0,
+		"Right": 64.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -1994,6 +1996,205 @@
 		"G": 0.0,
 		"B": 0.0,
 		"A": 0.6333333
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "00598bda4c52690ed4531484ce46400b",
+			"TypeName": "FlaxEngine.UICanvas",
+			"ParentID": "7b13144a43b6ef945a3687804ba79e7e",
+			"Name": "Side_Canvas",
+			"Transform": {
+				"Translation": {
+					"X": -17.5,
+					"Y": 47.4139404296875,
+					"Z": 33.16611862182617
+				},
+				"Orientation": {
+					"X": -0.6946583986282349,
+					"Y": -1.352550214051007e-7,
+					"Z": 0.7193397879600525,
+					"W": 1.400606493007217e-7
+				}
+			},
+			"V": {
+	"RenderMode": 2,
+	"ReceivesEvents": false,
+	"Size": {
+		"X": 15.0,
+		"Y": 50.0
+	}
+}
+		},
+		{
+			"ID": "eeb138a8445bc12ed6c2c2b37b014ef6",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "00598bda4c52690ed4531484ce46400b",
+			"Name": "Canvas Scalar",
+			"Control": "FlaxEngine.GUI.CanvasScaler",
+			"Data": {
+	"ResolutionCurve": {
+		"Keyframes": [
+			{
+				"Time": 0.0,
+				"Value": 0.0
+			},
+			{
+				"Time": 480.0,
+				"Value": 0.444
+			},
+			{
+				"Time": 720.0,
+				"Value": 0.666
+			},
+			{
+				"Time": 1080.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 8640.0,
+				"Value": 8.0
+			}
+		]
+	},
+	"DpiCurve": {
+		"Keyframes": [
+			{
+				"Time": 1.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 96.0,
+				"Value": 1.0
+			},
+			{
+				"Time": 200.0,
+				"Value": 2.0
+			},
+			{
+				"Time": 400.0,
+				"Value": 4.0
+			}
+		]
+	},
+	"Scaling": 2,
+	"ScaleFactor": 1.0,
+	"PhysicalUnit": 3,
+	"PhysicalUnitSize": 1.0,
+	"ResolutionMode": 0,
+	"ResolutionMin": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"ResolutionMax": {
+		"X": 7680.0,
+		"Y": 4320.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 1.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "affd96874a068fea7bdee292f98d73c5",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "eeb138a8445bc12ed6c2c2b37b014ef6",
+			"Name": "ProgressBar",
+			"Control": "FlaxEngine.GUI.ProgressBar",
+			"Data": {
+	"Method": 0,
+	"Origin": 3,
+	"SmoothingScale": 1.0,
+	"Minimum": 0.0,
+	"Maximum": 1.0,
+	"Value": 0.5,
+	"BarMargin": {
+		"Left": 1.0,
+		"Right": 1.0,
+		"Top": 1.0,
+		"Bottom": 1.0
+	},
+	"BarColor": {
+		"R": 0.039215688,
+		"G": 0.827451,
+		"B": 0.15686275,
+		"A": 1.0
+	},
+	"BarBrush": null,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.10980392,
+		"G": 0.10980392,
+		"B": 0.10980392,
+		"A": 1.0
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,

@@ -99,6 +99,14 @@
 			"MouseButton": 0,
 			"GamepadButton": 0,
 			"Gamepad": -1
+		},
+		{
+			"Name": "MouseRelease",
+			"Mode": 2,
+			"Key": 0,
+			"MouseButton": 1,
+			"GamepadButton": 0,
+			"Gamepad": -1
 		}
 	],
 	"AxisMappings": [
