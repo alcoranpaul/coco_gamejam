@@ -200,6 +200,7 @@
 			"ID": "7da5b4b0442a22aa73b1ef8a7e6c6766",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "244fe8c8484faa5530e2a3a85af71d06",
+			"IsActive": false,
 			"Name": "ContainerControl",
 			"Control": "FlaxEngine.GUI.ContainerControl",
 			"Data": {
@@ -240,7 +241,7 @@
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": true,
+	"Visible": false,
 	"AutoFocus": true
 }
 		},
@@ -1618,7 +1619,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 80.0,
+		"Right": 64.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
