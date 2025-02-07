@@ -1619,7 +1619,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 64.0,
+		"Right": 80.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -7138,9 +7138,8 @@
 			"ID": "2160af704bf1adc5f63412b6f92231dd",
 			"TypeName": "FlaxEngine.ExponentialHeightFog",
 			"ParentID": "b96c438e410114abb3f982b17d750e44",
-			"IsActive": false,
 			"Name": "ExponentialHeightFog",
-			"FogDensity": 0.5,
+			"FogDensity": 0.20000000298023225,
 			"FogInscatteringColor": {
 				"R": 1.0,
 				"G": 0.699999988079071,
