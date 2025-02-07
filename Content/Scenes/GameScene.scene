@@ -1560,7 +1560,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 84.0,
+		"Right": 10.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -7074,7 +7074,8 @@
 		"7590abcb46d4247e86108891352a43ac",
 		"25e5159347e36595ba64d9b24137ac60",
 		"060edd654de6807cac82e2a66c5cc8d7"
-	]
+	],
+	"winScene": "36890e964c85b43d2da8a7967a494895"
 }
 		},
 		{
@@ -7118,9 +7119,9 @@
 			"Name": "Harvest_Plant 3",
 			"Transform": {
 				"Translation": {
-					"X": 12145.498046875,
+					"X": 11589.7333984375,
 					"Y": 1981.8592529296876,
-					"Z": 12093.654296875
+					"Z": 12275.6201171875
 				}
 			}
 		},
@@ -7153,7 +7154,7 @@
 			"Transform": {
 				"Translation": {
 					"X": 11349.6103515625,
-					"Y": 2267.580810546875,
+					"Y": 2265.580810546875,
 					"Z": 12226.494140625
 				}
 			},
@@ -7172,6 +7173,76 @@
 			"Properties": {
 				"Name": "Default",
 				"Agent": {}
+			}
+		},
+		{
+			"ID": "75159887486111850e35b9935fb1be09",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Harvest_Plant 4",
+			"Transform": {
+				"Translation": {
+					"X": 10979.830078125,
+					"Y": 1981.8592529296876,
+					"Z": 12294.255859375
+				}
+			}
+		},
+		{
+			"ID": "f17ffe894289b7b2ba8c20996e2185a2",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "75159887486111850e35b9935fb1be09",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "75159887486111850e35b9935fb1be09"
+}
+		},
+		{
+			"ID": "caa97ae84650c7a2f8d8e8a2d9fda95f",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
+			"ParentID": "75159887486111850e35b9935fb1be09",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "9128884045f830ae0414939ee21773a1",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Harvest_Plant 5",
+			"Transform": {
+				"Translation": {
+					"X": 10760.7021484375,
+					"Y": 1981.8592529296876,
+					"Z": 12965.2568359375
+				}
+			}
+		},
+		{
+			"ID": "0e04211448763591604702908cd6745d",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "9128884045f830ae0414939ee21773a1",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "9128884045f830ae0414939ee21773a1"
+}
+		},
+		{
+			"ID": "fbcece334ec903d74b0666b205102751",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
+			"ParentID": "9128884045f830ae0414939ee21773a1",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
 			}
 		}
 	]

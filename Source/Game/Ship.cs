@@ -10,6 +10,7 @@ namespace Game;
 public class Ship : Script
 {
 	[ShowInEditor, Serialize] private Actor[] treeActors;
+	[ShowInEditor, Serialize] private SceneReference winScene;
 	private int treeIndex;
 
 	public override void OnAwake()
@@ -29,6 +30,7 @@ public class Ship : Script
 		if (treeIndex >= treeActors.Length)
 		{
 			Debug.Log("All trees are destroyed");
+			Level.ChangeSceneAsync(winScene);
 			// WIN CONDITIOn
 		}
 	}

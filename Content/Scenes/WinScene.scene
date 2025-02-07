@@ -5200,6 +5200,7 @@
 			"ID": "788059ae48da030f1e7ac7859f8ae8f0",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "60f2b97c413738b4834166970ef30b55",
+			"IsActive": false,
 			"Name": "GameOverUI",
 			"Control": "FlaxEngine.GUI.ContainerControl",
 			"Data": {
@@ -5240,7 +5241,7 @@
 	},
 	"BackgroundBrush": null,
 	"Enabled": true,
-	"Visible": true,
+	"Visible": false,
 	"AutoFocus": true
 }
 		},
