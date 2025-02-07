@@ -12,6 +12,7 @@ public class DVial
 	public string Name;
 	public Model Model;
 	public Type VialType;
+	public Toxin ToxinType;
 	public Prefab Prefab;
 	public MaterialInstance Material;
 
@@ -21,5 +22,11 @@ public class DVial
 	{
 		Toxin,
 		Health
+	}
+
+	public enum Toxin
+	{
+		Normal,
+		Special
 	}
 }

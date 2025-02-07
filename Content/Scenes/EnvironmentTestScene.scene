@@ -624,9 +624,9 @@
 			"Transform": {
 				"Orientation": {
 					"X": 0.0,
-					"Y": 1.0,
-					"Z": -0.0,
-					"W": -4.371138828673793e-8
+					"Y": -0.017452139407396318,
+					"Z": 0.0,
+					"W": 0.9998477101325989
 				}
 			},
 			"StaticFlags": 0,
@@ -1593,8 +1593,8 @@
 			"StaticFlags": 0,
 			"Control": "FlaxEngine.GUI.ContainerControl",
 			"Data": {
-	"ClipChildren": true,
-	"CullChildren": true,
+	"ClipChildren": false,
+	"CullChildren": false,
 	"AnchorMin": {
 		"X": 0.0,
 		"Y": 0.0
@@ -1605,9 +1605,9 @@
 	},
 	"Offsets": {
 		"Left": 2.0,
-		"Right": 11.0,
+		"Right": 10.0,
 		"Top": 2.0,
-		"Bottom": 22.0
+		"Bottom": 14.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1717,19 +1717,19 @@
 			"ID": "0826527446574c2f1c5f24b42c175233",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "67a49b9e4f9fd41bf7c0c2900478a502",
-			"Name": "ToxinItem",
+			"Name": "NormalToxin",
 			"Transform": {
 				"Translation": {
 					"X": 2.0,
-					"Y": 26.0,
+					"Y": 18.0,
 					"Z": 0.0
 				}
 			},
 			"StaticFlags": 0,
 			"Control": "FlaxEngine.GUI.ContainerControl",
 			"Data": {
-	"ClipChildren": true,
-	"CullChildren": true,
+	"ClipChildren": false,
+	"CullChildren": false,
 	"AnchorMin": {
 		"X": 0.0,
 		"Y": 0.0
@@ -1740,9 +1740,9 @@
 	},
 	"Offsets": {
 		"Left": 2.0,
-		"Right": 11.0,
-		"Top": 26.0,
-		"Bottom": 22.0
+		"Right": 10.0,
+		"Top": 18.0,
+		"Bottom": 14.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -1773,6 +1773,141 @@
 			"ID": "92c1ebb347bbe02ea1237c9f2b924466",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "0826527446574c2f1c5f24b42c175233",
+			"Name": "Image 0",
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.Image",
+			"Data": {
+	"Brush": {
+		"$type": "FlaxEngine.GUI.TextureBrush, FlaxEngine.CSharp",
+		"Texture": "6f6757ca4424fd730d26b0aaa5cf2666",
+		"Filter": 0
+	},
+	"Margin": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Color": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 0.5
+	},
+	"MouseOverColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"DisabledTint": {
+		"R": 0.5019608,
+		"G": 0.5019608,
+		"B": 0.5019608,
+		"A": 1.0
+	},
+	"KeepAspectRatio": true,
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 0.0,
+		"Right": 0.0,
+		"Top": 0.0,
+		"Bottom": 0.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.0,
+		"G": 0.0,
+		"B": 0.0,
+		"A": 0.6333333
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": false
+}
+		},
+		{
+			"ID": "3023e132442cb79e920c8a997bc6ca84",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "67a49b9e4f9fd41bf7c0c2900478a502",
+			"Name": "SpecialToxin",
+			"Transform": {
+				"Translation": {
+					"X": 2.0,
+					"Y": 34.0,
+					"Z": 0.0
+				}
+			},
+			"StaticFlags": 0,
+			"Control": "FlaxEngine.GUI.ContainerControl",
+			"Data": {
+	"ClipChildren": false,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Offsets": {
+		"Left": 2.0,
+		"Right": 10.0,
+		"Top": 34.0,
+		"Bottom": 14.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.5,
+		"Y": 0.5
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.51111114,
+		"G": 0.02222222,
+		"B": 1.0,
+		"A": 0.1
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
+			"ID": "7a9ff41a484bc0a48f444db570f5089a",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "3023e132442cb79e920c8a997bc6ca84",
 			"Name": "Image 0",
 			"StaticFlags": 0,
 			"Control": "FlaxEngine.GUI.Image",
@@ -6911,12 +7046,12 @@
 			"ID": "aa3edc664b823ba9258462b557152155",
 			"TypeName": "FlaxEngine.CharacterController",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Controller",
+			"Name": "Enemy",
 			"Transform": {
 				"Translation": {
-					"X": 12603.2939453125,
+					"X": 12655.5478515625,
 					"Y": 2020.89208984375,
-					"Z": 13282.732421875
+					"Z": 13376.0654296875
 				},
 				"Orientation": {
 					"X": 0.0,

@@ -53,7 +53,7 @@ public class HarvestNode : Script, IInteract
 
 	public void Interact(Vector3 origin, Actor instigator)
 	{
-		Debug.Log($"Interacted with object at {origin} by {instigator}");
+
 		PrefabManager.SpawnPrefab(prefabVialTrigger, origin);
 		Destroy(Actor);
 	}

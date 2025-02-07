@@ -6,6 +6,7 @@
 	"Name": "Special Vial",
 	"Model": "3f82e57744f57c28285150b646ad2198",
 	"VialType": 0,
+	"ToxinType": 1,
 	"Prefab": "32d085444f6ef8c1f9dbb9b92fe2e1c3",
 	"Material": "ec0842644416627edda1678d8a1751a7"
 }

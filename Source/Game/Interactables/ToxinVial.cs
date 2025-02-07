@@ -12,7 +12,7 @@ public class ToxinVial : Vial
 	public override void Interact(Vector3 origin, Actor instigator)
 	{
 		// Enable Throw
-		Debug.Log($"Enable Throw");
+
 		var throwActor = PrefabManager.SpawnPrefab(throwablePrefab, origin, instigator.Transform.Orientation);
 
 
