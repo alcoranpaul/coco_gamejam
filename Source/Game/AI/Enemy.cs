@@ -51,6 +51,18 @@ public class Enemy : Script, IDeath
 
 	}
 
+	public override void OnDisable()
+	{
+		attackTrigger.TriggerEnter -= OnTriggerEnter;
+		base.OnDisable();
+	}
+
+	public override void OnDestroy()
+	{
+		attackTrigger.TriggerEnter -= OnTriggerEnter;
+		base.OnDestroy();
+	}
+
 	private void OnTriggerEnter(PhysicsColliderActor actor)
 	{
 		if (!actor.TryGetScript<IDamage>(out var damageScript)) return;
@@ -63,7 +75,7 @@ public class Enemy : Script, IDeath
 	{
 		speedParam.Value = speed;
 		isAttackingParam.Value = isAttacking;
-		attackTrigger.IsActive = attackTriggerActive;
+
 	}
 
 	public override void OnUpdate()
@@ -86,7 +98,7 @@ public class Enemy : Script, IDeath
 			case State.Attacking:
 				isAttacking = true;
 				Actor.AddTag(tag: attakTag);
-				UpdateStateParameters(0f, true, true);
+				UpdateStateParameters(0f, true, false);
 				break;
 		}
 
@@ -105,9 +117,15 @@ public class Enemy : Script, IDeath
 	{
 		isAttacking = false;
 		Actor.RemoveTag(attakTag);
+		attackTrigger.IsActive = false;
 		ChangeState(State.Idle);
 
+	}
 
+	public void Attack()
+	{
+
+		attackTrigger.IsActive = true;
 	}
 
 	public void Die()
@@ -119,6 +137,7 @@ public class Enemy : Script, IDeath
 		Actor.Layer = 4;
 		controller.IsTrigger = true;
 		Enabled = false;
+		attackTrigger.TriggerEnter -= OnTriggerEnter;
 		Destroy(Actor, 5f);
 	}
 

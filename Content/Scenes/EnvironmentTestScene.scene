@@ -606,11 +606,13 @@
 	},
 	"_inventoryArgs": {
 		"ActorToAttach": "ed74f4fc4afab707e16e1cbb512a955e",
-		"toxinVialControl": "92c1ebb347bbe02ea1237c9f2b924466",
-		"healthVialControl": "539a350842694e70142baea3824689ed"
+		"NormalToxinVialControl": "92c1ebb347bbe02ea1237c9f2b924466",
+		"SpecialToxinVialControl": "7a9ff41a484bc0a48f444db570f5089a",
+		"HealthVialControl": "539a350842694e70142baea3824689ed"
 	},
 	"_toxinArgs": {
-		"FillRate": 1.5,
+		"NormalFillRate": 1.0,
+		"SpecialFillRate": 1.5,
 		"DecayRate": 1.0,
 		"MaxToxin": 100.0
 	}
@@ -6946,6 +6948,24 @@
 			}
 		},
 		{
+			"ID": "a8efed2c437431427cc8f09e642c80fc",
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "BoxCollider",
+			"StaticFlags": 23,
+			"Layer": 5,
+			"Center": {
+				"X": 0.0,
+				"Y": 90.957275390625,
+				"Z": 37.9541015625
+			},
+			"Size": {
+				"X": 759.0234375,
+				"Y": 368.73583984375,
+				"Z": 1117.689453125
+			}
+		},
+		{
 			"ID": "16cc49cc46878ed9275d8eb2a3a93df4",
 			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
 			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
@@ -7198,30 +7218,12 @@
 			},
 			"IsTrigger": true,
 			"Center": {
-				"X": 25.0,
+				"X": 35.0,
 				"Y": 0.0,
 				"Z": 0.0
 			},
 			"Radius": 15.0,
-			"Height": 50.0
-		},
-		{
-			"ID": "358b73ef4bd632cace6089a986525038",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"Name": "AttackCollider"
-		},
-		{
-			"ID": "eeaced1a42d1c7738d5d15878c0918ee",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "358b73ef4bd632cace6089a986525038",
-			"Name": "BoxCollider",
-			"IsTrigger": true,
-			"Size": {
-				"X": 0.0,
-				"Y": 0.0,
-				"Z": 0.0
-			}
+			"Height": 70.0
 		}
 	]
 }

@@ -13,6 +13,7 @@ public class AE_AttackEnd : AnimEvent
 	{
 		Enemy script = null;
 		Actor parent = actor.Parent;
+		if (parent == null) return;
 		while (script == null)
 		{
 			if (!parent.TryGetScript<Enemy>(out script))
@@ -22,7 +23,8 @@ public class AE_AttackEnd : AnimEvent
 
 		}
 
-		script.EndAttack();
+		if (script != null)
+			script.EndAttack();
 
 
 	}

@@ -11,9 +11,21 @@ public class AE_AttackStart : AnimEvent
 {
     public override void OnEvent(AnimatedModel actor, Animation anim, float time, float deltaTime)
     {
-        if (actor.TryGetScript<Enemy>(out var enemy))
+        Enemy script = null;
+        Actor parent = actor.Parent;
+        if (parent == null) return;
+        while (script == null)
         {
-            // enemy.ChangeState(Enemy.State.Idle);
+            if (!parent.TryGetScript<Enemy>(out script))
+            {
+                parent = parent.Parent;
+            }
+
         }
+
+        if (script != null)
+            script.Attack();
+
+
     }
 }
