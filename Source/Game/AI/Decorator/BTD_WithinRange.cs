@@ -38,7 +38,7 @@ public class BTD_WithinRange : BehaviorTreeDecorator
 			_ => false,
 		};
 
-		Debug.Log($"Distance: {distance}, Range: {Range}, Comparison: {Comparison}, retVal: {retVal}");
+
 		// Here you can interact with level or gameplay objects (be aware that this code runs in async by default)
 		return retVal;
 	}

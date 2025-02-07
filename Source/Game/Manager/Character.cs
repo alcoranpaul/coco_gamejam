@@ -7,7 +7,7 @@ namespace Game;
 /// <summary>
 /// Character Script.
 /// </summary>
-public class Character : InstanceManagerScript
+public class Character : InstanceManagerScript, IDamage
 {
 	[ShowInEditor, Serialize]
 	private MovementComponent.MovementArgs _movementArgs;
@@ -94,4 +94,16 @@ public class Character : InstanceManagerScript
 	{
 		ToxinComponent.Toxify(false);
 	}
+
+	public void TakeDamage(float damage)
+	{
+		HealthComponent.Damage(damage);
+	}
+
+}
+
+
+public interface IDamage
+{
+	void TakeDamage(float damage);
 }

@@ -53,7 +53,9 @@ public class Enemy : Script, IDeath
 
 	private void OnTriggerEnter(PhysicsColliderActor actor)
 	{
-		Debug.Log($"Enemy trigger enter: {actor}");
+		if (!actor.TryGetScript<IDamage>(out var damageScript)) return;
+		damageScript.TakeDamage(10f);
+
 	}
 
 
@@ -83,7 +85,7 @@ public class Enemy : Script, IDeath
 				break;
 			case State.Attacking:
 				isAttacking = true;
-				Actor.AddTag(attakTag);
+				Actor.AddTag(tag: attakTag);
 				UpdateStateParameters(0f, true, true);
 				break;
 		}
@@ -96,7 +98,7 @@ public class Enemy : Script, IDeath
 	{
 		if (state == newState) return;
 		state = newState;
-		Debug.Log($"Enemy state changed to: {state}");
+		// Debug.Log($"Enemy state changed to: {state}");
 	}
 
 	public void EndAttack()
