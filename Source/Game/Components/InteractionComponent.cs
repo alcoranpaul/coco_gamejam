@@ -49,6 +49,7 @@ public class InteractionComponent : InstanceManagerClass
 		if (objTointeract != null)
 		{
 			objTointeract.Interact(actor.Position, actor);
+			objTointeract = null;
 			OnInteract?.Invoke(false);
 		}
 	}

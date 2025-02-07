@@ -35,6 +35,21 @@ public class Throwable : Script
 
 			// Sphere case for checking enemies or Tree. Depending on the Type
 			// Normal: Enemies
+			if (type == Type.Normal)
+			{
+				if (Physics.OverlapSphere(Actor.Position, 150f, out Collider[] actors))
+					DebugDraw.DrawWireSphere(new BoundingSphere(Actor.Position, 150f), Color.Red, 1f);
+				foreach (var actor in actors)
+				{
+
+					if (actor.TryGetScript<IDeath>(out var death))
+					{
+						death.Die();
+					}
+
+				}
+
+			}
 			// Special: Tree
 		}
 	}

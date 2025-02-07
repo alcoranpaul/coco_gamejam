@@ -7,14 +7,15 @@
 		"Player",
 		"Bullet",
 		"Enemy",
-		"Enemy.Attacking"
+		"Enemy.Attacking",
+		"Enemy.Hit"
 	],
 	"Layers": [
 		"Default",
 		"Player",
 		"Interaction",
 		"Projectile",
-		null,
+		"Ignored",
 		null,
 		null,
 		null,

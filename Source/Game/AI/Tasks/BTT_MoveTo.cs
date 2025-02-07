@@ -18,7 +18,7 @@ public class BTT_MoveTo : BehaviorTreeMoveToNode
 		if (!context.Behavior.Actor.TryGetScript<Enemy>(out enemy))
 			Debug.LogError("Enemy script not found!");
 
-		enemy.RequestToMove();
+
 	}
 
 	public override void ReleaseState(BehaviorUpdateContext context)

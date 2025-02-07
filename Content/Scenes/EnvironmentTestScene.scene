@@ -6844,10 +6844,74 @@
 			}
 		},
 		{
-			"ID": "aa3edc664b823ba9258462b557152155",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "1cc629494a48cc684dbb6c88bce31f5f",
+			"ID": "4a8eb938479ece2689764dbfb23640cc",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Harvest_Plant 3",
+			"Transform": {
+				"Translation": {
+					"X": 12145.498046875,
+					"Y": 1981.8592529296876,
+					"Z": 12093.654296875
+				}
+			}
+		},
+		{
+			"ID": "3da158564350d063b3b81facd76df197",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "4a8eb938479ece2689764dbfb23640cc"
+}
+		},
+		{
+			"ID": "6a39d38c438f8524ca5223b8c6749ec6",
+			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
+			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
+			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "0374dcc1432c1fac692a32b71545639e",
+			"TypeName": "FlaxEngine.NavMeshBoundsVolume",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "NavMeshBoundsVolume",
+			"Transform": {
+				"Translation": {
+					"X": 11349.6103515625,
+					"Y": 2267.580810546875,
+					"Z": 12226.494140625
+				}
+			},
+			"Size": {
+				"X": 5000.0,
+				"Y": 3000.0,
+				"Z": 5000.0
+			}
+		},
+		{
+			"ID": "bc0d33b540573b3e40c69fa657b0a25f",
+			"TypeName": "FlaxEngine.NavMesh",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "NavMesh.Default",
+			"DataAsset": "eff776eb4c2c7cca85941aa3c9e4372c",
+			"Properties": {
+				"Name": "Default",
+				"Agent": {}
+			}
+		},
+		{
+			"ID": "aa3edc664b823ba9258462b557152155",
+			"TypeName": "FlaxEngine.CharacterController",
+			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
+			"Name": "Controller",
 			"Transform": {
 				"Translation": {
 					"X": 12603.2939453125,
@@ -6861,18 +6925,25 @@
 					"W": -4.371138828673793e-8
 				}
 			},
-			"Tag": "Enemy"
+			"StaticFlags": 0,
+			"Tag": "Enemy",
+			"Center": {
+				"X": 0.0,
+				"Y": -14.0,
+				"Z": 0.0
+			},
+			"Radius": 20.0,
+			"Height": 100.0
 		},
 		{
 			"ID": "0b56a526438f85ff6c9c6bb1d26fe097",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "348d432e4649620cb24971a2fbdb2201",
-			"ParentID": "aa3edc664b823ba9258462b557152155"
+			"TypeName": "FlaxEngine.Behavior",
+			"ParentID": "aa3edc664b823ba9258462b557152155",
+			"Tree": "2552ce9840146f40a972bf8f273c22e8"
 		},
 		{
 			"ID": "8ae385f84306f5a2f3613186ed4a712c",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "3fa1588b42bdb9abcebaa99a22e9ed12",
+			"TypeName": "Game.Enemy",
 			"ParentID": "aa3edc664b823ba9258462b557152155",
 			"V": {
 	"behavior": "0b56a526438f85ff6c9c6bb1d26fe097",
@@ -6883,20 +6954,58 @@
 		},
 		{
 			"ID": "1697b63746ea0b10870beb8ee73d150b",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "addaa4074d2d4634af9d6d8e05f76537",
-			"ParentID": "aa3edc664b823ba9258462b557152155"
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "aa3edc664b823ba9258462b557152155",
+			"Name": "Model",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -2.8455810546875,
+					"Z": -0.0
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 0
 		},
 		{
 			"ID": "3a28fdb94676e0509639d1846d764c00",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "b0e5042d4b25d495b11279b174e6f0c0",
+			"TypeName": "FlaxEngine.AnimatedModel",
 			"ParentID": "1697b63746ea0b10870beb8ee73d150b",
+			"Name": "Walker Walk_skin",
+			"Transform": {
+				"Translation": {
+					"X": 0.0,
+					"Y": -158.0,
+					"Z": 10.0
+				}
+			},
+			"StaticFlags": 0,
+			"SkinnedModel": "9602e1bc457dcde570812c90f5e0dad4",
+			"AnimationGraph": "9744417843e3eaf8e03a209bf08ba74c",
 			"Buffer": {
 				"Entries": [
-					{},
-					{},
-					{}
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					},
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
 				]
 			}
 		},
@@ -6963,78 +7072,20 @@
 		},
 		{
 			"ID": "358b73ef4bd632cace6089a986525038",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "dc9f6c5d44444f56ecf1acb058b90260",
-			"ParentID": "aa3edc664b823ba9258462b557152155"
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "aa3edc664b823ba9258462b557152155",
+			"Name": "AttackCollider"
 		},
 		{
 			"ID": "eeaced1a42d1c7738d5d15878c0918ee",
-			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
-			"PrefabObjectID": "3e66db58416f185ece68a191cd766473",
-			"ParentID": "358b73ef4bd632cace6089a986525038"
-		},
-		{
-			"ID": "4a8eb938479ece2689764dbfb23640cc",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Harvest_Plant 3",
-			"Transform": {
-				"Translation": {
-					"X": 12145.498046875,
-					"Y": 1981.8592529296876,
-					"Z": 12093.654296875
-				}
-			}
-		},
-		{
-			"ID": "3da158564350d063b3b81facd76df197",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
-			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
-			"V": {
-	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
-	"collider": "4a8eb938479ece2689764dbfb23640cc"
-}
-		},
-		{
-			"ID": "6a39d38c438f8524ca5223b8c6749ec6",
-			"PrefabID": "479ab12a4ccdcd94e72771b25a6f7898",
-			"PrefabObjectID": "1883deff4c90cde53ea5659065b9f9f2",
-			"ParentID": "4a8eb938479ece2689764dbfb23640cc",
-			"Buffer": {
-				"Entries": [
-					{}
-				]
-			}
-		},
-		{
-			"ID": "0374dcc1432c1fac692a32b71545639e",
-			"TypeName": "FlaxEngine.NavMeshBoundsVolume",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "NavMeshBoundsVolume",
-			"Transform": {
-				"Translation": {
-					"X": 11349.6103515625,
-					"Y": 2267.580810546875,
-					"Z": 12226.494140625
-				}
-			},
+			"TypeName": "FlaxEngine.BoxCollider",
+			"ParentID": "358b73ef4bd632cace6089a986525038",
+			"Name": "BoxCollider",
+			"IsTrigger": true,
 			"Size": {
-				"X": 5000.0,
-				"Y": 3000.0,
-				"Z": 5000.0
-			}
-		},
-		{
-			"ID": "bc0d33b540573b3e40c69fa657b0a25f",
-			"TypeName": "FlaxEngine.NavMesh",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "NavMesh.Default",
-			"DataAsset": "eff776eb4c2c7cca85941aa3c9e4372c",
-			"Properties": {
-				"Name": "Default",
-				"Agent": {}
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.0
 			}
 		}
 	]

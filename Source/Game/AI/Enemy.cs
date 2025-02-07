@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using FlaxEngine;
 
+
 namespace Game;
 
 /// <summary>
 /// Enemy Script.
 /// </summary>
-public class Enemy : Script
+public class Enemy : Script, IDeath
 {
 	[ShowInEditor, Serialize] private Behavior behavior;
 	[ShowInEditor, Serialize] private float moveSpeed = 50f;
@@ -17,6 +18,7 @@ public class Enemy : Script
 	[ShowInEditor, Serialize] private AnimatedModel model;
 	private AnimGraphParameter speedParam;
 	private AnimGraphParameter isAttackingParam;
+	private AnimGraphParameter isDeathParam;
 	public float MoveSpeed => (float)speedParam.Value;
 
 	[ShowInEditor] private State state;
@@ -26,7 +28,8 @@ public class Enemy : Script
 	private bool isAttacking = false;
 	public bool IsAttacking => isAttacking;
 	private Tag attakTag = Tags.Find("Enemy.Attacking");
-	private bool requestMove = false;
+
+
 
 	/// <inheritdoc/>
 	public override void OnStart()
@@ -34,16 +37,18 @@ public class Enemy : Script
 		controller = Actor.As<CharacterController>();
 		speedParam = model.GetParameter("moveSpeed");
 		isAttackingParam = model.GetParameter("isAttack");
-
+		isDeathParam = model.GetParameter("isDeath");
 		behavior.StartLogic();
 
 		knowledge = behavior.Knowledge.Blackboard as BasicKnowledge;
-		knowledge.Agent = Actor;
+		// knowledge.Agent = Actor.Parent;
 		knowledge.Player = SingletonManager.Get<Character>().Actor;
 		knowledge.MoveSpeed = moveSpeed;
 
 		attackTrigger.IsActive = false;
 		attackTrigger.TriggerEnter += OnTriggerEnter;
+
+
 	}
 
 	private void OnTriggerEnter(PhysicsColliderActor actor)
@@ -68,6 +73,7 @@ public class Enemy : Script
 				break;
 			case State.Idle:
 				UpdateStateParameters(0f, false, false);
+
 				if (controller.Velocity.LengthSquared > 0)
 					ChangeState(State.Moving);
 				break;
@@ -82,15 +88,15 @@ public class Enemy : Script
 				break;
 		}
 
-
 	}
 
-	public void RequestToMove() => requestMove = true;
+
 
 	public void ChangeState(State newState)
 	{
 		if (state == newState) return;
 		state = newState;
+		Debug.Log($"Enemy state changed to: {state}");
 	}
 
 	public void EndAttack()
@@ -102,6 +108,18 @@ public class Enemy : Script
 
 	}
 
+	public void Die()
+	{
+		isDeathParam.Value = true;
+		ChangeState(State.Death);
+		behavior.StopLogic();
+		behavior.Enabled = false;
+		Actor.Layer = 4;
+		controller.IsTrigger = true;
+		Enabled = false;
+		Destroy(Actor, 5f);
+	}
+
 	public enum State
 	{
 		Idle,
@@ -109,4 +127,10 @@ public class Enemy : Script
 		Attacking,
 		Death
 	}
+}
+
+
+public interface IDeath
+{
+	void Die();
 }

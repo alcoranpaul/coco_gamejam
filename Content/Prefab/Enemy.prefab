@@ -8,6 +8,7 @@
 		"TypeName": "FlaxEngine.CharacterController",
 		"Name": "Enemy",
 		"StaticFlags": 0,
+		"Tag": "Enemy",
 		"Center": {
 			"X": 0.0,
 			"Y": -14.0,
@@ -28,8 +29,9 @@
 		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
 		"V": {
 	"behavior": "348d432e4649620cb24971a2fbdb2201",
-	"moveSpeed": 150.0,
-	"model": "b0e5042d4b25d495b11279b174e6f0c0"
+	"moveSpeed": 75.0,
+	"model": "b0e5042d4b25d495b11279b174e6f0c0",
+	"attackTrigger": "818f68244901dd2adc72f9861f1239c5"
 }
 	},
 	{
@@ -88,6 +90,67 @@
 				}
 			]
 		}
+	},
+	{
+		"ID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"TypeName": "FlaxEngine.BoneSocket",
+		"ParentID": "b0e5042d4b25d495b11279b174e6f0c0",
+		"Name": "BoneSocket",
+		"Transform": {
+			"Translation": {
+				"X": 29.62051773071289,
+				"Y": -39.640647888183597,
+				"Z": 47.124061584472659
+			},
+			"Orientation": {
+				"X": 0.8620911240577698,
+				"Y": -0.16622893512248994,
+				"Z": -0.3792046308517456,
+				"W": 0.2921827733516693
+			}
+		},
+		"Node": "RightHand"
+	},
+	{
+		"ID": "11d670e7483197a85d6d1d9f163ddcec",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"Name": "Top",
+		"Transform": {
+			"Translation": {
+				"X": 1.511734962463379,
+				"Y": 32.59172821044922,
+				"Z": -1.4987754821777344
+			}
+		}
+	},
+	{
+		"ID": "96d83fdd4e87ce177db4e79dedb4e46e",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"Name": "End"
+	},
+	{
+		"ID": "818f68244901dd2adc72f9861f1239c5",
+		"TypeName": "FlaxEngine.CapsuleCollider",
+		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"Name": "CapsuleCollider",
+		"Transform": {
+			"Orientation": {
+				"X": 0.0,
+				"Y": 0.0,
+				"Z": 0.7071068286895752,
+				"W": 0.7071068286895752
+			}
+		},
+		"IsTrigger": true,
+		"Center": {
+			"X": 25.0,
+			"Y": 0.0,
+			"Z": 0.0
+		},
+		"Radius": 15.0,
+		"Height": 50.0
 	},
 	{
 		"ID": "dc9f6c5d44444f56ecf1acb058b90260",
