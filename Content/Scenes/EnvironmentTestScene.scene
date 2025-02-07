@@ -553,6 +553,15 @@
 			"V": {}
 		},
 		{
+			"ID": "d00b2672475cb6f6215e0eaf05c588e6",
+			"TypeName": "Game.EnemyManager",
+			"ParentID": "c49208b74cadd074f6e8499ba54056fc",
+			"V": {
+	"enemyPrefab": "763e8f3f423260d8b103f1be04e04be7"
+},
+			"Enabled": false
+		},
+		{
 			"ID": "869e062243a848ad3a534aa0ad85d107",
 			"TypeName": "FlaxEngine.CharacterController",
 			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
@@ -6287,29 +6296,25 @@
 }
 		},
 		{
-			"ID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"ID": "ec302240475926450aa80b91ed0ecfd9",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "b96c438e410114abb3f982b17d750e44",
-			"Name": "Enemy Spawn",
+			"Name": "Caves",
 			"Transform": {
 				"Translation": {
-					"X": 14853.9111328125,
-					"Y": 1912.833740234375,
-					"Z": 13107.390625
+					"X": 12641.466796875,
+					"Y": 1963.126953125,
+					"Z": 13386.0400390625
 				}
-			}
+			},
+			"StaticFlags": 0
 		},
 		{
 			"ID": "23b545dd462baf84a118cda418f135ef",
 			"TypeName": "FlaxEngine.StaticModel",
-			"ParentID": "2fe6d6d448b0aa8468ab239d12d8422d",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
 			"Name": "SM_Rock_CaveEntrance_02",
 			"Transform": {
-				"Translation": {
-					"X": -2212.4443359375,
-					"Y": 50.293212890625,
-					"Z": 278.6494140625
-				},
 				"Orientation": {
 					"X": 0.0,
 					"Y": 0.13052619993686677,
@@ -6383,6 +6388,100 @@
 			"ID": "320459a34eeaff1e4ed2afa015553b4a",
 			"TypeName": "FlaxEngine.EmptyActor",
 			"ParentID": "23b545dd462baf84a118cda418f135ef",
+			"Name": "Spawn Point",
+			"Transform": {
+				"Translation": {
+					"X": 81.40855407714844,
+					"Y": 0.0,
+					"Z": 74.3617172241211
+				}
+			},
+			"StaticFlags": 23
+		},
+		{
+			"ID": "06c85b314dedb4c2e26299a91edffc03",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "ec302240475926450aa80b91ed0ecfd9",
+			"Name": "SM_Rock_CaveEntrance_3",
+			"Transform": {
+				"Translation": {
+					"X": 4141.302734375,
+					"Y": -79.685302734375,
+					"Z": -558.5322265625
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.13052619993686677,
+					"Z": 0.0,
+					"W": 0.9914448857307434
+				},
+				"Scale": {
+					"X": 0.5,
+					"Y": 0.5,
+					"Z": 0.5
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "35515ba949debaa85d25ebb6ab8f28ea",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "00000000000000000000000000000000",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "e9aebc4b4be4d2beeffa9aa5a1106408",
+			"TypeName": "FlaxEngine.StaticModel",
+			"ParentID": "06c85b314dedb4c2e26299a91edffc03",
+			"Name": "StaticModel 0",
+			"Transform": {
+				"Translation": {
+					"X": 33.233482360839847,
+					"Y": 186.3173828125,
+					"Z": -124.02902221679688
+				},
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.9998477697372437,
+					"Z": 0.0,
+					"W": -0.017452433705329896
+				},
+				"Scale": {
+					"X": 5.130000114440918,
+					"Y": 5.130003929138184,
+					"Z": 5.130003929138184
+				}
+			},
+			"StaticFlags": 23,
+			"Model": "54a1ff4a42af9f018234f7b39b1366b3",
+			"Buffer": {
+				"Entries": [
+					{
+						"Material": "ff078f6c477ceef58494ee8c22eb44a4",
+						"ShadowsMode": 3,
+						"Visible": true,
+						"ReceiveDecals": true
+					}
+				]
+			}
+		},
+		{
+			"ID": "0bc26f774909a81eb336b6b13b2c8d34",
+			"TypeName": "FlaxEngine.MeshCollider",
+			"ParentID": "06c85b314dedb4c2e26299a91edffc03",
+			"Name": "MeshCollider",
+			"StaticFlags": 23,
+			"CollisionData": "8b6723c64d906376ebd022891c1be90c"
+		},
+		{
+			"ID": "be8d190f4e2a719e4b3ad2ae8dd1df47",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "06c85b314dedb4c2e26299a91edffc03",
 			"Name": "Spawn Point",
 			"Transform": {
 				"Translation": {
@@ -6954,6 +7053,7 @@
 			"Name": "BoxCollider",
 			"StaticFlags": 23,
 			"Layer": 5,
+			"Tag": "ShipTree",
 			"Center": {
 				"X": 0.0,
 				"Y": 90.957275390625,
@@ -6964,6 +7064,18 @@
 				"Y": 368.73583984375,
 				"Z": 1117.689453125
 			}
+		},
+		{
+			"ID": "564fb2764c78a4b4817be78b6ea32988",
+			"TypeName": "Game.Ship",
+			"ParentID": "a8efed2c437431427cc8f09e642c80fc",
+			"V": {
+	"treeActors": [
+		"7590abcb46d4247e86108891352a43ac",
+		"25e5159347e36595ba64d9b24137ac60",
+		"060edd654de6807cac82e2a66c5cc8d7"
+	]
+}
 		},
 		{
 			"ID": "16cc49cc46878ed9275d8eb2a3a93df4",
@@ -7061,169 +7173,6 @@
 				"Name": "Default",
 				"Agent": {}
 			}
-		},
-		{
-			"ID": "aa3edc664b823ba9258462b557152155",
-			"TypeName": "FlaxEngine.CharacterController",
-			"ParentID": "f33ce73649fd05dbe77743944315f7e0",
-			"Name": "Enemy",
-			"Transform": {
-				"Translation": {
-					"X": 12655.5478515625,
-					"Y": 2020.89208984375,
-					"Z": 13376.0654296875
-				},
-				"Orientation": {
-					"X": 0.0,
-					"Y": 1.0,
-					"Z": 0.0,
-					"W": -4.371138828673793e-8
-				}
-			},
-			"StaticFlags": 0,
-			"Tag": "Enemy",
-			"Center": {
-				"X": 0.0,
-				"Y": -14.0,
-				"Z": 0.0
-			},
-			"Radius": 20.0,
-			"Height": 100.0
-		},
-		{
-			"ID": "0b56a526438f85ff6c9c6bb1d26fe097",
-			"TypeName": "FlaxEngine.Behavior",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"Tree": "2552ce9840146f40a972bf8f273c22e8"
-		},
-		{
-			"ID": "8ae385f84306f5a2f3613186ed4a712c",
-			"TypeName": "Game.Enemy",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"V": {
-	"behavior": "0b56a526438f85ff6c9c6bb1d26fe097",
-	"moveSpeed": 75.0,
-	"model": "3a28fdb94676e0509639d1846d764c00",
-	"attackTrigger": "66dcffc84eadecbcb00779a8c58e9473"
-}
-		},
-		{
-			"ID": "1697b63746ea0b10870beb8ee73d150b",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"Name": "Model",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": -2.8455810546875,
-					"Z": -0.0
-				},
-				"Scale": {
-					"X": 0.5,
-					"Y": 0.5,
-					"Z": 0.5
-				}
-			},
-			"StaticFlags": 0
-		},
-		{
-			"ID": "3a28fdb94676e0509639d1846d764c00",
-			"TypeName": "FlaxEngine.AnimatedModel",
-			"ParentID": "1697b63746ea0b10870beb8ee73d150b",
-			"Name": "Walker Walk_skin",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": -158.0,
-					"Z": 10.0
-				}
-			},
-			"StaticFlags": 0,
-			"SkinnedModel": "9602e1bc457dcde570812c90f5e0dad4",
-			"AnimationGraph": "9744417843e3eaf8e03a209bf08ba74c",
-			"Buffer": {
-				"Entries": [
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					},
-					{
-						"Material": "00000000000000000000000000000000",
-						"ShadowsMode": 3,
-						"Visible": true,
-						"ReceiveDecals": true
-					}
-				]
-			}
-		},
-		{
-			"ID": "97d3175e42f35a79b44a69880f3f57ad",
-			"TypeName": "FlaxEngine.BoneSocket",
-			"ParentID": "3a28fdb94676e0509639d1846d764c00",
-			"Name": "BoneSocket",
-			"Transform": {
-				"Translation": {
-					"X": 29.62051773071289,
-					"Y": -39.640647888183597,
-					"Z": 47.124061584472659
-				},
-				"Orientation": {
-					"X": 0.8620911240577698,
-					"Y": -0.16622893512248994,
-					"Z": -0.3792046308517456,
-					"W": 0.2921827733516693
-				}
-			},
-			"Node": "RightHand"
-		},
-		{
-			"ID": "1090f0c84a3c19dd8f4ede87f487b1c7",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
-			"Name": "Top",
-			"Transform": {
-				"Translation": {
-					"X": 1.511734962463379,
-					"Y": 32.59172821044922,
-					"Z": -1.4987754821777344
-				}
-			}
-		},
-		{
-			"ID": "c85331374bbbad60e65b75ba9f864d79",
-			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
-			"Name": "End"
-		},
-		{
-			"ID": "66dcffc84eadecbcb00779a8c58e9473",
-			"TypeName": "FlaxEngine.CapsuleCollider",
-			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
-			"Name": "CapsuleCollider",
-			"Transform": {
-				"Orientation": {
-					"X": 0.0,
-					"Y": 0.0,
-					"Z": 0.7071068286895752,
-					"W": 0.7071068286895752
-				}
-			},
-			"IsTrigger": true,
-			"Center": {
-				"X": 35.0,
-				"Y": 0.0,
-				"Z": 0.0
-			},
-			"Radius": 15.0,
-			"Height": 70.0
 		}
 	]
 }

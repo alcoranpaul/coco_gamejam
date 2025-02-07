@@ -1,11 +1,12 @@
 {
-	"ID": "cfb10c0e48857c2741f41e852738631a",
+	"ID": "763e8f3f423260d8b103f1be04e04be7",
 	"TypeName": "FlaxEngine.Prefab",
 	"EngineBuild": 6606,
 	"Data": [
 	{
-		"ID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"ID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"TypeName": "FlaxEngine.CharacterController",
+		"ParentID": "00000000000000000000000000000000",
 		"Name": "Enemy",
 		"StaticFlags": 0,
 		"Tag": "Enemy",
@@ -18,26 +19,26 @@
 		"Height": 100.0
 	},
 	{
-		"ID": "348d432e4649620cb24971a2fbdb2201",
+		"ID": "f6941ef94e04de63db9057a0a9915141",
 		"TypeName": "FlaxEngine.Behavior",
-		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"ParentID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"Tree": "2552ce9840146f40a972bf8f273c22e8"
 	},
 	{
-		"ID": "3fa1588b42bdb9abcebaa99a22e9ed12",
+		"ID": "072cf20f456cdc464033488a8e727ee6",
 		"TypeName": "Game.Enemy",
-		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"ParentID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"V": {
-	"behavior": "348d432e4649620cb24971a2fbdb2201",
-	"moveSpeed": 75.0,
-	"model": "b0e5042d4b25d495b11279b174e6f0c0",
-	"attackTrigger": "818f68244901dd2adc72f9861f1239c5"
-}
+			"behavior": "f6941ef94e04de63db9057a0a9915141",
+			"moveSpeed": 75.0,
+			"model": "3f1e48ec4cc38534c9834ab35fd26db8",
+			"attackTrigger": "aaf177d7464d6798f5dd0db6c0531e17"
+		}
 	},
 	{
-		"ID": "addaa4074d2d4634af9d6d8e05f76537",
+		"ID": "4f35cf254db5727f380f73882a6bec91",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"ParentID": "3d7363c84d5fab9ac53c7196d891c95c",
 		"Name": "Model",
 		"Transform": {
 			"Translation": {
@@ -54,9 +55,9 @@
 		"StaticFlags": 0
 	},
 	{
-		"ID": "b0e5042d4b25d495b11279b174e6f0c0",
+		"ID": "3f1e48ec4cc38534c9834ab35fd26db8",
 		"TypeName": "FlaxEngine.AnimatedModel",
-		"ParentID": "addaa4074d2d4634af9d6d8e05f76537",
+		"ParentID": "4f35cf254db5727f380f73882a6bec91",
 		"Name": "Walker Walk_skin",
 		"Transform": {
 			"Translation": {
@@ -92,14 +93,14 @@
 		}
 	},
 	{
-		"ID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"ID": "08f70a7744e144ed4b720e8629062148",
 		"TypeName": "FlaxEngine.BoneSocket",
-		"ParentID": "b0e5042d4b25d495b11279b174e6f0c0",
+		"ParentID": "3f1e48ec4cc38534c9834ab35fd26db8",
 		"Name": "BoneSocket",
 		"Transform": {
 			"Translation": {
 				"X": 29.62051773071289,
-				"Y": -39.640647888183597,
+				"Y": -39.6406478881836,
 				"Z": 47.124061584472659
 			},
 			"Orientation": {
@@ -112,9 +113,9 @@
 		"Node": "RightHand"
 	},
 	{
-		"ID": "11d670e7483197a85d6d1d9f163ddcec",
+		"ID": "de694870467a7697e94a0baa44abf190",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"ParentID": "08f70a7744e144ed4b720e8629062148",
 		"Name": "Top",
 		"Transform": {
 			"Translation": {
@@ -125,15 +126,15 @@
 		}
 	},
 	{
-		"ID": "96d83fdd4e87ce177db4e79dedb4e46e",
+		"ID": "b28d93f948eedf11aa8cc68056cb422b",
 		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"ParentID": "08f70a7744e144ed4b720e8629062148",
 		"Name": "End"
 	},
 	{
-		"ID": "818f68244901dd2adc72f9861f1239c5",
+		"ID": "aaf177d7464d6798f5dd0db6c0531e17",
 		"TypeName": "FlaxEngine.CapsuleCollider",
-		"ParentID": "dc77a465430eb84eac254ea0fd1a7aaf",
+		"ParentID": "08f70a7744e144ed4b720e8629062148",
 		"Name": "CapsuleCollider",
 		"Transform": {
 			"Orientation": {
@@ -145,30 +146,12 @@
 		},
 		"IsTrigger": true,
 		"Center": {
-			"X": 25.0,
+			"X": 35.0,
 			"Y": 0.0,
 			"Z": 0.0
 		},
 		"Radius": 15.0,
-		"Height": 50.0
-	},
-	{
-		"ID": "dc9f6c5d44444f56ecf1acb058b90260",
-		"TypeName": "FlaxEngine.EmptyActor",
-		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
-		"Name": "AttackCollider"
-	},
-	{
-		"ID": "3e66db58416f185ece68a191cd766473",
-		"TypeName": "FlaxEngine.BoxCollider",
-		"ParentID": "dc9f6c5d44444f56ecf1acb058b90260",
-		"Name": "BoxCollider",
-		"IsTrigger": true,
-		"Size": {
-			"X": 0.0,
-			"Y": 0.0,
-			"Z": 0.0
-		}
+		"Height": 70.0
 	}
 ]
 }

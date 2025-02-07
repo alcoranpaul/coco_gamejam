@@ -12,6 +12,7 @@ public class Throwable : Script
 	[ShowInEditor, Serialize] private Collider collider;
 	[ShowInEditor, Serialize] private Prefab vfxPrefab;
 	[ShowInEditor, Serialize] private Type type;
+	// [ShowInEditor, Serialize] private LayersMask layerToTarget;
 
 	private bool firstCollision = true;
 	public override void OnStart()
@@ -31,9 +32,8 @@ public class Throwable : Script
 		{
 			firstCollision = false;
 			var vfxActor = PrefabManager.SpawnPrefab(vfxPrefab, Actor.Position);
-			Destroy(vfxActor, 1f);
 
-			// Sphere case for checking enemies or Tree. Depending on the Type
+
 			// Normal: Enemies
 			if (type == Type.Normal)
 			{
@@ -51,6 +51,22 @@ public class Throwable : Script
 
 			}
 			// Special: Tree
+			else
+			{
+				if (Physics.OverlapSphere(Actor.Position, 150f, out Collider[] actors))
+					DebugDraw.DrawWireSphere(new BoundingSphere(Actor.Position, 150f), Color.Green, 1f);
+				foreach (var actor in actors)
+				{
+					if (actor.HasTag("ShipTree") && actor.TryGetScript<Ship>(out var ship))
+					{
+						ship.DecreaseTrees();
+						break;
+					}
+				}
+
+			}
+
+			Destroy(vfxActor, 1f);
 		}
 	}
 

@@ -4,11 +4,12 @@
 	"EngineBuild": 6606,
 	"Data": {
 	"Tags": [
-		"Player",
 		"Bullet",
 		"Enemy",
 		"Enemy.Attacking",
-		"Enemy.Hit"
+		"Enemy.Hit",
+		"Player",
+		"ShipTree"
 	],
 	"Layers": [
 		"Default",

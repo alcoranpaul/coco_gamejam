@@ -33,6 +33,7 @@ public class HealthComponent
 		if (Health < 0)
 		{
 			Health = 0;
+			// LOSE CONDITIOn
 			OnDeath?.Invoke(this, EventArgs.Empty);
 		}
 		OnHealthChanged?.Invoke(Health, MaxHealth, NormalizedHealth);
