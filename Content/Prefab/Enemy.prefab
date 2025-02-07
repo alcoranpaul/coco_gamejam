@@ -28,7 +28,8 @@
 		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
 		"V": {
 	"behavior": "348d432e4649620cb24971a2fbdb2201",
-	"moveSpeed": 150.0
+	"moveSpeed": 150.0,
+	"model": "b0e5042d4b25d495b11279b174e6f0c0"
 }
 	},
 	{
@@ -37,6 +38,11 @@
 		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
 		"Name": "Model",
 		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": -2.8455810546875,
+				"Z": -0.0
+			},
 			"Scale": {
 				"X": 0.5,
 				"Y": 0.5,
@@ -81,6 +87,24 @@
 					"ReceiveDecals": true
 				}
 			]
+		}
+	},
+	{
+		"ID": "dc9f6c5d44444f56ecf1acb058b90260",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "1cc629494a48cc684dbb6c88bce31f5f",
+		"Name": "AttackCollider"
+	},
+	{
+		"ID": "3e66db58416f185ece68a191cd766473",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "dc9f6c5d44444f56ecf1acb058b90260",
+		"Name": "BoxCollider",
+		"IsTrigger": true,
+		"Size": {
+			"X": 0.0,
+			"Y": 0.0,
+			"Z": 0.0
 		}
 	}
 ]

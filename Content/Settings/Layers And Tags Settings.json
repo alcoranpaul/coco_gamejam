@@ -5,7 +5,9 @@
 	"Data": {
 	"Tags": [
 		"Player",
-		"Bullet"
+		"Bullet",
+		"Enemy",
+		"Enemy.Attacking"
 	],
 	"Layers": [
 		"Default",

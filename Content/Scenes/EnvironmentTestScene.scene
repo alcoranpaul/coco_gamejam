@@ -6860,7 +6860,8 @@
 					"Z": 0.0,
 					"W": -4.371138828673793e-8
 				}
-			}
+			},
+			"Tag": "Enemy"
 		},
 		{
 			"ID": "0b56a526438f85ff6c9c6bb1d26fe097",
@@ -6874,21 +6875,17 @@
 			"PrefabObjectID": "3fa1588b42bdb9abcebaa99a22e9ed12",
 			"ParentID": "aa3edc664b823ba9258462b557152155",
 			"V": {
-	"behavior": "0b56a526438f85ff6c9c6bb1d26fe097"
+	"behavior": "0b56a526438f85ff6c9c6bb1d26fe097",
+	"moveSpeed": 75.0,
+	"model": "3a28fdb94676e0509639d1846d764c00",
+	"attackTrigger": "66dcffc84eadecbcb00779a8c58e9473"
 }
 		},
 		{
 			"ID": "1697b63746ea0b10870beb8ee73d150b",
 			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
 			"PrefabObjectID": "addaa4074d2d4634af9d6d8e05f76537",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"Transform": {
-				"Translation": {
-					"X": 0.0,
-					"Y": -2.8455810546875,
-					"Z": -0.0
-				}
-			}
+			"ParentID": "aa3edc664b823ba9258462b557152155"
 		},
 		{
 			"ID": "3a28fdb94676e0509639d1846d764c00",
@@ -6904,22 +6901,77 @@
 			}
 		},
 		{
-			"ID": "358b73ef4bd632cace6089a986525038",
+			"ID": "97d3175e42f35a79b44a69880f3f57ad",
+			"TypeName": "FlaxEngine.BoneSocket",
+			"ParentID": "3a28fdb94676e0509639d1846d764c00",
+			"Name": "BoneSocket",
+			"Transform": {
+				"Translation": {
+					"X": 29.62051773071289,
+					"Y": -39.640647888183597,
+					"Z": 47.124061584472659
+				},
+				"Orientation": {
+					"X": 0.8620911240577698,
+					"Y": -0.16622893512248994,
+					"Z": -0.3792046308517456,
+					"W": 0.2921827733516693
+				}
+			},
+			"Node": "RightHand"
+		},
+		{
+			"ID": "1090f0c84a3c19dd8f4ede87f487b1c7",
 			"TypeName": "FlaxEngine.EmptyActor",
-			"ParentID": "aa3edc664b823ba9258462b557152155",
-			"Name": "AttackCollider"
+			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
+			"Name": "Top",
+			"Transform": {
+				"Translation": {
+					"X": 1.511734962463379,
+					"Y": 32.59172821044922,
+					"Z": -1.4987754821777344
+				}
+			}
+		},
+		{
+			"ID": "c85331374bbbad60e65b75ba9f864d79",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
+			"Name": "End"
+		},
+		{
+			"ID": "66dcffc84eadecbcb00779a8c58e9473",
+			"TypeName": "FlaxEngine.CapsuleCollider",
+			"ParentID": "97d3175e42f35a79b44a69880f3f57ad",
+			"Name": "CapsuleCollider",
+			"Transform": {
+				"Orientation": {
+					"X": 0.0,
+					"Y": 0.0,
+					"Z": 0.7071068286895752,
+					"W": 0.7071068286895752
+				}
+			},
+			"IsTrigger": true,
+			"Center": {
+				"X": 25.0,
+				"Y": 0.0,
+				"Z": 0.0
+			},
+			"Radius": 15.0,
+			"Height": 50.0
+		},
+		{
+			"ID": "358b73ef4bd632cace6089a986525038",
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "dc9f6c5d44444f56ecf1acb058b90260",
+			"ParentID": "aa3edc664b823ba9258462b557152155"
 		},
 		{
 			"ID": "eeaced1a42d1c7738d5d15878c0918ee",
-			"TypeName": "FlaxEngine.BoxCollider",
-			"ParentID": "358b73ef4bd632cace6089a986525038",
-			"Name": "BoxCollider",
-			"IsTrigger": true,
-			"Size": {
-				"X": 0.0,
-				"Y": 0.0,
-				"Z": 0.0
-			}
+			"PrefabID": "cfb10c0e48857c2741f41e852738631a",
+			"PrefabObjectID": "3e66db58416f185ece68a191cd766473",
+			"ParentID": "358b73ef4bd632cace6089a986525038"
 		},
 		{
 			"ID": "4a8eb938479ece2689764dbfb23640cc",

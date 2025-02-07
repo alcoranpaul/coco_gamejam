@@ -9,6 +9,8 @@ namespace Game;
 /// </summary>
 public class BasicKnowledge : FlaxEngine.Object
 {
+	public Actor Agent;
 	public Actor Player;
 	public float MoveSpeed = 5f;
+
 }

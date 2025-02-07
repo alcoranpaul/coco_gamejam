@@ -18,8 +18,17 @@ public class BTT_MoveTo : BehaviorTreeMoveToNode
 		if (!context.Behavior.Actor.TryGetScript<Enemy>(out enemy))
 			Debug.LogError("Enemy script not found!");
 
+		enemy.RequestToMove();
 	}
 
+	public override void ReleaseState(BehaviorUpdateContext context)
+	{
+		enemy.ChangeState(Enemy.State.Idle);
+		base.ReleaseState(context);
+
+	}
+
+	/// <inheritdoc />
 	/// <inheritdoc />
 	public override bool Move(Actor agent, Vector3 move)
 	{
