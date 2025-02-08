@@ -5558,6 +5558,15 @@
 	"Visible": true,
 	"AutoFocus": true
 }
+		},
+		{
+			"ID": "832baaf641472f731ea3fda43b4fb9f0",
+			"TypeName": "FlaxEngine.AudioSource",
+			"ParentID": "36890e964c85b43d2da8a7967a494895",
+			"Name": "80s-retro-fight-game-theme-loo",
+			"Clip": "ee9db9f94f8d762b30515789c4974007",
+			"Loop": true,
+			"PlayOnStart": true
 		}
 	]
 }
