@@ -30,7 +30,7 @@ public class HealthComponent
 	public void Damage(float amount)
 	{
 		Health -= amount;
-		if (Health < 0)
+		if (Health <= 0)
 		{
 			Health = 0;
 			// LOSE CONDITIOn

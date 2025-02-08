@@ -33,6 +33,7 @@ public class Character : InstanceManagerScript, IDamage
 	public event EventHandler OnDeathEvent;
 
 	[ShowInEditor, Serialize] private AudioClip[] deathClips;
+	[ShowInEditor, Serialize] private AudioSource bgmAudioSource;
 
 
 	public override void OnAwake()
@@ -54,6 +55,7 @@ public class Character : InstanceManagerScript, IDamage
 
 	private void OnDeath(object sender, EventArgs e)
 	{
+		if (isDead) return;
 		isDead = true;
 		Screen.CursorLock = CursorLockMode.Clipped;
 		Screen.CursorVisible = true;
@@ -61,7 +63,7 @@ public class Character : InstanceManagerScript, IDamage
 
 		int randomIndex = Random.Shared.Next(0, deathClips.Length);
 		AudioClip deathClip = deathClips[randomIndex];
-		SingletonManager.Get<SFXManager>().PlayAudio(clip: deathClip, Actor.Position, 1f);
+		SingletonManager.Get<SFXManager>().PlayAudio(clip: deathClip, Actor.Position, 5f);
 
 		OnDeathEvent?.Invoke(this, EventArgs.Empty);
 	}
@@ -89,7 +91,15 @@ public class Character : InstanceManagerScript, IDamage
 
 	public override void OnUpdate()
 	{
-		if (isDead) return;
+		if (isDead)
+		{
+			if (bgmAudioSource.Volume > 0f)
+			{
+				bgmAudioSource.Volume -= 0.005f;
+			}
+			return;
+
+		}
 		ToxinComponent.Update();
 	}
 

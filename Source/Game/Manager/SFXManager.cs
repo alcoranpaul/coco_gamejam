@@ -31,10 +31,12 @@ public class SFXManager : InstanceManagerScript
 		source.PlayOnStart = true;
 		source.Position = position;
 		source.AllowSpatialization = true;
+
 		if (volume == 0f)
 			source.Volume = _inGameSettings.SFXVolume;
 		else
 			source.Volume = volume;
+
 
 		source.MinDistance = 30f;
 		Level.SpawnActor(source);
