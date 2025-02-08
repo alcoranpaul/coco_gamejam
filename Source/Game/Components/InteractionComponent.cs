@@ -50,6 +50,10 @@ public class InteractionComponent : InstanceManagerClass
 		{
 			objTointeract.Interact(actor.Position, actor);
 			objTointeract = null;
+
+			int randomIndex = Random.Shared.Next(0, _interactionArgs.harvestClips.Length);
+			AudioClip harvestClip = _interactionArgs.harvestClips[randomIndex];
+			SingletonManager.Get<SFXManager>().PlayAudio(harvestClip, actor.Position);
 			OnInteract?.Invoke(false);
 		}
 	}
@@ -69,6 +73,7 @@ public class InteractionComponent : InstanceManagerClass
 	{
 		public Collider TriggerColllider;
 		public LayersMask LayersMask;
+		public AudioClip[] harvestClips;
 
 	}
 

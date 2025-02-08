@@ -110,6 +110,7 @@ public class InventoryComponent : InstanceManagerClass
 
 		if (healthVial == null && specialToxinVial == null && normalToxinVial == null) return;
 
+
 		switch (_vialEquipped)
 		{
 			case VialEquipped.NToxin:
@@ -143,16 +144,22 @@ public class InventoryComponent : InstanceManagerClass
 				}
 				break;
 		}
+
 	}
 
 	private void EquipVial(VialEquipped newVial, Vial activeVial, Vial inactiveVial1, Vial inactiveVial2)
 	{
+		int randomIndex = Random.Shared.Next(0, _inventoryArgs.vialSwapClips.Length);
+
 		_vialEquipped = newVial;
 		if (inactiveVial1 != null)
 			inactiveVial1.Actor.IsActive = false;
 		if (inactiveVial2 != null)
 			inactiveVial2.Actor.IsActive = false;
 		activeVial.Actor.IsActive = true;
+
+		AudioClip vialSwapClip = _inventoryArgs.vialSwapClips[randomIndex];
+		SingletonManager.Get<SFXManager>().PlayAudio(vialSwapClip, character.Position);
 	}
 	public void AddVial(DVial vial)
 	{
@@ -248,6 +255,7 @@ public class InventoryComponent : InstanceManagerClass
 		public UIControl NormalToxinVialControl;
 		public UIControl SpecialToxinVialControl;
 		public UIControl HealthVialControl;
+		public AudioClip[] vialSwapClips;
 	}
 
 	private enum VialEquipped

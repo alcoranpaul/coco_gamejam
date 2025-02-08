@@ -2408,13 +2408,23 @@
 		"TriggerColllider": null,
 		"LayersMask": {
 			"Mask": 4
-		}
+		},
+		"harvestClips": [
+			"984a0c73474c813e97e1009c8ed65680",
+			"3630196d4c871bdf6298bda2ab534cd9",
+			"e895580a4dd75686967fda854439fa8e",
+			"dd467365437719e0a4d49b844de79f2c",
+			"c13ea99042e906a8ff268db46686edaf"
+		]
 	},
 	"_inventoryArgs": {
 		"ActorToAttach": "ed74f4fc4afab707e16e1cbb512a955e",
 		"NormalToxinVialControl": "92c1ebb347bbe02ea1237c9f2b924466",
 		"SpecialToxinVialControl": "7a9ff41a484bc0a48f444db570f5089a",
-		"HealthVialControl": "539a350842694e70142baea3824689ed"
+		"HealthVialControl": "539a350842694e70142baea3824689ed",
+		"vialSwapClips": [
+			"0eb891b6472a3d0ba6eac0b3c1a05510"
+		]
 	},
 	"_toxinArgs": {
 		"NormalFillRate": 1.0,
