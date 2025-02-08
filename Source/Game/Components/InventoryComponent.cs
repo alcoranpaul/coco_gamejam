@@ -83,24 +83,21 @@ public class InventoryComponent : InstanceManagerClass
 				normalToxinVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_normalToxinVialImage, _inventoryArgs.NormalToxinVialControl, toxinVialColorNone, 0.5f);
 				// FlaxEngine.Object.Destroy(normalToxinVial.Actor);
-				normalToxinVial = null;
-				OnToxinVialRemoved?.Invoke(DVial.Toxin.Normal);
+
 				break;
 			case VialEquipped.SToxin:
 				if (specialToxinVial == null) return;
 				specialToxinVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_specialToxinVialImage, _inventoryArgs.SpecialToxinVialControl, toxinVialColorNone, 0.5f);
 				// FlaxEngine.Object.Destroy(specialToxinVial.Actor);
-				specialToxinVial = null;
-				OnToxinVialRemoved?.Invoke(DVial.Toxin.Special);
+
 				break;
 			case VialEquipped.Health:
 				if (healthVial == null) return;
 				healthVial.Interact(_inventoryArgs.ActorToAttach.Position, character);
 				UpdateVialUI(_healthVialImage, _inventoryArgs.HealthVialControl, healthVialColorNone, 0.5f);
 				// FlaxEngine.Object.Destroy(healthVial.Actor);
-				healthVial = null;
-				OnHealthVialRemoved?.Invoke(this, EventArgs.Empty);
+
 				break;
 		}
 	}
@@ -215,11 +212,13 @@ public class InventoryComponent : InstanceManagerClass
 			if (vial.ToxinType == DVial.Toxin.Normal)
 			{
 				vialActor.TryGetScript<Vial>(out normalToxinVial);
+				normalToxinVial.OnUsed += OnNormalToxinUsed;
 				OnToxinVialAdded?.Invoke(true, DVial.Toxin.Normal);
 			}
 			else
 			{
 				vialActor.TryGetScript<Vial>(out specialToxinVial);
+				specialToxinVial.OnUsed += OnSpecialToxinUsed;
 				OnToxinVialAdded?.Invoke(true, DVial.Toxin.Special);
 			}
 
@@ -227,8 +226,11 @@ public class InventoryComponent : InstanceManagerClass
 		else if (isHealth)
 		{
 			vialActor.TryGetScript<Vial>(out healthVial);
+			healthVial.OnUsed += OnHealthVialUsed;
 			OnHealthVialAdded?.Invoke(true);
 		}
+
+
 
 		// Determine whether the spawned vial should be active.
 		// If it's the first vial or if it matches the equipped type, set active; otherwise, inactive.
@@ -238,6 +240,27 @@ public class InventoryComponent : InstanceManagerClass
 						  (isHealth && _vialEquipped == VialEquipped.Health);
 		vialActor.IsActive = shouldShow;
 
+	}
+
+	private void OnHealthVialUsed(VialEquipped equipped)
+	{
+		healthVial.OnUsed -= OnHealthVialUsed;
+		healthVial = null;
+		OnHealthVialRemoved?.Invoke(this, EventArgs.Empty);
+	}
+
+	private void OnSpecialToxinUsed(VialEquipped equipped)
+	{
+		specialToxinVial.OnUsed -= OnSpecialToxinUsed;
+		specialToxinVial = null;
+		OnToxinVialRemoved?.Invoke(DVial.Toxin.Special);
+	}
+
+	private void OnNormalToxinUsed(VialEquipped equipped)
+	{
+		normalToxinVial.OnUsed -= OnNormalToxinUsed;
+		normalToxinVial = null;
+		OnToxinVialRemoved?.Invoke(DVial.Toxin.Normal);
 	}
 
 	private void UpdateVialUI(Image vialImage, UIControl vialControl, Color usedColor, float alpha = 1)
@@ -258,7 +281,7 @@ public class InventoryComponent : InstanceManagerClass
 		public AudioClip[] vialSwapClips;
 	}
 
-	private enum VialEquipped
+	public enum VialEquipped
 	{
 		NToxin,
 		SToxin,

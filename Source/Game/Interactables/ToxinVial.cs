@@ -10,6 +10,7 @@ public class ToxinVial : Vial
 	[ShowInEditor, Serialize] private float throwUpForce = 500f;
 	[ShowInEditor, Serialize] private float lifetime = 5f;
 
+
 	private float throwMultiplier;
 	private float maxThrowMultipler = 1500f;
 	private bool isThrowing;
@@ -17,6 +18,7 @@ public class ToxinVial : Vial
 	private Actor instigator;
 
 	private float normalizedThrowMultiplier => throwMultiplier / maxThrowMultipler;
+
 
 	public override void Interact(Vector3 origin, Actor instigator)
 	{
@@ -68,6 +70,7 @@ public class ToxinVial : Vial
 		// Debug.Log($"Force: {force}");
 		rb.AddForce(force, ForceMode.Impulse);
 		ThrowUI.Instance.SetThrowing(false);
+		CallOnUsed();
 		Destroy(throwActor, lifetime);
 		Destroy(Actor);
 	}
