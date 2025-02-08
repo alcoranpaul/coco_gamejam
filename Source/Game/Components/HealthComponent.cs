@@ -42,7 +42,7 @@ public class HealthComponent
 	public void Heal(float amount)
 	{
 		Health += amount;
-		if (Health > MaxHealth)
+		if (Health >= MaxHealth)
 			Health = MaxHealth;
 		OnHealthChanged?.Invoke(Health, MaxHealth, NormalizedHealth);
 	}

@@ -12,7 +12,7 @@ public class VialTrigger : Script
 	[ShowInEditor, Serialize] private JsonAssetReference<DVial> VialType;
 	[ShowInEditor, Serialize] private Collider collider;
 	[ShowInEditor, Serialize] private Actor modelActor;
-
+	public event EventHandler OnVialCollected;
 
 	/// <inheritdoc/>
 	public override void OnStart()
@@ -29,6 +29,7 @@ public class VialTrigger : Script
 
 		// Send the Vial to the Inventory
 		SingletonManager.Get<InventoryComponent>()?.AddVial(VialType.Instance);
+		OnVialCollected?.Invoke(this, EventArgs.Empty);
 		// Destroy Actor
 		Destroy(Actor);
 	}

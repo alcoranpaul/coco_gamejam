@@ -131,6 +131,11 @@ public class Character : InstanceManagerScript, IDamage
 		HealthComponent.Damage(damage);
 	}
 
+	public void Heal(float amount)
+	{
+		HealthComponent.Heal(amount);
+	}
+
 }
 
 

@@ -3782,7 +3782,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 80.0,
+		"Right": 64.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -9926,8 +9926,22 @@
 		"25e5159347e36595ba64d9b24137ac60"
 	],
 	"winScene": "36890e964c85b43d2da8a7967a494895",
-	"treeDissolveVFX": "6e7508dd4e88398d5b5d8ca4ac56044d"
+	"treeDissolveVFX": "6e7508dd4e88398d5b5d8ca4ac56044d",
+	"healthTriggerPrefab": "b4a2fc39442c7bae12508899a8568a4a"
 }
+		},
+		{
+			"ID": "7d4e52a8468eb7ebd602ba8c396c7072",
+			"TypeName": "FlaxEngine.EmptyActor",
+			"ParentID": "fafa076743833bb76f45d9affca228ef",
+			"Name": "EmptyActor",
+			"Transform": {
+				"Translation": {
+					"X": 631.8588256835938,
+					"Y": 30.574167251586915,
+					"Z": 0.0
+				}
+			}
 		},
 		{
 			"ID": "0374dcc1432c1fac692a32b71545639e",

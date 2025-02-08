@@ -1,0 +1,56 @@
+{
+	"ID": "b4a2fc39442c7bae12508899a8568a4a",
+	"TypeName": "FlaxEngine.Prefab",
+	"EngineBuild": 6606,
+	"Data": [
+	{
+		"ID": "45f139a747df610c2461ca9086b827b8",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"Name": "Health Vial Trigger"
+	},
+	{
+		"ID": "ea85be304a162c6d6ea102b2e751f3bc",
+		"TypeName": "Game.VialTrigger",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"V": {
+	"VialType": "e8418eeb46c8ab45cce0769ea5b9ba44",
+	"collider": "723f0a40433614498f7026a6c08e7bcf",
+	"modelActor": "511d93524f852a35a87d5f88e210dfb2"
+}
+	},
+	{
+		"ID": "723f0a40433614498f7026a6c08e7bcf",
+		"TypeName": "FlaxEngine.BoxCollider",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"Name": "BoxCollider",
+		"Center": {
+			"X": 0.0,
+			"Y": 50.0,
+			"Z": -0.0000019073486328125
+		},
+		"Size": {
+			"X": 25.0,
+			"Y": 99.99999237060547,
+			"Z": 25.0
+		}
+	},
+	{
+		"ID": "511d93524f852a35a87d5f88e210dfb2",
+		"TypeName": "FlaxEngine.EmptyActor",
+		"ParentID": "45f139a747df610c2461ca9086b827b8",
+		"Name": "Item",
+		"Transform": {
+			"Translation": {
+				"X": 0.0,
+				"Y": 44.11660385131836,
+				"Z": 0.0
+			},
+			"Scale": {
+				"X": 0.5,
+				"Y": 0.5,
+				"Z": 0.5
+			}
+		}
+	}
+]
+}

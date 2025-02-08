@@ -12,7 +12,14 @@ public class Ship : Script
 	[ShowInEditor, Serialize] private Actor[] treeActors;
 	[ShowInEditor, Serialize] private SceneReference winScene;
 	[ShowInEditor, Serialize] private Prefab treeDissolveVFX;
+	[ShowInEditor, Serialize] private Prefab healthTriggerPrefab;
+	[ShowInEditor, Serialize] private Actor healthTriggerSpawnPoint;
+
+	private float timeElapsed = 0f;
+	private float timeToSpawnHealthTrigger = 10f;
+	private bool isThereCurrentlyHealthTrigger = false;
 	private int treeIndex;
+	private VialTrigger vialTrigger;
 
 	public override void OnAwake()
 	{
@@ -22,6 +29,38 @@ public class Ship : Script
 		treeIndex = 0;
 	}
 
+	public override void OnUpdate()
+	{
+		if (isThereCurrentlyHealthTrigger) return;
+
+		timeElapsed += Time.DeltaTime;
+		Debug.Log($"Time elapsed: {timeElapsed}");
+		if (timeElapsed >= timeToSpawnHealthTrigger)
+		{
+
+			timeElapsed = 0f;
+			SpawnHealthTrigger();
+		}
+	}
+
+	private void SpawnHealthTrigger()
+	{
+		var healthActor = PrefabManager.SpawnPrefab(healthTriggerPrefab, healthTriggerSpawnPoint.Position);
+		if (healthActor.TryGetScript<VialTrigger>(out vialTrigger))
+		{
+			vialTrigger.OnVialCollected += OnVialCollected;
+		}
+		Debug.Log("Health Trigger Spawned");
+		isThereCurrentlyHealthTrigger = true;
+	}
+
+	private void OnVialCollected(object sender, EventArgs e)
+	{
+		vialTrigger.OnVialCollected -= OnVialCollected;
+		vialTrigger = null;
+		Debug.Log("Health Trigger Collected");
+		isThereCurrentlyHealthTrigger = false;
+	}
 
 	public void DecreaseTrees()
 	{
