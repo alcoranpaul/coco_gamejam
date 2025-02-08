@@ -24,6 +24,8 @@ public class MovementComponent
 	private float _pitch;
 	private float _defaultFov;
 
+	private InGameSettings _inGameSettings;
+	private float mouseSentivity;
 	public MovementComponent(MovementArgs movementArgs, CameraArgs cameraArgs, CharacterController controller, AnimatedModel model)
 	{
 		_movementArgs = movementArgs;
@@ -37,6 +39,20 @@ public class MovementComponent
 			return;
 		}
 
+		SingletonManager.Get<InputManager>().OnResume += OnResume;
+
+	}
+
+	private void OnResume(object sender, EventArgs e)
+	{
+		mouseSentivity = _cameraArgs.MouseSensitivity * _inGameSettings.MouseSentivity;
+		Debug.Log("Mouse Sensitivity: " + mouseSentivity);
+	}
+
+	public void OnDisable()
+	{
+		SingletonManager.Get<InputManager>().OnResume -= OnResume;
+
 	}
 
 	public void Start()
@@ -44,6 +60,17 @@ public class MovementComponent
 		_defaultFov = _cameraArgs.CameraView.FieldOfView;
 		_speedParam = _model.GetParameter("moveSpeed");
 		_isSprintParam = _model.GetParameter("isSprint");
+
+		JsonAsset asset = Engine.GetCustomSettings("InGameSettings") ?? throw new InvalidOperationException("InGameSettings asset not found.");
+
+		_inGameSettings = asset.GetInstance<InGameSettings>();
+
+		if (_inGameSettings == null)
+		{
+			throw new InvalidOperationException("InGameSettings asset not found.");
+		}
+		mouseSentivity = _cameraArgs.MouseSensitivity * _inGameSettings.MouseSentivity;
+		Debug.Log("Mouse Sensitivity: " + mouseSentivity);
 	}
 
 	public void Update()
@@ -57,8 +84,8 @@ public class MovementComponent
 		// Camera Rotation
 		{
 			// Get mouse axis values and clamp pitch
-			_yaw += Input.GetAxis("Mouse X") * _cameraArgs.MouseSensitivity * Time.DeltaTime; // H
-			_pitch += Input.GetAxis("Mouse Y") * _cameraArgs.MouseSensitivity * Time.DeltaTime; // V
+			_yaw += Input.GetAxis("Mouse X") * mouseSentivity * Time.DeltaTime; // H
+			_pitch += Input.GetAxis("Mouse Y") * mouseSentivity * Time.DeltaTime; // V
 			_pitch = Mathf.Clamp(_pitch, _cameraArgs.PitchMinMax.X, _cameraArgs.PitchMinMax.Y);
 
 			// The camera's parent should be another actor, like a spring arm for instance

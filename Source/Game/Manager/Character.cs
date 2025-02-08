@@ -73,6 +73,7 @@ public class Character : InstanceManagerScript, IDamage
 		_interactionComponent.OnDisable();
 		_throwComponent.OnDisable();
 		_inventoryComponent.OnDisable();
+		_movementComponent.OnDisable();
 		_inventoryComponent.OnToxinVialAdded -= OnToxinVialAdded;
 		_inventoryComponent.OnToxinVialRemoved -= OnToxinVialRemoved;
 		_throwComponent.OnThrowEnabled -= OnThrowEnabled;

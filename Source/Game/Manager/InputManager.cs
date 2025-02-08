@@ -35,7 +35,7 @@ public class InputManager : InstanceManagerScript
 	private InputEvent mouseReleaseEvent;
 	private InputEvent pauseEvent;
 
-	private bool isPaused;
+	public event EventHandler OnResume;
 
 	public override void OnAwake()
 	{
@@ -69,7 +69,7 @@ public class InputManager : InstanceManagerScript
 		continueButton.Clicked += Resume;
 
 		pauseControl.IsActive = false;
-		isPaused = false;
+
 	}
 
 	private void Resume()
@@ -78,6 +78,7 @@ public class InputManager : InstanceManagerScript
 		Screen.CursorVisible = false;
 		pauseControl.IsActive = false;
 		Time.TimeScale = 1f;
+		OnResume?.Invoke(this, EventArgs.Empty);
 
 	}
 
