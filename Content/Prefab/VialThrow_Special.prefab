@@ -18,7 +18,14 @@
 		"V": {
 	"collider": "a413b3fe47faa620230ce0892ac01518",
 	"vfxPrefab": "ac5800c64bd05353a38274bf1d7534e6",
-	"type": 1
+	"type": 1,
+	"impactClips": [
+		"f97fb6604926b9533e733db46c15abee",
+		"88d717c04131f120be5a3a8bb371e805",
+		"6ef06fde465ff6049b6d288e60984afb",
+		"1c79c89d4db9b5accde04c8a84339b37"
+	],
+	"splashClip": "f4fd66984d47758d270bb3a387f2b512"
 }
 	},
 	{

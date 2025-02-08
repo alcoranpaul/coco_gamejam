@@ -17,7 +17,14 @@
 		"ParentID": "06a868424661d0172eb6c2befb006db6",
 		"V": {
 	"collider": "a413b3fe47faa620230ce0892ac01518",
-	"vfxPrefab": "e439be5347313c6747787396ee10c005"
+	"vfxPrefab": "e439be5347313c6747787396ee10c005",
+	"impactClips": [
+		"f97fb6604926b9533e733db46c15abee",
+		"88d717c04131f120be5a3a8bb371e805",
+		"6ef06fde465ff6049b6d288e60984afb",
+		"1c79c89d4db9b5accde04c8a84339b37"
+	],
+	"splashClip": "f4fd66984d47758d270bb3a387f2b512"
 }
 	},
 	{

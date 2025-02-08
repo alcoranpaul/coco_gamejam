@@ -12,7 +12,8 @@ public class Throwable : Script
 	[ShowInEditor, Serialize] private Collider collider;
 	[ShowInEditor, Serialize] private Prefab vfxPrefab;
 	[ShowInEditor, Serialize] private Type type;
-	// [ShowInEditor, Serialize] private LayersMask layerToTarget;
+	[ShowInEditor, Serialize] private AudioClip[] impactClips;
+	[ShowInEditor, Serialize] private AudioClip splashClip;
 
 	private bool firstCollision = true;
 	public override void OnStart()
@@ -45,6 +46,7 @@ public class Throwable : Script
 					if (actor.TryGetScript<IDeath>(out var death))
 					{
 						death.Die();
+
 					}
 
 				}
@@ -65,7 +67,10 @@ public class Throwable : Script
 				}
 
 			}
-
+			int randomIndex = Random.Shared.Next(0, impactClips.Length);
+			AudioClip bottleBreakClip = impactClips[randomIndex];
+			SingletonManager.Get<SFXManager>().PlayAudio(bottleBreakClip, Actor.Position);
+			SingletonManager.Get<SFXManager>().PlayAudio(splashClip, Actor.Position);
 			Destroy(vfxActor, 1f);
 		}
 	}
