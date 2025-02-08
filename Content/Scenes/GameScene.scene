@@ -1374,8 +1374,8 @@
 	"Value": 0.5,
 	"TrackThickness": 5,
 	"ThumbSize": {
-		"X": 16.0,
-		"Y": 16.0
+		"X": 34.0,
+		"Y": 23.0
 	},
 	"TrackLineColor": {
 		"R": 0.34441194,
@@ -1412,9 +1412,9 @@
 	"ThumbBrush": {
 		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
 		"Color": {
-			"R": 0.0,
-			"G": 0.09307289,
-			"B": 1.0,
+			"R": 1.0,
+			"G": 0.93658495,
+			"B": 0.0,
 			"A": 1.0
 		}
 	},
@@ -1644,8 +1644,8 @@
 	"Value": 0.5,
 	"TrackThickness": 5,
 	"ThumbSize": {
-		"X": 16.0,
-		"Y": 16.0
+		"X": 34.0,
+		"Y": 23.0
 	},
 	"TrackLineColor": {
 		"R": 0.34441194,
@@ -1682,9 +1682,9 @@
 	"ThumbBrush": {
 		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
 		"Color": {
-			"R": 0.0,
-			"G": 0.09307289,
-			"B": 1.0,
+			"R": 1.0,
+			"G": 0.93658495,
+			"B": 0.0,
 			"A": 1.0
 		}
 	},
@@ -1911,11 +1911,11 @@
 	"Maximum": 1.0,
 	"Minimum": 0.0,
 	"Direction": 0,
-	"Value": 0.5,
+	"Value": 1.0,
 	"TrackThickness": 5,
 	"ThumbSize": {
-		"X": 16.0,
-		"Y": 16.0
+		"X": 34.0,
+		"Y": 23.0
 	},
 	"TrackLineColor": {
 		"R": 0.34441194,
@@ -1952,9 +1952,9 @@
 	"ThumbBrush": {
 		"$type": "FlaxEngine.GUI.SolidColorBrush, FlaxEngine.CSharp",
 		"Color": {
-			"R": 0.0,
-			"G": 0.09307289,
-			"B": 1.0,
+			"R": 1.0,
+			"G": 0.93658495,
+			"B": 0.0,
 			"A": 1.0
 		}
 	},
@@ -2029,6 +2029,12 @@
 		"7b3d929444060ab09f79c6b522aa40c8"
 	]
 }
+		},
+		{
+			"ID": "979e4d8248f5513294d65d87e65a1f9c",
+			"TypeName": "Game.SFXManager",
+			"ParentID": "c49208b74cadd074f6e8499ba54056fc",
+			"V": {}
 		},
 		{
 			"ID": "869e062243a848ad3a534aa0ad85d107",

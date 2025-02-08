@@ -81,14 +81,15 @@ public class SingletonManager : GamePlugin
 	// Get the singleton instance
 	private T GetInstance<T>() where T : class
 	{
-		singletons.TryGetValue(typeof(T), out object instance);
+		if (singletons == null || !singletons.TryGetValue(typeof(T), out object instance))
+			return null;
 
 		return instance as T;
 	}
 
 	public static T Get<T>() where T : class
 	{
-		return PluginManager.GetPlugin<SingletonManager>().GetInstance<T>();
+		return PluginManager.GetPlugin<SingletonManager>()?.GetInstance<T>();
 	}
 
 	// Nullify all singletons (for example, when exiting play mode)

@@ -48,8 +48,8 @@ public class OptionsUI : Script
 
 	private void OnSFXChanged()
 	{
-		_inGameSettings.MusicVolume = bgmSlider.Value;
-		bgmSlider.Value = _inGameSettings.MusicVolume;
+		_inGameSettings.SFXVolume = sfxSlider.Value;
+		sfxSlider.Value = _inGameSettings.SFXVolume;
 	}
 
 	private void OnMouseSensitivityChanged()
