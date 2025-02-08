@@ -1299,7 +1299,7 @@
 			"Name": "Button",
 			"Transform": {
 				"Translation": {
-					"X": 350.0,
+					"X": 144.0,
 					"Y": 770.0,
 					"Z": 0.0
 				}
@@ -1388,7 +1388,7 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": 350.0,
+		"Left": 144.0,
 		"Right": 400.0,
 		"Top": -125.0,
 		"Bottom": 100.0
@@ -2412,6 +2412,132 @@
 }
 		},
 		{
+			"ID": "3a94c5364b73fa5e667fe286c6af8052",
+			"TypeName": "FlaxEngine.UIControl",
+			"ParentID": "446d0c74401ee02d06683baee292bc4d",
+			"Name": "Button 0",
+			"Transform": {
+				"Translation": {
+					"X": 663.0,
+					"Y": 770.0,
+					"Z": 0.0
+				}
+			},
+			"Control": "FlaxEngine.GUI.Button",
+			"Data": {
+	"BackgroundColorHighlighted": {
+		"R": 0.32941177,
+		"G": 0.32941177,
+		"B": 0.36078432,
+		"A": 1.0
+	},
+	"BackgroundColorSelected": {
+		"R": 0.0,
+		"G": 0.47843137,
+		"B": 0.8,
+		"A": 1.0
+	},
+	"HasBorder": true,
+	"BorderThickness": 1.0,
+	"BorderColor": {
+		"R": 0.32941177,
+		"G": 0.32941177,
+		"B": 0.36078432,
+		"A": 1.0
+	},
+	"BorderColorHighlighted": {
+		"R": 0.41568628,
+		"G": 0.41568628,
+		"B": 0.45882353,
+		"A": 1.0
+	},
+	"BorderColorSelected": {
+		"R": 0.10980392,
+		"G": 0.5921569,
+		"B": 0.91764706,
+		"A": 1.0
+	},
+	"Text": "Main Menu",
+	"CaseOption": 1,
+	"Bold": false,
+	"Italic": false,
+	"TextColor": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"TextColorHighlighted": {
+		"R": 1.0,
+		"G": 1.0,
+		"B": 1.0,
+		"A": 1.0
+	},
+	"HorizontalAlignment": 1,
+	"VerticalAlignment": 1,
+	"Wrapping": 0,
+	"BaseLinesGapScale": 1.0,
+	"Font": {
+		"Font": "4508d98f4aa1f0bd59362b81d47e38f4",
+		"Size": 150.0
+	},
+	"Material": null,
+	"Margin": {
+		"Left": 10.0,
+		"Right": 10.0,
+		"Top": 10.0,
+		"Bottom": 10.0
+	},
+	"ClipText": false,
+	"AutoWidth": false,
+	"AutoHeight": false,
+	"AutoFitText": true,
+	"AutoFitTextRange": {
+		"X": 0.1,
+		"Y": 100.0
+	},
+	"ClipChildren": true,
+	"CullChildren": true,
+	"AnchorMin": {
+		"X": 0.0,
+		"Y": 1.0
+	},
+	"AnchorMax": {
+		"X": 0.0,
+		"Y": 1.0
+	},
+	"Offsets": {
+		"Left": 663.0,
+		"Right": 400.0,
+		"Top": -125.0,
+		"Bottom": 100.0
+	},
+	"Scale": {
+		"X": 1.0,
+		"Y": 1.0
+	},
+	"Pivot": {
+		"X": 0.0,
+		"Y": 1.0
+	},
+	"Shear": {
+		"X": 0.0,
+		"Y": 0.0
+	},
+	"Rotation": 0.0,
+	"BackgroundColor": {
+		"R": 0.24705882,
+		"G": 0.24705882,
+		"B": 0.27450982,
+		"A": 1.0
+	},
+	"BackgroundBrush": null,
+	"Enabled": true,
+	"Visible": true,
+	"AutoFocus": true
+}
+		},
+		{
 			"ID": "3aeb97b54446aae65a5dee84bbcc41ac",
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "4aca7b9846efba58cfd5909a569d9666",
@@ -2743,7 +2869,9 @@
 			"ParentID": "c49208b74cadd074f6e8499ba54056fc",
 			"V": {
 	"pauseControl": "5237b7e24357eda6cbb7c08757324640",
-	"resumeControl": "bf6099734950abce5ae990b672d05315"
+	"resumeControl": "bf6099734950abce5ae990b672d05315",
+	"mainMenuControl": "3a94c5364b73fa5e667fe286c6af8052",
+	"mainMenuScene": "3dbe7fc04c98ba332f1bd195d9fd834f"
 }
 		},
 		{
@@ -3782,7 +3910,7 @@
 	},
 	"Offsets": {
 		"Left": -1.5586767,
-		"Right": 64.0,
+		"Right": 80.0,
 		"Top": -9.785886E-07,
 		"Bottom": 50.0
 	},
@@ -9927,7 +10055,8 @@
 	],
 	"winScene": "36890e964c85b43d2da8a7967a494895",
 	"treeDissolveVFX": "6e7508dd4e88398d5b5d8ca4ac56044d",
-	"healthTriggerPrefab": "b4a2fc39442c7bae12508899a8568a4a"
+	"healthTriggerPrefab": "b4a2fc39442c7bae12508899a8568a4a",
+	"healthTriggerSpawnPoint": "7d4e52a8468eb7ebd602ba8c396c7072"
 }
 		},
 		{
@@ -10149,9 +10278,9 @@
 			"Name": "Harvest_Plant_Special 0",
 			"Transform": {
 				"Translation": {
-					"X": 10521.125,
+					"X": 10963.8515625,
 					"Y": 1963.3502197265626,
-					"Z": 11572.57421875
+					"Z": 11917.9931640625
 				}
 			},
 			"StaticFlags": 0
@@ -10211,9 +10340,9 @@
 			"Name": "Harvest_Plant_Special 1",
 			"Transform": {
 				"Translation": {
-					"X": 10247.5107421875,
+					"X": 9731.552734375,
 					"Y": 1963.3502197265626,
-					"Z": 11621.97265625
+					"Z": 11932.462890625
 				}
 			},
 			"StaticFlags": 0
@@ -10273,9 +10402,9 @@
 			"Name": "Harvest_Plant_Special 2",
 			"Transform": {
 				"Translation": {
-					"X": 9816.6259765625,
+					"X": 9880.111328125,
 					"Y": 1963.3502197265626,
-					"Z": 11503.19921875
+					"Z": 11476.892578125
 				}
 			},
 			"StaticFlags": 0

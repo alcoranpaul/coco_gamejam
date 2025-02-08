@@ -12,8 +12,11 @@ public class InputManager : InstanceManagerScript
 {
 	[ShowInEditor, Serialize] private UIControl pauseControl;
 	[ShowInEditor, Serialize] private UIControl resumeControl;
+	[ShowInEditor, Serialize] private UIControl mainMenuControl;
+	[ShowInEditor, Serialize] private SceneReference mainMenuScene;
 
 	private Button continueButton;
+	private Button mainMenuButton;
 
 
 	public InputAxis MouseXAxis { get; private set; }
@@ -68,8 +71,17 @@ public class InputManager : InstanceManagerScript
 		continueButton = resumeControl.Get<Button>();
 		continueButton.Clicked += Resume;
 
+		mainMenuButton = mainMenuControl.Get<Button>();
+		mainMenuButton.Clicked += LoadMainMenu;
+
 		pauseControl.IsActive = false;
 
+	}
+
+	private void LoadMainMenu()
+	{
+		Time.TimeScale = 1f;
+		Level.ChangeSceneAsync(mainMenuScene);
 	}
 
 	private void Resume()
@@ -112,6 +124,7 @@ public class InputManager : InstanceManagerScript
 		OnPaused = null;
 
 		continueButton.Clicked -= Resume;
+		mainMenuButton.Clicked -= LoadMainMenu;
 
 		base.OnDisable();
 	}
