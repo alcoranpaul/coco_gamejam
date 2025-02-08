@@ -26,6 +26,9 @@ public class GameOverUI : Script
 		quitBtn.Clicked += () => Engine.RequestExit();
 		SingletonManager.Get<Character>().OnDeathEvent += OnPlayerDeath;
 		gameOverUIControl.IsActive = false;
+
+		Screen.CursorLock = CursorLockMode.Clipped;
+		Screen.CursorVisible = true;
 	}
 
 	public override void OnDisable()

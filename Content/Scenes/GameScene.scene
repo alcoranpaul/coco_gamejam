@@ -864,7 +864,8 @@
 		"732096404d41974d2be8aa9b22c457ed",
 		"b6b9205b4d10e53eeb91cdb0aed8dc52",
 		"3366cae646488bc852aab2b2cd70f84c",
-		"9b00d937433525b8ac237cb13b5acbff"
+		"9b00d937433525b8ac237cb13b5acbff",
+		"9a47e01940cfa9490c11f0bfbf612315"
 	]
 }
 		},
@@ -873,6 +874,13 @@
 			"TypeName": "FlaxEngine.UIControl",
 			"ParentID": "333e6ccc4d19d6da9ee8309c27a6b48e",
 			"Name": "Image",
+			"Transform": {
+				"Translation": {
+					"X": 100.0,
+					"Y": 20.0,
+					"Z": 0.0
+				}
+			},
 			"Control": "FlaxEngine.GUI.Image",
 			"Data": {
 	"Brush": {
@@ -916,10 +924,10 @@
 		"Y": 1.0
 	},
 	"Offsets": {
-		"Left": 0.0,
-		"Right": 0.0,
-		"Top": 0.0,
-		"Bottom": 0.0
+		"Left": 100.0,
+		"Right": 100.0,
+		"Top": 20.0,
+		"Bottom": 20.0
 	},
 	"Scale": {
 		"X": 1.0,
@@ -10079,7 +10087,8 @@
 			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
 			"V": {
 	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
-	"collider": "92e695ce4e5034e7461d1eb91b316940"
+	"collider": "92e695ce4e5034e7461d1eb91b316940",
+	"vialEquipped": 1
 }
 		},
 		{
@@ -10111,6 +10120,192 @@
 			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
 			"PrefabObjectID": "5ba032764ba355ed88aabe8c8e662145",
 			"ParentID": "92e695ce4e5034e7461d1eb91b316940",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1bf521104b709175ee743caff119504b",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "00f925c446e9fe27d0df70b575d6b229",
+			"Name": "Harvest_Plant_Special 0",
+			"Transform": {
+				"Translation": {
+					"X": 10521.125,
+					"Y": 1963.3502197265626,
+					"Z": 11572.57421875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "063660f74a648f2bbd2f5d864491c809",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "1bf521104b709175ee743caff119504b",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "1bf521104b709175ee743caff119504b",
+	"vialEquipped": 1
+}
+		},
+		{
+			"ID": "68b0075c42efa538a3598aab3d8d337c",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "13e544f44ef049025761549d6d4c003b",
+			"ParentID": "1bf521104b709175ee743caff119504b",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "8b35f80d4b6d85e2d6819ab19e7dd54d",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "ce9cec85495ff5016a70c994c16aff68",
+			"ParentID": "1bf521104b709175ee743caff119504b",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "1532a41b40badc45d9c0f9b2f8dbf4c0",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "5ba032764ba355ed88aabe8c8e662145",
+			"ParentID": "1bf521104b709175ee743caff119504b",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "358b8d494e82553d6f3fa487e84b2d51",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "00f925c446e9fe27d0df70b575d6b229",
+			"Name": "Harvest_Plant_Special 1",
+			"Transform": {
+				"Translation": {
+					"X": 10247.5107421875,
+					"Y": 1963.3502197265626,
+					"Z": 11621.97265625
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "6733287b462278977f8cdfb826675262",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "358b8d494e82553d6f3fa487e84b2d51",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "358b8d494e82553d6f3fa487e84b2d51",
+	"vialEquipped": 1
+}
+		},
+		{
+			"ID": "8a769c4745543f4afa43219641b6a9e6",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "13e544f44ef049025761549d6d4c003b",
+			"ParentID": "358b8d494e82553d6f3fa487e84b2d51",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4f3ee35441850afd0c4522b1331fdc22",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "ce9cec85495ff5016a70c994c16aff68",
+			"ParentID": "358b8d494e82553d6f3fa487e84b2d51",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "f3a9d2974cf4e58a49866794fc313edb",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "5ba032764ba355ed88aabe8c8e662145",
+			"ParentID": "358b8d494e82553d6f3fa487e84b2d51",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "4473fa29459701aeac73229c50f99a02",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "0f773d694bfc4b1f6e639eb663f99a57",
+			"ParentID": "00f925c446e9fe27d0df70b575d6b229",
+			"Name": "Harvest_Plant_Special 2",
+			"Transform": {
+				"Translation": {
+					"X": 9816.6259765625,
+					"Y": 1963.3502197265626,
+					"Z": 11503.19921875
+				}
+			},
+			"StaticFlags": 0
+		},
+		{
+			"ID": "de87cf1d45f2c885c14cb9b828998e3a",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "b06c4d6045d03f55915b089d3cb4ddb0",
+			"ParentID": "4473fa29459701aeac73229c50f99a02",
+			"V": {
+	"prefabVialTrigger": "7ab8b2384f7a59950dacbfafadbeef31",
+	"collider": "4473fa29459701aeac73229c50f99a02",
+	"vialEquipped": 1
+}
+		},
+		{
+			"ID": "1981f8aa4bccbfe0fcacd3bdf358fdc5",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "13e544f44ef049025761549d6d4c003b",
+			"ParentID": "4473fa29459701aeac73229c50f99a02",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "22079b11458eb2c9dcf8ddb0c59689e5",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "ce9cec85495ff5016a70c994c16aff68",
+			"ParentID": "4473fa29459701aeac73229c50f99a02",
+			"StaticFlags": 0,
+			"Buffer": {
+				"Entries": [
+					{}
+				]
+			}
+		},
+		{
+			"ID": "7240c8d245f038d6679fdbbc4c671435",
+			"PrefabID": "29e589614f3fb1049d0cbca4260c3fdc",
+			"PrefabObjectID": "5ba032764ba355ed88aabe8c8e662145",
+			"ParentID": "4473fa29459701aeac73229c50f99a02",
 			"StaticFlags": 0,
 			"Buffer": {
 				"Entries": [

@@ -12,6 +12,7 @@ public class HarvestNode : Script, IInteract
 
 	[ShowInEditor, Serialize] private Prefab prefabVialTrigger;
 	[ShowInEditor, Serialize] private Collider collider;
+	[ShowInEditor, Serialize] private InventoryComponent.VialEquipped vialEquipped;
 	/// <inheritdoc/>
 	public override void OnStart()
 	{
@@ -39,17 +40,13 @@ public class HarvestNode : Script, IInteract
 		collider.TriggerExit -= TriggerExit;
 	}
 
-	/// <inheritdoc/>
-	public override void OnUpdate()
-	{
-		// Here you can add code that needs to be called every frame
-	}
+
 
 	private void TriggerEnter(PhysicsColliderActor actor)
 	{
 		if (!actor.HasTag("Player")) return;
 
-		InteractionComponent.TryAssignInteract(this);
+		InteractionComponent.TryAssignInteract(this, vialEquipped);
 	}
 
 
@@ -57,7 +54,7 @@ public class HarvestNode : Script, IInteract
 	{
 		if (!actor.HasTag("Player")) return;
 
-		InteractionComponent.TryAssignInteract(null);
+		InteractionComponent.TryAssignInteract(null, vialEquipped);
 	}
 
 	public void Interact(Vector3 origin, Actor instigator)

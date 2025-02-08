@@ -28,10 +28,11 @@ public class InteractionComponent : InstanceManagerClass
 
 	}
 
-	public static bool TryAssignInteract(IInteract obj)
+	public static bool TryAssignInteract(IInteract obj, InventoryComponent.VialEquipped vialEquipped)
 	{
 		var instance = SingletonManager.Get<InteractionComponent>();
-		if (obj == null || instance == null || instance.objTointeract != null)
+		var inventoryComponent = SingletonManager.Get<InventoryComponent>();
+		if (obj == null || instance == null || instance.objTointeract != null || !inventoryComponent.CanHarvest(vialEquipped))
 		{
 			instance.objTointeract = null;
 			OnInteract?.Invoke(false);

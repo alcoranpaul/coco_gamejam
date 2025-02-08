@@ -74,6 +74,25 @@ public class InventoryComponent : InstanceManagerClass
 		SingletonManager.Get<InputManager>().OnSwapVial -= OnSwapVial;
 	}
 
+	public bool CanHarvest(VialEquipped vialEquipped)
+	{
+		switch (vialEquipped)
+		{
+			case VialEquipped.NToxin:
+				Debug.Log($"Vial already added to Inventory {vialEquipped}");
+				return normalToxinVial == null;
+			case VialEquipped.SToxin:
+				Debug.Log($"Vial already added to Inventory {vialEquipped}");
+				return specialToxinVial == null;
+			case VialEquipped.Health:
+				Debug.Log($"Vial already added to Inventory {vialEquipped}");
+				return healthVial == null;
+
+		}
+		Debug.Log("CanHarvest");
+		return true;
+	}
+
 	private void OnUseVial()
 	{
 		switch (_vialEquipped)
