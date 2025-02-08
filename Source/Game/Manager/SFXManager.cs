@@ -24,14 +24,17 @@ public class SFXManager : InstanceManagerScript
 	}
 
 
-	public void PlayAudio(AudioClip clip, Vector3 position)
+	public void PlayAudio(AudioClip clip, Vector3 position, float volume = 0f)
 	{
 		AudioSource source = new AudioSource();
 		source.Clip = clip;
 		source.PlayOnStart = true;
 		source.Position = position;
 		source.AllowSpatialization = true;
-		source.Volume = _inGameSettings.SFXVolume;
+		if (volume == 0f)
+			source.Volume = _inGameSettings.SFXVolume;
+		else
+			source.Volume = volume;
 
 		source.MinDistance = 30f;
 		Level.SpawnActor(source);

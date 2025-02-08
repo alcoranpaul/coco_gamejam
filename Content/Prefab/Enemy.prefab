@@ -33,7 +33,15 @@
 	"behavior": "f6941ef94e04de63db9057a0a9915141",
 	"moveSpeed": 75.0,
 	"model": "3f1e48ec4cc38534c9834ab35fd26db8",
-	"attackTrigger": "aaf177d7464d6798f5dd0db6c0531e17"
+	"attackTrigger": "aaf177d7464d6798f5dd0db6c0531e17",
+	"attackClips": [
+		"fc269b6e485ae1d0e5069d9e104e85bf",
+		"9dd4900744b8baa4bdac498709df397e",
+		"556b4ad64ecf08a3706b9191989f66e9",
+		"4e4ce4434bc1f04ef1b0da90678e72e3",
+		"31ddd1e644adc369240e589257dd4727"
+	],
+	"hitImpactVFX": "de1098254be69fda8e6a8f81b0a56217"
 }
 	},
 	{
@@ -147,11 +155,12 @@
 		},
 		"IsTrigger": true,
 		"Center": {
-			"X": 98.0,
+			"X": 61.0,
 			"Y": 0.0,
 			"Z": 0.0
 		},
-		"Height": 70.0
+		"Radius": 50.0,
+		"Height": 150.0
 	}
 ]
 }

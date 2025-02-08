@@ -32,6 +32,8 @@ public class Character : InstanceManagerScript, IDamage
 
 	public event EventHandler OnDeathEvent;
 
+	[ShowInEditor, Serialize] private AudioClip[] deathClips;
+
 
 	public override void OnAwake()
 	{
@@ -56,6 +58,11 @@ public class Character : InstanceManagerScript, IDamage
 		Screen.CursorLock = CursorLockMode.Clipped;
 		Screen.CursorVisible = true;
 		_movementArgs.AnimModel.GetParameter("isDead").Value = true;
+
+		int randomIndex = Random.Shared.Next(0, deathClips.Length);
+		AudioClip deathClip = deathClips[randomIndex];
+		SingletonManager.Get<SFXManager>().PlayAudio(clip: deathClip, Actor.Position, 1f);
+
 		OnDeathEvent?.Invoke(this, EventArgs.Empty);
 	}
 

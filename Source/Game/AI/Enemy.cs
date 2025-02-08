@@ -28,6 +28,8 @@ public class Enemy : Script, IDeath
 	private bool isAttacking = false;
 	public bool IsAttacking => isAttacking;
 	private Tag attakTag = Tags.Find("Enemy.Attacking");
+	[ShowInEditor, Serialize] private AudioClip[] attackClips;
+	[ShowInEditor, Serialize] private Prefab hitImpactVFX;
 
 
 
@@ -69,8 +71,17 @@ public class Enemy : Script, IDeath
 
 	private void OnTriggerEnter(PhysicsColliderActor actor)
 	{
+		Debug.Log($"Enemy OnTriggerEnter: {actor.Name}");
 		if (!actor.TryGetScript<IDamage>(out var damageScript)) return;
+
+		var imapctActor = PrefabManager.SpawnPrefab(hitImpactVFX, attackTrigger.Position);
+
+		int randomIndex = Random.Shared.Next(0, attackClips.Length);
+		AudioClip attackClip = attackClips[randomIndex];
+		SingletonManager.Get<SFXManager>().PlayAudio(attackClip, Actor.Position);
 		damageScript.TakeDamage(10f);
+
+		Destroy(imapctActor, 1f);
 
 	}
 
