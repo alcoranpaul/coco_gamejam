@@ -136,6 +136,15 @@ public class Character : InstanceManagerScript, IDamage
 		HealthComponent.Heal(amount);
 	}
 
+	public static void ToggleMovement(bool state)
+	{
+		// Enable or disable movement
+		Debug.Log($"Movement Toggled: {state}");
+		SingletonManager.Get<Character>()._movementComponent.ToggleMovement(state);
+
+	}
+
+
 }
 
 

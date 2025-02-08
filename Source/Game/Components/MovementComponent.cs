@@ -26,6 +26,8 @@ public class MovementComponent
 
 	private InGameSettings _inGameSettings;
 	private float mouseSentivity;
+	private bool canMove = true;
+
 	public MovementComponent(MovementArgs movementArgs, CameraArgs cameraArgs, CharacterController controller, AnimatedModel model)
 	{
 		_movementArgs = movementArgs;
@@ -106,7 +108,12 @@ public class MovementComponent
 
 		// Character Movement
 		{
-
+			if (!canMove)
+			{
+				_speedParam.Value = 0f;
+				_isSprintParam.Value = false;
+				return;
+			}
 			var movementDirection = _cameraArgs.CameraView.Transform.TransformDirection(movement);
 
 			// Jump if the space bar is down, jump
@@ -138,6 +145,10 @@ public class MovementComponent
 
 
 		}
+	}
+	public void ToggleMovement(bool canMove)
+	{
+		this.canMove = canMove;
 	}
 
 	[Serializable]

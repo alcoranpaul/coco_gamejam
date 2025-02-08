@@ -30,6 +30,7 @@ public class ToxinVial : Vial
 
 		throwMultiplier = 0f;
 		ThrowUI.Instance.SetThrowing(true);
+		Character.ToggleMovement(false);
 	}
 
 	public override void OnUpdate()
@@ -38,6 +39,7 @@ public class ToxinVial : Vial
 		{
 			// Debug.Log($"Throwing: {throwMultiplier}");
 			// Update Throw
+
 			ThrowUI.Instance.SetValue(normalizedThrowMultiplier);
 			throwMultiplier += Time.DeltaTime * 700f;
 		}
@@ -63,7 +65,9 @@ public class ToxinVial : Vial
 		SingletonManager.Get<InputManager>().OnMouseRelease -= OnMouseRelease;
 		isThrowing = false;
 
+
 		var throwActor = PrefabManager.SpawnPrefab(throwablePrefab, origin, instigator.Transform.Orientation);
+
 
 		Vector3 force = (instigator.Transform.Forward * throwForce + throwMultiplier) + Transform.Up * throwUpForce;
 		RigidBody rb = throwActor.As<RigidBody>();
@@ -71,6 +75,7 @@ public class ToxinVial : Vial
 		rb.AddForce(force, ForceMode.Impulse);
 		ThrowUI.Instance.SetThrowing(false);
 		CallOnUsed();
+		Character.ToggleMovement(true);
 		Destroy(throwActor, lifetime);
 		Destroy(Actor);
 	}

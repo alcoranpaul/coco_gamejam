@@ -34,7 +34,7 @@ public class Ship : Script
 		if (isThereCurrentlyHealthTrigger) return;
 
 		timeElapsed += Time.DeltaTime;
-		Debug.Log($"Time elapsed: {timeElapsed}");
+		// Debug.Log($"Time elapsed: {timeElapsed}");
 		if (timeElapsed >= timeToSpawnHealthTrigger)
 		{
 
@@ -50,7 +50,7 @@ public class Ship : Script
 		{
 			vialTrigger.OnVialCollected += OnVialCollected;
 		}
-		Debug.Log("Health Trigger Spawned");
+		// Debug.Log("Health Trigger Spawned");
 		isThereCurrentlyHealthTrigger = true;
 	}
 
@@ -58,7 +58,7 @@ public class Ship : Script
 	{
 		vialTrigger.OnVialCollected -= OnVialCollected;
 		vialTrigger = null;
-		Debug.Log("Health Trigger Collected");
+		// Debug.Log("Health Trigger Collected");
 		isThereCurrentlyHealthTrigger = false;
 	}
 
