@@ -25,15 +25,15 @@
 		"InGameSettings": "d8423d9748647fa00d5a40ad0503cf71"
 	},
 	"WindowsPlatform": "79ac390447f4263e30f56e9190a70dbc",
-	"UWPPlatform": "8660bbf44f1ea61cb9bc4580b3631973",
-	"LinuxPlatform": "1bf4eedd41508974d6646e8faa55420a",
+	"UWPPlatform": null,
+	"LinuxPlatform": null,
 	"PS4Platform": null,
 	"XboxOnePlatform": null,
 	"XboxScarlettPlatform": null,
-	"AndroidPlatform": "f815fa4140740ea170371b83471ed9f3",
+	"AndroidPlatform": null,
 	"SwitchPlatform": null,
 	"PS5Platform": null,
-	"MacPlatform": "c781c32b43f9bdfa520340a7b52ee615",
-	"iOSPlatform": "ae21da2b4ef20d43222715a13e3bd70a"
+	"MacPlatform": null,
+	"iOSPlatform": null
 }
 }

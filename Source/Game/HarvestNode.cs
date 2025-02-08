@@ -20,13 +20,13 @@ public class HarvestNode : Script, IInteract
 		collider.TriggerEnter += TriggerEnter;
 		collider.TriggerExit += TriggerExit;
 
-		foreach (var child in Actor.Children)
+		for (int i = 0; i < Actor.ChildrenCount - 1; i++)
 		{
-			child.IsActive = false;
+			Actor.GetChild(i).IsActive = false;
 		}
 
 		var childCount = Actor.ChildrenCount;
-		var randomIndex = Random.Shared.Next(0, childCount);
+		var randomIndex = Random.Shared.Next(0, childCount - 1);
 		Actor.GetChild(randomIndex).IsActive = true;
 	}
 
